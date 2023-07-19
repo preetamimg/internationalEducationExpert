@@ -11,3 +11,17 @@ function scrollFunction() {
         document.getElementById("navbar").classList.remove('fixed-navbar');
     }
 }
+
+
+// hero slider start
+var swiper = new Swiper(".heroslider", {
+    spaceBetween: 30,
+    loop: true,
+    speed: 1000,
+    effect: "fade",
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
