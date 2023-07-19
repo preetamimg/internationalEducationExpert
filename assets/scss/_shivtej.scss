@@ -1,1 +1,168 @@
-@charset "UTF-8";
+
+.cards{
+    & .card-style{
+        
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        border: 1px solid $theme2;
+        &.card-style2{
+            &::after{
+                position: absolute;
+                content: '';
+                background-color: rgba(255, 171, 51, 0.18);
+                left: 0;
+                bottom: 0;
+                transition: all 0.3s ease-in-out;
+                height: 0;
+                opacity: 1;
+    
+            }
+        }
+        &.card-style3{
+            &::after{
+                position: absolute;
+                content: '';
+                background-color: rgba(255, 160, 194, 0.18);
+                left: 0;
+                bottom: 0;
+                transition: all 0.3s ease-in-out;
+                height: 0;
+                opacity: 1;
+    
+            }
+        }
+        &.card-style4{
+            &::after{
+                position: absolute;
+                content: '';
+                background-color: rgba(108, 55, 221, 0.1);
+                left: 0;
+                bottom: 0;
+                transition: all 0.3s ease-in-out;
+                height: 0;
+                opacity: 1;
+    
+            }
+        }
+        &.card-style5{
+            &::after{
+                position: absolute;
+                content: '';
+                background-color: rgba(68, 255, 0, 0.18);
+                left: 0;
+                bottom: 0;
+                transition: all 0.3s ease-in-out;
+                height: 0;
+                opacity: 1;
+    
+            }
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-color: rgba(56, 232, 255, 0.1);
+            left: 0;
+            bottom: 0;
+            transition: all 0.3s ease-in-out;
+            height: 0;
+            opacity: 1;
+
+        }
+      
+        &:hover{
+            &::after{
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+          
+            }
+            & .card-content {
+                & .card-icon{
+                    & i{
+                        z-index: 333;
+                    }
+                  
+                }
+                & .heading{
+                    opacity: 0;
+       
+                }
+                & .pera{
+                    opacity: 0;
+
+                    
+                }
+                & .pera2{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 33%;
+              
+                }
+                & .readMore{
+                    opacity: 0;
+              
+                }
+
+          
+        }
+          
+        }
+        & .card-content {
+                & .icon{
+                        padding: 18px;
+                        background-color: rgba(100, 219, 226, 0.18);
+                        height: 75px;
+                        width: 75px;
+                        color: rgb(10, 250, 238);
+                        transition: all 0.3s ease-in-out;
+
+                 
+                  
+                }
+                & .heading{
+                    font-size: 20px;
+                    font-weight: 700;
+                    transition: all 0.3s ease-in-out;
+                }
+                & .pera{
+                    color: $black;
+                    font-size: 16px;
+                    font-weight: 400;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                     transition: all 0.3s ease-in-out;
+                    
+                }
+                & .pera2{
+                    color: $black;
+                    font-size: 16px;
+                    font-weight: 400;
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    padding: 10px;
+                     transition: all 0.3s ease-in-out;
+                }
+                & .readMore{
+                    font-size: 16px;
+                    color: $black;
+                    font-weight: 400;
+                    transition: all 0.3s ease-in-out;
+                    & span{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+          
+        }
+
+    }
+}
+
+
+
