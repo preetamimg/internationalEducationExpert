@@ -99,12 +99,15 @@
                             margin-bottom: 10px;
                         }
                         & .readBtn{
-                            border: none;
-                            background-color: #E20935;
-                            color: white;
+                            border: 1px solid;
+                            border-color:#E20935 ;
+                            background-color: transparent;
+                            // background-color: #E20935;
+                            color: #E20935;
                             font-size: 12px;
                             font-weight: 500;
                             padding: 8px 15px;
+                            transition: 0.3s linear;
                         }
                     }
                     &:hover{
@@ -114,6 +117,10 @@
                             }
                             &::after{
                                 transform: translateX(-50%) scale(1);
+                            }
+                            & .readBtn{
+                                background-color: #E20935;
+                                color: white;
                             }
                         }
                     }
@@ -354,6 +361,38 @@
         font-size: 12px;
         color: white;
         text-align: center;
+    }
+}
+
+.ctcFluid{
+    // background-color: #000F24;
+    // height: 200px;
+    & .ctcContainer{
+        & .ctcBox{
+            border: 1px solid $theme1;
+            border-radius: 13px;
+            background-color: #000F24;
+            padding: 30px 30px;
+                & .ctcHead{
+                font-size: 30px;
+                font-weight: 700;
+                color: white;
+            }
+            & .ctcSub{
+                font-size: 15px;
+                font-weight: 500;
+                color: white;
+            }
+            & .downloadBtn{
+                border: none;
+                background-color: $theme1;
+                color: black;
+                // border-radius: 13px;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
     }
 }
 // footer end
