@@ -45,12 +45,16 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
+      <!-- jquery -->
+      <script src="assets/libs/jquery/jquery.min.js"></script>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- glightBox css -->
+        <link rel="stylesheet" href="assets/libs/glightBox/glightbox.min.css">
 </head>
 
 <body >
@@ -145,18 +149,22 @@
 <!-- video section  -->
 <div class="container-fluid videoSection py-5">
   <div class="container sectionBg">
-    <div class="row align-items-center ">
-      <div class="col-6">
+    <div class="row align-items-center py-lg-0 py-4">
+      <div class="col-lg-6 order-lg-1 order-2">
         <div class="videoPlay">
-          <div class="videoImg py-4"><img src="assets/image/videoSection/video.jpg" alt="video" class="img-fluid w-100 h-100 rounded-5"></div>
-          <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/image/videoSection/videoicon.png" alt="videoicon" class="img-fluid w-100 h-100"></a>
+          <!-- <a href="https://vimeo.com/115041822" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/image/videoSection/videoicon.png" alt="videoicon" class="img-fluid w-100 h-100"></a> -->
+          <a href="https://vimeo.com/115041822" class="glightbox1 d-flex py-4">
+            <img src="assets/image/videoSection/video.jpg" alt="image" class="img-fluid h-100 w-100 rounded-5 object-fit-cover" />
+          </a>
         </div>
       </div>
-      <div class="col-6">
-        <div class="videoContent">
-          <div class="videoHeading"> FREE CONSULTANT &  <br>WATCH YOUTUBE VIDEO</div>
-          <div class="d-inline-block pt-3">
-            <a href="javascript:;" class="text-decoration-none btn themBtn">CONTACT US</a>
+      <div class="col-lg-6 order-lg-2 order-1">
+        <div class="row mx-0 videoContent">
+          <div class="col-12 px-0">
+            <div class="videoHeading text-lg-start text-center"> FREE CONSULTANT &  <br>WATCH YOUTUBE VIDEO</div>
+          </div>
+          <div class="col-auto px-0 pt-3 mx-lg-0 mx-auto">
+            <a href="javascript:;" class="text-decoration-none  btn themBtn">CONTACT US</a>
           </div>
         </div>
       </div>
@@ -168,5 +176,14 @@
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
+
+        <!-- glightBox Js -->
+        <script src="assets/libs/glightBox/glightbox.min.js"></script>
+    <script>
+          const lightbox = GLightbox1();
+      lightbox.on('open', () => {
+      // Do something
+      });
+  </script>
 </body>
 </html>
