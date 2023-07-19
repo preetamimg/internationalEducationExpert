@@ -126,8 +126,8 @@
                     transition: all 0.3s ease-in-out;
                 }
                 & .pera{
-                    color: $black;
-                    font-size: 16px;
+                    font-size: 14px;
+                    color: #000;
                     font-weight: 400;
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
@@ -138,9 +138,10 @@
                     
                 }
                 & .pera2{
-                    color: $black;
-                    font-size: 16px;
-                    font-weight: 400;
+                    font-size: 14px;
+                    font-weight: 200;
+                    color: #000;
+                    line-height: 24px;
                     opacity: 0;
                     visibility: hidden;
                     position: absolute;
