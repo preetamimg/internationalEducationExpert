@@ -1,44 +1,40 @@
-.mainBtn {
-    font-weight: 600;
-    color: $white;
-    background-position: 100% 0;
-    background-image: linear-gradient(to right, $theme1, $theme2);
-    box-shadow: 0 4px 15px 0 rgba($theme1, 0.5);
-    transition: all ease-in-out 0.4s;
-    padding: 0.5rem 1rem;
+.themBtn {
+    border: 1px solid $gray-200;
     box-shadow: none;
+    outline: none;
+    background-color: rgba($primary, 0.1);
+    font-size: 14px;
+    padding: 6px 24px 6px 24px;
+    border-radius: 2em;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
     text-decoration: none;
-    color: $white;
-    border: none;
-    border-radius: 50px;
-    &:hover{
-    background-image: linear-gradient(to right, rgba($theme1, 0.8), rgba($theme2, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $theme2;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 150%;
+        z-index: -1;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        background-color: $theme2;
     }
-    &.googleBtn {
-        background: transparent;
-        color: $black;
-        border: 1px solid rgba($theme1, 0.5);
+    &:hover{
+        z-index: 1;
+        color: $white;
+        &::before{
+            height: 300%;
+        }
     }
 }
-
-
-.opetionBtn {
-    background-color: $white;
-    border: 1px solid $black;
-    font-weight: 600;
-    transition: all ease-in-out 0.3s;
-    color: rgba($black, 0.8);
-    &:hover{
-        color: $theme2;
-        border-color: $theme1;
-    }
-}
-
-
-
-
-
-
-
-
-
