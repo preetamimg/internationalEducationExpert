@@ -100,10 +100,10 @@
                         }
                         & .readBtn{
                             border: 1px solid;
-                            border-color:#E20935 ;
+                            border-color:$theme2 ;
                             background-color: transparent;
                             // background-color: #E20935;
-                            color: #E20935;
+                            color: $theme2;
                             font-size: 12px;
                             font-weight: 500;
                             padding: 8px 15px;
@@ -119,7 +119,7 @@
                                 transform: translateX(-50%) scale(1);
                             }
                             & .readBtn{
-                                background-color: #E20935;
+                                background-color: $theme2;
                                 color: white;
                             }
                         }
@@ -142,7 +142,7 @@
                         height: unset;
                         margin-inline: 10px;
                         & .testimonialsBox{
-                            background: #ffffff;
+                            background: white;
                             padding: 30px 30px 30px 30px;
                             border: 1px solid #E7EAEF;
                             & .testimonialsUser{
@@ -179,7 +179,7 @@
                                 font-weight: 400;
                                 margin-bottom: 20px;
                                 line-height: 28px;
-                                color: #6f6f6f;
+                                color: black;
                                 margin-top: 20px;
                             }
                             & .starUl{
@@ -370,16 +370,18 @@
     & .ctcContainer{
         & .ctcBox{
             border: 1px solid $theme1;
-            border-radius: 13px;
+            // border-radius: 13px;
             background-color: #000F24;
-            padding: 30px 30px;
+            padding: 50px 30px;
                 & .ctcHead{
-                font-size: 30px;
-                font-weight: 700;
-                color: white;
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 1.2em;
+                    color: white;
+                    margin-bottom: 5px;
             }
             & .ctcSub{
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 500;
                 color: white;
             }
