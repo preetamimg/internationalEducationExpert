@@ -45,6 +45,9 @@
     & .map-mail-icon {
         height: 15px;
         width: 15px;
+        & img {
+        filter: brightness(9);
+        }
     }
 }
 .top-social-icon {
@@ -52,11 +55,11 @@
     width: 15px;
     & .topsocial-img {
         filter: brightness(9);
-        transition: all 0.3s ease-in-out ;
+        transition: all 0.3s ease-out 0s ;
     }
     &:hover {
         & .topsocial-img {
-            filter: brightness(1);
+            transform: rotate(360deg);
         }
     }
 }
@@ -118,21 +121,35 @@ height: 80px;
                     transition: all 0.3s ease-in-out;
                 }
                 &::before {
+                    // content: "";
+                    // position: absolute;
+                    // left: 0;
+                    // top: 0;
+                    // width: 0;
+                    // height: 100%;
+                    // background-color: $theme2; 
+                    // // transform: scaleX(0);
+                    // // transform-origin: right;
+                    // transition: all 0.3s ease-in-out;
+                    // z-index: -1;
+                    
                     content: "";
                     position: absolute;
                     left: 0;
-                    top: 0;
-                    width: 0;
+                    bottom: 0;
+                    width: 100%;
                     height: 100%;
                     background-color: $theme2; 
-                    // transform: scaleX(0);
-                    // transform-origin: right;
-                    transition: all 0.3s ease-in-out;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.3s ease-in-out;  
                     z-index: -1;
                 }
                 &:hover {
                     &::before {
-                        width: 100%;
+                        // width: 100%;
+                        transform: scaleX(1);
+                        transform-origin:left;
                     }
                     & .drop-link {
                         color: $white;
