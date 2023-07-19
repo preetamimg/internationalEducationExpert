@@ -1,41 +1,3 @@
-// .mainheader {
-//     & .navbar-brand {
-//         height: 70px;
-//     }
-//     & .navbar-nav {
-//         & .nav-link {
-//             font-size: 16px;
-//             position: relative;
-//             transition: all 0.3s;
-//             &::after{
-//                 position: absolute;
-//                 bottom: 0;
-//                 left: 0;
-//                 right: 0;
-//                 margin: auto;
-//                 width: 0%;
-//                 content: '.';
-//                 color: transparent;
-//                 background: $theme2;
-//                 height: 2px;
-//                 transition: all 0.3s;
-//             }
-//             &:hover{
-//                 color: $theme2;
-//                 &::after{
-//                     width: 100%;
-//                 }
-//             }
-//             &.active{
-//                 color: $theme2;
-//                 &::after{
-//                     width: 100%;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 
 // topbar start
 .map-mail {
@@ -46,7 +8,7 @@
         height: 15px;
         width: 15px;
         & img {
-        filter: brightness(9);
+            // filter: brightness(9);
         }
     }
 }
@@ -59,7 +21,7 @@
     }
     &:hover {
         & .topsocial-img {
-            transform: rotate(360deg);
+        filter: brightness(1);
         }
     }
 }
@@ -121,18 +83,6 @@ height: 80px;
                     transition: all 0.3s ease-in-out;
                 }
                 &::before {
-                    // content: "";
-                    // position: absolute;
-                    // left: 0;
-                    // top: 0;
-                    // width: 0;
-                    // height: 100%;
-                    // background-color: $theme2; 
-                    // // transform: scaleX(0);
-                    // // transform-origin: right;
-                    // transition: all 0.3s ease-in-out;
-                    // z-index: -1;
-                    
                     content: "";
                     position: absolute;
                     left: 0;
