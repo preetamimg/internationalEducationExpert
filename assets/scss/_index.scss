@@ -1,2 +1,581 @@
 @charset "UTF-8";
 
+// hero section start
+@include media-breakpoint(basic) {
+
+    .hero-section {
+        & .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            & .hero-subheading {
+                font-size: 18px;
+                color: $white;
+                letter-spacing: 3px;
+                animation:fadeInUp 1.2s ease backwards;
+                & .pie-chart {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            
+            & .hero-heading {
+                font-size:60px;
+                color: $white;
+                line-height: normal;
+                animation:fadeInUp 1.5s ease backwards;
+                & .hero-animation {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: url(../img/index/main-slide.png) no-repeat;
+                        background-size: 100%;
+                        background-position: center center;
+                        z-index: -1;
+                        animation: zoom-fade 5s linear 0s infinite;
+                    }
+                    @keyframes zoom-fade {
+                        0% {
+                          transform: scale(1);
+                        }
+                        
+                        10% {
+                          transform: scale(1.05);
+                        }
+                        
+                        20% {
+                            transform: scale(1.1);
+                        }
+                        
+                         30% {
+                            transform: scale(1);
+                        }
+                        
+                        40% {
+                          transform: scale(1.1);
+                        }
+                        
+                        50% {
+                          transform: scale(1.1);
+                        }
+                        
+                        90% {
+                          transform: scale(1);
+                        }
+                        
+                        100% {
+                          opacity: 1;
+                          transform: scale(1);
+                        }
+                      }
+                    }
+            }
+            & .hero-title {
+                font-size: 15px;
+                animation:fadeInUp 1.7s ease backwards;
+            }
+            & .hero-btn {
+                animation:fadeInUp 1.8s ease backwards;
+            }
+            @keyframes fadeInUp{
+                0%{
+                    transform:translate(0px, 200px);
+                     opacity: 0;
+                }
+                100%{
+                    transform:translate(0px, 0);
+                     opacity: 1;
+                }
+            }
+        }    
+        & .swiper-slider1 {
+            background-image: url(../img/index/slider-1.png);
+        } 
+        & .swiper-slider2 {
+            background-image: url(../img/index/slider-2.png);
+        }
+        & .swiper-button-next {
+            left: 20px;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after {
+                font-size: 10px;
+                color: $black;
+                font-weight: 600;
+            }
+        }
+        & .swiper-button-prev {
+            left: 20px;
+            height: 45px;
+            top: 40%;
+            // margin: 20px 0;
+            width: 45px;
+            border-radius: 50%;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after {
+                font-size: 10px;
+                color: $black;
+                font-weight: 600;
+            }
+        }
+        & .hero-content {
+            & .hero-icon {
+                height: 105px;
+                width: 105px;
+                & .hand-icon {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            & .hero-content2 {
+                height: 105px;
+                & .hero-checkout {
+                    font-size: 10px;
+                    letter-spacing: 3px;
+                }
+                & .hero-rates {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+// hero section end
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+// X-Large devices (large desktops, less than 1400px)
+@include media-breakpoint-down(xl) {
+    .hero-section {
+        & .swiper-slide {
+            & .hero-subheading {
+                & .pie-chart {
+                }
+            }
+            @keyframes fadeInUp{
+                0%{
+                }
+                100%{
+
+                }
+            }
+            & .hero-heading {
+                & .hero-animation {
+                    &::before {
+                    }
+                    @keyframes zoom-fade {
+                        0% {
+                        }                       
+                       10% {
+                        }
+                        
+                        20% {
+                        }
+                        
+                        30% {
+                        }
+                        
+                        40% {
+
+                        }                        
+                        50% {
+                        }
+                        
+                        90% {
+                        }
+                        
+                        100% {
+                        }
+                      }
+                    }
+            }
+            & .hero-title {
+            }
+            & .hero-btn {
+            }
+        }    
+        & .swiper-slider1 {
+        } 
+        & .swiper-slider2 {
+        }
+        & .swiper-button-next {
+            &::after {
+            }
+        }
+        & .swiper-button-prev {
+            &::after {
+            }
+        }
+        & .hero-content {
+            & .hero-icon {                
+                & .hand-icon {
+                }
+            }
+            & .hero-content2 {
+                & .hero-checkout {
+                }
+                & .hero-rates {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(lg) {
+    .hero-section {
+        & .swiper-slide {
+            & .hero-subheading {
+                & .pie-chart {
+                }
+            }
+            @keyframes fadeInUp{
+                0%{
+                }
+                100%{
+
+                }
+            }
+            & .hero-heading {
+                & .hero-animation {
+                    &::before {
+                    }
+                    @keyframes zoom-fade {
+                        0% {
+                        }                       
+                       10% {
+                        }
+                        
+                        20% {
+                        }
+                        
+                        30% {
+                        }
+                        
+                        40% {
+
+                        }                        
+                        50% {
+                        }
+                        
+                        90% {
+                        }
+                        
+                        100% {
+                        }
+                      }
+                    }
+            }
+            & .hero-title {
+            }
+            & .hero-btn {
+            }
+        }    
+        & .swiper-slider1 {
+        } 
+        & .swiper-slider2 {
+        }
+        & .swiper-button-next {
+            &::after {
+            }
+        }
+        & .swiper-button-prev {
+            &::after {
+            }
+        }
+        & .hero-content {
+            & .hero-icon {                
+                & .hand-icon {
+                }
+            }
+            & .hero-content2 {
+                & .hero-checkout {
+                }
+                & .hero-rates {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+    .hero-section {
+        & .swiper-slide {
+            & .hero-subheading {
+                font-size: 17px;
+                & .pie-chart {
+                }
+            }
+            @keyframes fadeInUp{
+                0%{
+                }
+                100%{
+
+                }
+            }
+            & .hero-heading {
+                font-size: 44px;
+                & .hero-animation {
+                    &::before {
+                    }
+                    @keyframes zoom-fade {
+                        0% {
+                        }                       
+                       10% {
+                        }
+                        
+                        20% {
+                        }
+                        
+                        30% {
+                        }
+                        
+                        40% {
+
+                        }                        
+                        50% {
+                        }
+                        
+                        90% {
+                        }
+                        
+                        100% {
+                        }
+                      }
+                    }
+            }
+            & .hero-title {
+                font-size: 14px;
+            }
+            & .hero-btn {
+            }
+        }    
+        & .swiper-slider1 {
+        } 
+        & .swiper-slider2 {
+        }
+        & .swiper-button-next {
+            &::after {
+            }
+        }
+        & .swiper-button-prev {
+            &::after {
+            }
+        }
+        & .hero-content {
+            & .hero-icon {
+                height: 95px;
+                width: 95px;
+                & .hand-icon {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            & .hero-content2 {
+                height: 95px;
+                & .hero-checkout {
+                }
+                & .hero-rates {
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+    .hero-section {
+        & .swiper-slide {
+            & .hero-subheading {
+                font-size: 16px;
+                & .pie-chart {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+            @keyframes fadeInUp{
+                0%{
+                }
+                100%{
+
+                }
+            }
+            & .hero-heading {
+                font-size: 36px;
+                & .hero-animation {
+                    &::before {
+                    }
+                    @keyframes zoom-fade {
+                        0% {
+                        }                       
+                       10% {
+                        }
+                        
+                        20% {
+                        }
+                        
+                        30% {
+                        }
+                        
+                        40% {
+
+                        }                        
+                        50% {
+                        }
+                        
+                        90% {
+                        }
+                        
+                        100% {
+                        }
+                    }
+                    }
+            }
+            & .hero-title {
+                font-size: 13px;
+            }
+            & .hero-btn {
+            }
+        }    
+        & .swiper-slider1 {
+        } 
+        & .swiper-slider2 {
+        }
+        & .swiper-button-next {
+            &::after {
+            }
+        }
+        & .swiper-button-prev {
+            &::after {
+            }
+        }
+        & .hero-content {
+            & .hero-icon {
+                height: 75px;
+                width: 75px;
+                & .hand-icon {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            & .hero-content2 {
+                height: 75px;
+                & .hero-checkout {
+                    font-size: 9px;
+                }
+                & .hero-rates {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin heroSection-mixin-max-xs() {
+    .hero-section {
+        & .swiper-slide {
+            & .hero-subheading {
+                font-size: 15px;
+                & .pie-chart {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            @keyframes fadeInUp{
+                0%{
+                }
+                100%{
+
+                }
+            }
+            & .hero-heading {
+                font-size: 30px;
+                & .hero-animation {
+                    &::before {
+                    }
+                    @keyframes zoom-fade {
+                        0% {
+                        }                       
+                       10% {
+                        }
+                        
+                        20% {
+                        }
+                        
+                        30% {
+                        }
+                        
+                        40% {
+
+                        }                        
+                        50% {
+                        }
+                        
+                        90% {
+                        }
+                        
+                        100% {
+                        }
+                      }
+                    }
+            }
+            & .hero-title {
+                font-size: 12px;
+            }
+            & .hero-btn {
+            }
+        }    
+        & .swiper-slider1 {
+        } 
+        & .swiper-slider2 {
+        }
+        & .swiper-button-next {
+            &::after {
+            }
+        }
+        & .swiper-button-prev {
+            &::after {
+            }
+        }
+        & .hero-content {
+            & .hero-icon {
+                height: 65px;
+                width: 65px;
+                & .hand-icon {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            & .hero-content2 {
+                height: 65px;
+                & .hero-checkout {
+                    font-size: 8px;
+                }
+                & .hero-rates {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// hero section end

@@ -1,8 +1,104 @@
-.subheading {
-    text-transform: uppercase;
+// .subheading {
+//     font-size: 13px;
+//     color: $theme2;
+//     letter-spacing: 1px;
+// }
+// .mainheading {
+//     font-size: 40px;
+//     line-height: 110%;
+// }
+.heading {
     font-size: 14px;
+    color: $theme2;
+    line-height: normal;
+    padding-left: 24px;
+    &::after {
+        content: '| |';
+        font-size: 12px;
+        position: absolute;
+        top: 0px;
+        right: -20px;
+    }
+    &::before {
+        content: '| |';
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        left: 4px;
+    }
 }
-.mainHeading {
+.sub-heading {
     font-size: 40px;
-    line-height: 110%;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .heading {
+        &::after {
+        }
+        &::before {
+        }
+    }
+    .sub-heading {
+        font-size: 38px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .heading {
+        &::after {
+        }
+        &::before {
+        }
+    }
+    .sub-heading {
+        font-size: 34px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heading {
+        &::after {
+        }
+        &::before {
+        }
+    }
+    .sub-heading {
+        font-size: 26px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .heading {
+        font-size: 12px;
+        padding-left: 20px;
+        &::after {
+            font-size: 10px;
+            top: 0px;
+            right: -17px;
+        }
+        &::before {
+            top: 0px;
+            left: 2px;
+            font-size: 10px;
+        }
+    }
+    .sub-heading {
+        font-size: 22px;
+    }
 }
