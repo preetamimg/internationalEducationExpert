@@ -327,7 +327,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    border-radius: 28px;
+    // border-radius: 28px;
     &::before {
         content: '';
         position: absolute;
@@ -338,7 +338,7 @@
         // background: url(../img/mohit/counter-bg.png);
         background-color: rgba($black, 0.8);
         z-index: 0;
-        border-radius: 28px;
+        // border-radius: 28px;
     }
     & .ctaHeading {
         font-size: 36px;
@@ -378,9 +378,9 @@
 
 @include media-breakpoint-down(xl) {
     .CtaSection {
-        border-radius: 24px;
+        // border-radius: 24px;
         &::before {
-            border-radius: 24px;
+            // border-radius: 24px;
         }
         & .ctaHeading {
             font-size: 33px;
@@ -396,9 +396,9 @@
 
 @include media-breakpoint-down(lg) {
     .CtaSection {
-        border-radius: 20px;
+        // border-radius: 20px;
         &::before {
-            border-radius: 20px;
+            // border-radius: 20px;
         }
         & .ctaHeading {
             font-size: 30px;
@@ -415,9 +415,9 @@
 
 @include media-breakpoint-down(md) {
     .CtaSection {
-        border-radius: 16px;
+        // border-radius: 16px;
         &::before {
-            border-radius: 16px;
+            // border-radius: 16px;
         }
         & .ctaHeading {
             font-size: 26px;
@@ -434,9 +434,9 @@
 
 @include media-breakpoint-down(sm) {
     .CtaSection {
-        border-radius: 10px;
+        // border-radius: 10px;
         &::before {
-            border-radius: 10px;
+            // border-radius: 10px;
         }
         & .ctaHeading {
             font-size: 22px;
@@ -494,7 +494,8 @@
             & .news-content {
                 padding:0 20px;
                     & .news-blog-heading {
-                        font-size: 22px;
+                        // font-size: 22px;
+                        font-size: 16px;
                         color: $black;
                         transition: all 0.3s ease-in-out;
                         &:hover {
@@ -603,7 +604,7 @@
                 & .news-content {
                     padding: 0 15px;
                         & .news-blog-heading {
-                            font-size: 20px;
+                            // font-size: 20px;
                             &:hover {
                             }
                         }
@@ -672,7 +673,7 @@
                 & .news-content {
                     padding: 0 18px;
                         & .news-blog-heading {
-                            font-size: 18px;
+                            font-size: 15px;
                             &:hover {
                             }
                         }
@@ -745,7 +746,7 @@
                 & .news-content {
                     padding: 0 16px;
                         & .news-blog-heading {
-                            font-size: 18px;
+                            font-size: 14px;
                             &:hover {
                             }
                         }
@@ -818,7 +819,7 @@
                 & .news-content {
                     padding: 0 12px;
                         & .news-blog-heading {
-                            font-size: 16px;
+                            font-size: 13px;
                             &:hover {
                             }
                         }
@@ -869,3 +870,199 @@
 }
 
 //  recent news section end
+
+
+// hero card start
+.AboutCardMain {
+    & .aboutCard {
+        padding: 30px 45px;
+        & .CardIcon {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                width: 50%;
+                height:65%;
+                transform: translateY(-50%);
+                background-color: $theme2;
+                background-image: linear-gradient(92deg, $white 0%, lighten($theme2,  39) 100%);
+            }
+            & .CardImg {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        & .cardHeading {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 29px;
+            transition: all 0.3s ease-in-out;
+        }
+        & .cardTitle {
+            font-size: 14px;
+            color: $black;
+            line-height: 26px;
+        }
+        & .moredetaiBtn {
+            font-size: 12px;
+            color: $black;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $theme2;
+                border-color: $theme2 !important;
+            }
+        }
+        &:hover {
+            & .cardHeading {
+                color: $theme2;
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .AboutCardMain {
+        & .aboutCard {
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+            & .cardHeading {
+            }
+            & .cardTitle {
+            }
+            & .moredetaiBtn {
+
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .AboutCardMain {
+        gap: 25px 0;
+        & .aboutCard {
+            padding: 20px 20px;
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            & .cardHeading {
+                font-size: 14px;
+            }
+            & .cardTitle {
+                font-size: 13px;
+                line-height: 19px;
+            }
+            & .moredetaiBtn {
+                font-size: 11px;
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .AboutCardMain {
+        gap: 25px 0;
+        & .aboutCard {
+            padding: 25px 30px;
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            & .cardHeading {
+                font-size: 15px;
+            }
+            & .cardTitle {
+                line-height: 19px;
+            }
+            & .moredetaiBtn {
+                font-size: 11px;
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .AboutCardMain {
+        gap: 25px;
+        & .aboutCard {
+            padding: 20px 25px;
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            & .cardHeading {
+                font-size: 13px;
+            }
+            & .cardTitle {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            & .moredetaiBtn {
+                font-size: 10px;
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+    
+}
+
+// hero card end
