@@ -4,6 +4,7 @@
     & .about-left {
         & .about-title2 {
             font-size: 16px;
+            font-weight: 400;
             color: $black;
             line-height: 24px;
         }
@@ -248,10 +249,10 @@
                     width: 22px;
                 }
                 & .about-card-heading {
-                    font-size: 14px;
+                    font-size: 15px;
                 }
                 & .about-card-title {
-                    font-size: 13px;
+                    font-size: 14px;
                 }
             }
             }
@@ -1019,11 +1020,10 @@
                 font-size: 14px;
             }
             & .cardTitle {
-                font-size: 13px;
+                font-size: 14px;
                 line-height: 19px;
             }
             & .moredetaiBtn {
-                font-size: 11px;
                 &:hover {
                 }
             }
@@ -1056,7 +1056,7 @@
                 line-height: 19px;
             }
             & .moredetaiBtn {
-                font-size: 11px;
+                font-size: 12px;
                 &:hover {
                 }
             }
@@ -1082,15 +1082,12 @@
                     width: 35px;
                 }
             }
-            & .cardHeading {
-                font-size: 13px;
-            }
             & .cardTitle {
-                font-size: 12px;
+                // font-size: 12px;
                 line-height: 18px;
             }
             & .moredetaiBtn {
-                font-size: 10px;
+                font-size: 12px;
                 &:hover {
                 }
             }
