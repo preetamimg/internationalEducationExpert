@@ -3,9 +3,9 @@
     box-shadow: none;
     outline: none;
     background-color: rgba($primary, 0.1);
-    font-size: 14px;
-    padding: 6px 24px 6px 24px;
-    border-radius: 2em;
+    font-size: 15px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 0px;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
     color: $theme2;
     &::before{
         content: "";
@@ -36,6 +37,16 @@
         &::before{
             height: 300%;
         }
+    }
+    &.darkBtn{
+        background-color: $theme1;
+        &::before{
+            background-color: $white;
+        }
+        &:hover{
+            color: $black;
+        }
+
     }
 }
 
