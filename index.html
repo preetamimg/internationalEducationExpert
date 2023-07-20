@@ -45,29 +45,32 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
+    <!-- jquery -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Swiper Css -->
     <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="assets/libS/owlCarousel/owl.carousel.min.css">
+    <!-- glightBox css -->
+    <link rel="stylesheet" href="assets/libs/glightBox/glightbox.min.css">
 </head>
 
 <body >
-<!-- navbar start -->
+<!-- * navbar start -->
 <div class="container-fluid bg-dark top-bar py-2 d-lg-flex d-none">
     <div class="container">
         <div class="row align-items-center py-1">
             <div class="col">
             <div class="d-flex gap-5 align-items-center">
-                <a href="javascript:;" class="text-decoration-none map-mail fw-normal d-flex align-items-center gap-2">
-                <span class="d-inline-flex align-items-center justify-content-center map-mail-icon"><img src="assets/img/Navbar/location.svg" alt="location" class="h-100 w-100 img-fluid"></span>
-                B34, chitrakoot vaishali nagar, jaipur
-                </a>
-                <a href="mailto:demo123@gmail.com" class="text-decoration-none map-mail fw-normal d-flex align-items-center gap-2">
-                <span class="d-inline-flex align-items-center justify-content-center map-mail-icon"><img src="assets/img/Navbar/email.svg" alt="location" class="h-100 w-100 img-fluid"></span>
-                demo123@gmail.com
-                </a>
+                <a href="tel: 01144459768" class="text-decoration-none map-mail fw-normal d-flex align-items-center gap-2">
+                <span class="d-inline-flex align-items-center justify-content-center map-mail-icon"><img src="assets/img/Navbar/Phone.svg" alt="phone" class="h-100 w-100 img-fluid"></span>Helpline:011-44459768</a>
+                <a href="mailto: info@internationaleducationexpert.in" class="text-decoration-none map-mail fw-normal d-flex align-items-center gap-2">
+                <span class="d-inline-flex align-items-center justify-content-center map-mail-icon"><img src="assets/img/Navbar/email.svg" alt="email" class="h-100 w-100 img-fluid"></span>
+                info@internationaleducationexpert.in</a>
             </div>
             </div>
             <div class="col-auto">
@@ -86,46 +89,68 @@
 <nav class="navbar navbar-expand-lg container-fluid bg-light z-3 w-100 " aria-label="Offcanvas navbar large" id="navbar">
     <div class="container"> 
         <a class="navbar-brand nav-logo" href="index.html"><img src="assets/img/header/logo.png" alt="logo" class="nav-logo img-fluid h-100"></a>
-        <ul class="navbar-nav justify-content-end flex-grow-1 align-items-md-center align-items-start pe-3 d-lg-flex d-none">
+        <ul class="navbar-nav gap-4 justify-content-end flex-grow-1 align-items-md-center align-items-start pe-3 d-lg-flex d-none">
             <li class="nav-item"><a class="nav-link p-0 position-relative fw-normal active" href="javascript:;">Home</a></li>
-            <li class="nav-item"><a class="nav-link p-0 position-relative fw-normal" href="javascript:;">About</a></li>
+            <li class="nav-item position-relative py-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a class="nav-link p-0 position-relative fw-normal" href="javascript:;">About</a>
+                <ul class="drop-link-main popover-header list-unstyled bg-white position-absolute" id="collapseExample">
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Overview</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Our Services</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Director Message</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Scholarship</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Why Choose Us</a></li>
+                </ul>
+            </li>
             <li class="nav-item position-relative py-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <a class="nav-link p-0 position-relative fw-normal" href="javascript:;">Universites</a>
                 <ul class="drop-link-main popover-header list-unstyled bg-white position-absolute" id="collapseExample">
-                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Service 1</a></li>
-                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Service detail</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">MBBS</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Engineering</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">Language</a></li>
+                    <li class="drop-list pe-5 ps-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link pe-3">MBA</a></li>
                 </ul>
             </li>
             <li class="nav-item position-relative py-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <a class="nav-link p-0 position-relative fw-normal" href="javascript:;">Study MBBS Abroad</a>
                 <ul class="drop-link-main popover-header list-unstyled bg-white position-absolute" id="collapseExample">
-                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">Personal Loan Calcualtor</a></li>
-                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">Loan Eligibility</a></li>
-                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">Home Loan Calcualtor</a></li>
-                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">Home Loan Eligibility</a></li>
-                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">Compare Loan EMI</a></li>
-                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">Monthly Calcualtor</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">KYRGYZSTAN</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">ARMENIA</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">UZBEKISTAN</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">GEORGIA</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">PHILIPPINES</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">RUSSIA</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">UKRAINE</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">POLAND</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">ROMANIA</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">SLOVAKIA REPUBLIC</a></li>
+                    <li class="drop-list px-3 position-relative"><a href="javascript:;" class="text-decoration-none drop-link ">MOLDOVA</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a class="nav-link p-0 position-relative fw-normal" href="#howplay">Blog</a></li>
             <li class="nav-item"><a class="nav-link p-0 position-relative fw-normal" href="#contact">Contact</a></li>
             <li><a href="javascript:;" class="themBtn">Apply Now</a></li>
         </ul>
+        <div class="d-lg-none d-flex align-items-center">
+            <a class="d-flex menu-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="assets/img/Navbar/menu_icon.svg" alt="menu" class="h-100 w-100">
+            </a>
+        </div>
     </div>
 </nav>
-<!-- hero section start -->
-<div class="container-fluid hero-section vh-100 px-0">
+<!-- * navbar End -->
+<!-- * hero section start -->
+<div class="container-fluid hero-section px-0">
     <div class="swiper mySwiper heroslider h-100 position-relative">
         <div class="swiper-wrapper h-100">
         <div class="swiper-slide swiper-slider1 h-100">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
-                    <div class="col-md-7">
+                    <div class="col-lg-7 col-md-10">
                         <div class="row mx-0 gap-md-4 gap-3">
                             <div class="col-12">
                                 <div class=" text-uppercase hero-subheading d-flex align-items-center gap-3"><span class="d-inline-flex justify-content-center align-items-center pie-chart"><img src="assets/img/index/university.png" alt="pie-chart" class="h-100 w-100 img-fluid"></span>Welcome To International Education Expert</div>
                             </div>
-                            <div class="hero-heading col-12 fw-bolder">Study MBBS In  <span class="hero-animation position-relative">Abroad</span></div>
+                            <div class="hero-heading col-12 fw-bolder">Study MBBS In  <span class="hero-animation position-relative d-inline-flex">Abroad</span></div>
                             <div class="col-12 fw-noraml hero-title text-white pb-1">Are you dreaming of becoming a doctor? International Education Expert can make your dream come true with our wide reach and decades-long experience. We have been providing our services to thousands of aspiring doctors since 1991, helping them realize their dreams.</div>   
                             <div class="col-12 d-flex align-items-center gap-3 ">
                                 <a href="javascript:;" class="themBtn text-white">Contact Us</a>
@@ -139,12 +164,12 @@
         <div class="swiper-slide swiper-slider2 h-100">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
-                    <div class="col-md-7">
+                    <div class="col-lg-7 col-md-10">
                         <div class="row mx-0 gap-md-4 gap-3">
                             <div class="col-12">
                                 <div class=" text-uppercase hero-subheading d-flex align-items-center gap-3"><span class="d-inline-flex justify-content-center align-items-center pie-chart"><img src="assets/img/index/university.png" alt="pie-chart" class="h-100 w-100 img-fluid"></span>Welcome To International Education Expert</div>
                             </div>
-                            <div class="hero-heading col-12 fw-bolder">Study MBBS In  <span class="hero-animation position-relative">Abroad</span></div>
+                            <div class="hero-heading col-12 fw-bolder">Study MBBS In  <span class="hero-animation position-relative d-inline-flex">Abroad</span></div>
                             <div class="col-12 fw-noraml hero-title text-white pb-1">Are you dreaming of becoming a doctor? International Education Expert can make your dream come true with our wide reach and decades-long experience. We have been providing our services to thousands of aspiring doctors since 1991, helping them realize their dreams.</div>   
                             <div class="col-12 d-flex align-items-center gap-3 ">
                                 <a href="javascript:;" class="themBtn text-white">Contact Us</a>
@@ -158,36 +183,1048 @@
         </div>
         <div class="swiper-button-next d-md-flex d-none"></div>
         <div class="swiper-button-prev d-md-flex d-none"></div>
-        <div class="hero-content d-flex align-items-center position-absolute end-0 bottom-0 z-1 gap-2">
+        <!-- <div class="hero-content d-flex align-items-center position-absolute end-0 bottom-0 z-1 gap-2">
             <div class="hero-icon bg-theme1 d-flex justify-content-center align-items-center">
-            <span class="hand-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Index/hand.svg" alt="hand" class="h-100 w-100 img-fluid"></span>
+                <span class="hand-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Index/hand.svg" alt="hand" class="h-100 w-100 img-fluid"></span>
             </div>  
             <div class="hero-content2 bg-white px-5 d-flex flex-column justify-content-center ">
-            <div class="hero-checkout text-theme1 fw-semibold">CHECKOUT OUR</div>
-            <div class="hero-rates fw-medium">88% Success Rates</div>
+                <div class="hero-checkout text-theme1 fw-semibold">CHECKOUT OUR</div>
+                <div class="hero-rates fw-medium">88% Success Rates</div>
             </div> 
-        </div>
-        <!-- search-offcanvas start -->
-        <div class="offcanvas offcanvas-top search-offcanvas" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-            <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-            ...
-            </div>
-        </div>
-        <!-- search-offcanvas end -->
+        </div> -->
     </div>
 </div>
-<!-- hero section end -->
-<div class="vh-100"></div>
+<!-- * hero section end -->
 
+<!-- * Who We are Section Start -->
+<div class="container-fluid about-us my-5 position-relative">
+    <div class="container pt-5">
+        <div class="row pt-lg-4 pt-md-3 pt-0 gap-lg-0 gap-5">
+            <div class="col-lg-6 about-left position-relative ">
+                <div class="row mx-0 h-100">
+                    <div class="col-12 px-0">
+                        <span class="heading fw-semibold position-relative text-uppercase">WHO We Are</span>
+                    </div>
+                    <div class="col-12 sub-heading pt-1 z-1 px-0"> Welcome To International Education Expert</div>
+                    <div class="about-title2 col-md-10 px-0 pt-3">At IEE, we are dedicated to helping you achieve your dream of becoming a doctor with <a href="javascript:;" class="text-decoration-none text-theme2 fw-medium">MBBS in Russia.</a> With our decades of experience, we have helped make more than 5000+ dreams a reality. Our grandeur reach ensures that all our students find their perfect MBBS in Russia. We have helped thousands of young professionals realize their dreams and now it’s your turn!</div>
+                    <div class="about-title2 col-md-10 px-0 pt-3">At IEE, we are committed to providing our students with seamless support throughout their journey. Our experienced team is always ready to answer any questions or queries that you may have along the way.</div>
+                    <div class="col-12 py-4">
+                        <div class="row gap-sm-0 gap-3">
+                            <div class="col-sm-6 ps-0">
+                                <div class="about-card">
+                                    <div class="align-items-center d-flex gap-2">
+                                        <span class="about-card-icon d-inline-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohit/user1.svg" alt="about-card" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        <a href="javascipt:;" class="text-decoration-none about-card-heading fw-bold">Complete Support</a>
+                                    </div>
+                                    <div class="about-card-title pt-2 fw-normal">With Doctor Abroad you'll get the real-time status of your application.</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pe-0">
+                                <div class="about-card">
+                                    <div class="align-items-center d-flex gap-2">
+                                        <span class="about-card-icon d-inline-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohit/users.svg" alt="about-card" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        <a href="javascipt:;" class="text-decoration-none about-card-heading fw-bold">Experienced Team</a>
+                                    </div>
+                                    <div class="about-card-title pt-2 fw-normal">Our team of experts will help you to get into the right university.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-us-img position-relative h-100 z-1 mx-auto d-flex align-items-center justify-content-center">
+                    <img src="assets/img/mohit/about.png" alt="about" class="h-100 w-100 img-fluid object-fit-cover">
+                    <div class="position-absolute about-img-content-main d-inline-flex align-items-center bg-black ">
+                        <div class="about-year fw-semibold">5 <sup>+</sup></div>
+                        <div class="about-experience fw-medium">Year <br> Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- * Who We are Section End -->
+
+<!-- why abroad start -->
+    <div class="container-fluid cards py-5">
+        <div class="container">
+            <div class="row pb-5">
+            <div class="col-12  ">
+                <span class="heading fw-semibold position-relative text-uppercase">STUDY MBBS IN ABROAD</span>
+            </div>
+            <div class="col-12 sub-heading pt-1 z-1"> Why Study MBBS Abroad?</div>
+            </div>
+            <div class="row g-md-4 g-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card bg-transparent card-style rounded-0 h-100">
+                    <div class="card-body card-content ">
+                    <div class="icon d-flex align-items-center justify-content-center" style="background-color: rgba(56, 232, 255, 0.1);"><img src="assets/image/EducationCard/user.svg" alt="user" class="lazy-img img-fluid h-100 w-100" style=""></div>   
+                        <div class="cardheading pt-md-4 pt-3 pb-md-3 pb-1">Highly Experienced Team</div>
+                        <div class="pera mb-4">We have a highly experienced and knowledgeable team at IEE that has been helping students from all over India reach their goal of becoming a doctor successfully. Our team has been actively working in this field since 1991,</div>
+                        <div class="">
+                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore"> Read More <span class="d-inline-flex ms-2"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
+                        </div>
+                        <div class=" pera2">We have a highly experienced and knowledgeable team at IEE that has been helping students from all over India reach their goal of becoming a doctor successfully. Our team has been actively working in this field since 1991,</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card bg-transparent card-style rounded-0 card-style2 h-100">
+                    <div class="card-body card-content ">
+                    <div class="icon d-flex align-items-center justify-content-center" style="background-color: rgba(255, 171, 51, 0.18);"><img src="assets/image/EducationCard/icon2.svg" alt="" class="lazy-img" style=""></div> 
+                        <div class="cardheading pt-md-4 pt-3 pb-md-3 pb-1">Seamless support</div>
+                        <div class="pera mb-4">At IEE, we are committed to providing our students with seamless support throughout their journey. Our experienced team is always ready to answer any questions or queries that you may have along the way.
+                        </div>
+                        <div class="">
+                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore"> Read More <span class="d-inline-flex ms-2"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
+                        </div>
+                        <div class=" pera2">At IEE, we are committed to providing our students with seamless support throughout their journey. Our experienced team is always ready to answer any questions or queries that you may have along the way.
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card bg-transparent card-style rounded-0 card-style3 h-100">
+                    <div class="card-body card-content ">
+                    <div class="icon d-flex align-items-center justify-content-center" style="background-color: rgba(255, 160, 194, 0.18);"><img src="assets/image/EducationCard/icon3.svg" alt="" class="lazy-img" style=""></div>
+                        <div class="cardheading pt-md-4 pt-3 pb-md-3 pb-1">No-hassle admission process</div>
+                        <div class="pera mb-4">Our hassle-free admission process makes it easier for you to enroll in top Russian medical universities. We provide complete guidance and assistance throughout the entire process so that you can focus on your studies instead!</div>
+                        <div class="">
+                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore"> Read More <span class="d-inline-flex ms-2"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
+                        </div>
+                        <div class=" pera2">Our hassle-free admission process makes it easier for you to enroll in top Russian medical universities. We provide complete guidance and assistance throughout the entire process so that you can focus on your studies instead!</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card bg-transparent card-style rounded-0 h-100">
+                    <div class="card-body card-content ">
+                    <div class="icon d-flex align-items-center justify-content-center" style="background-color: rgba(56, 232, 255, 0.1);"><img src="assets/image/EducationCard/icon4.svg" alt="" class="lazy-img" style=""></div> 
+                        <div class="cardheading pt-md-4 pt-3 pb-md-3 pb-1">Reach new heights</div>
+                        <div class="pera mb-4">Our grandeur reach ensures that all our students find their perfect MBBS in Russia. We have helped thousands of young professionals realize their dreams and now it's your turn!</div>
+                        <div class="">
+                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore"> Read More <span class="d-inline-flex ms-2"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
+                        </div>
+                        <div class=" pera2">Our grandeur reach ensures that all our students find their perfect MBBS in Russia. We have helped thousands of young professionals realize their dreams and now it's your turn!</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card bg-transparent card-style rounded-0 card-style4 h-100">
+                    <div class="card-body card-content ">
+                    <div class="icon d-flex align-items-center justify-content-center" style="background-color: rgba(108, 55, 221, 0.1);"><img src="assets/image/EducationCard/icon6.svg" alt="" class="lazy-img" style=""></div>
+                        <div class="cardheading pt-md-4 pt-3 pb-md-3 pb-1">Vast Network</div>
+                        <div class="pera mb-4">Our mentors get you seats in high-ranked international universities for higher studies. Connect with our expert faculty, and we will help you chase your dreams</div>
+                        <div class="">
+                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore"> Read More <span class="d-inline-flex ms-2"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
+                        </div>
+                        <div class=" pera2">We have established an extensive network across India with multiple offices that help us reach out to more students with our services. This allows us to  during your course duration as well as after you complete your studies.</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card bg-transparent card-style rounded-0 card-style5 h-100">
+                    <div class="card-body card-content ">
+                    <div class="icon d-flex align-items-cen5ter justify-content-center" style="background-color: rgba(68, 255, 0, 0.18);"><img src="assets/image/EducationCard/icon5.svg" alt="" class="lazy-img" style=""></div>
+                        <div class="cardheading pt-md-4 pt-3 pb-md-3 pb-1">Top Medical Universities</div>
+                        <div class="pera mb-4">Our mentors get you seats in high-ranked international universities for higher studies. Connect with our expert faculty, and we will help you chase your dreams.</div>
+                        <div class="">
+                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore"> Read More <span class="d-inline-flex ms-2"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
+                        </div>
+                        <div class=" pera2">Our mentors get you seats in high-ranked international universities for higher studies. Connect with our expert faculty, and we will help you chase your dreams.</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- why abroad end -->
+
+<!-- choose country start -->
+    <div class="container-fluid chooseCountryFluid">
+        <div class="container chooseCountryContainer">
+            <div class="row py-5">
+                <div class="col-12">
+                    <div class="country owl-carousel owl-theme">
+                        <div class="item h-100">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries1.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In KYRGYSTAN</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries2.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In KAZAKHSTAN</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries3.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In ARMENIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries4.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In GEORGIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries5.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In PHILIPPINES </div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries6.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In RUSSIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries4.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In UKRAINE </div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries5.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In POLAND</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries6.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In ROMANIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- choose country start -->
+
+<!-- cta section start -->
+<div class="container-fluid pb-5">
+    <div class="container CtaSection position-relative py-5">
+        <div class="row align-items-center position-relative z-1">
+            <div class="col-sm-10 col-12 mx-auto ctaHeading fw-bold text-center pb-3 position-relative">Contact Us If You Are Looking To Study MBBS Abroad</div>
+            <div class="col-12 ctapara fw-medium text-center py-sm-4 py-3">Contact Us If You Are Looking To Study MBBS Abroad</div>
+            <div class="col-auto mx-auto mt-sm-3 mt-2">
+                <a href="javascript:;" class="themBtn contactBtn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cta section end -->
+
+<!-- gallary start -->
+<div class="container-fluid gallaryFluid px-0">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <span class="heading fw-semibold position-relative ps-4">MEMOROIES</span>
+            </div>
+            <div class="sub-heading col-12 py-1">Photo Gallary</div>
+        </div>
+        </div>
+    <div class="row pb-5 gx-0 gallaryBox">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g1.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g1.jpg" alt="image" />
+            </a>
+        </div> 
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g2.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g2.jpg" alt="image" />
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g3.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g3.jpg" alt="image" />
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g4.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g4.jpg" alt="image" />
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g5.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g5.jpg" alt="image" />
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g6.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g6.jpg" alt="image" />
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g7.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g7.jpg" alt="image" />
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+            <a href="assets/img/g8.jpg" class="glightbox gallary d-block">
+                <img src="assets/img/g8.jpg" alt="image" />
+            </a>
+        </div>
+    </div>
+</div>
+<!-- gallary end -->
+
+<!-- video section start -->
+    <div class="container-fluid videoSection pb-5">
+        <div class="container sectionBg">
+        <div class="row align-items-center py-lg-0 py-4">
+            <div class="col-lg-6 order-lg-1 order-2">
+            <div class="videoPlay">
+                <!-- <a href="https://vimeo.com/115041822" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/image/videoSection/videoicon.png" alt="videoicon" class="img-fluid w-100 h-100"></a> -->
+                <a href="https://vimeo.com/115041822" class="glightbox1 d-flex py-4">
+                <img src="assets/image/videoSection/video.jpg" alt="image" class="img-fluid h-100 w-100 object-fit-cover" />
+                </a>
+            </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1">
+            <div class="row mx-0 videoContent">
+                <div class="col-12 px-0">
+                <div class="videoHeading text-lg-start text-center"> FREE CONSULTANT &  <br>WATCH YOUTUBE VIDEO</div>
+                </div>
+                <div class="col-auto px-0 pt-3 mx-lg-0 mx-auto">
+                <a href="javascript:;" class="text-decoration-none  btn themBtn">CONTACT US</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- video section end -->
+
+<!-- Testimonials start -->
+    <div class="container-fluid testimonialsFluid">
+        <div class="container testimonialsContainer">
+            <div class="row pb-5">
+                <div class="col-12">
+                    <div class="Testimonials owl-carousel row mx-0">
+                        <div class="item h-100 col-12">
+                            <div class="testimonialsBox h-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center mx-0">
+                                            <div class="col px-0">
+                                                <div class="row align-items-center mx-0">
+                                                    <div class="col-auto">
+                                                        <div class="testimonialsUser">
+                                                            <img src="assets/img/testImg1.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="name">Dr. Absarul Haque</div>
+                                                        <div class="position">MBBS Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto px-0">
+                                                <div class="quote">
+                                                    <img src="assets/img/quote.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="para">
+                                            I am very glad to part of International Education expert one, of the best consultancy in india they doing great work for  abroad admission in MBBS,their support and giuding always with the  student during whole course and guiding for Comptative exam like FMGE ,PLAB,USMLE,TOFEL, All other exams for PG , All relvent question that i had asked during admission or study ther answering and alwas available for us, that is good thing about IEE
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="list-unstyled starUl d-flex align-items-center mb-0">
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item h-100 col-12">
+                            <div class="testimonialsBox h-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center mx-0">
+                                            <div class="col px-0">
+                                                <div class="row align-items-center mx-0">
+                                                    <div class="col-auto">
+                                                        <div class="testimonialsUser">
+                                                            <img src="assets/img/testImg2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="name">Dr. Jatin Chauhan</div>
+                                                        <div class="position">MBBS Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto px-0">
+                                                <div class="quote">
+                                                    <img src="assets/img/quote.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="para">
+                                            IEE has been an incredible asset to me throughout my MBBS abroad journey. He was very patient and understanding, answering all my queries and guiding me every step of the way. I am thankful to have had such a reliable partner in this process who made sure that everything went smoothly and I got the best possible outcome. Highly recommend!
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="list-unstyled starUl d-flex align-items-center mb-0">
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item h-100 col-12">
+                            <div class="testimonialsBox h-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center mx-0">
+                                            <div class="col px-0">
+                                                <div class="row align-items-center mx-0">
+                                                    <div class="col-auto">
+                                                        <div class="testimonialsUser">
+                                                            <img src="assets/img/testImg3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="name">Dr. Kushal Bipul Biswas</div>
+                                                        <div class="position">MBBS Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto px-0">
+                                                <div class="quote">
+                                                    <img src="assets/img/quote.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="para">
+                                            IEE has serverd me ultimate destination for my professional journey, it has been providing great opportunity to each student for there better future throughout the medical carrier and has always been supportive to overcome every aspect that student face's during his academic sessions. I would be so proud to say that It is one of the Best agency out there for Medical students.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="list-unstyled starUl d-flex align-items-center mb-0">
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Testimonials end -->
+
+<!-- recent news section start -->
+<div class="container-fluid newsSection pb-5">
+    <div class="container">
+        <div class="row">
+        <div class="col-12">
+            <span class="heading fw-semibold position-relative ps-4">Recent News</span>
+        </div>
+        <div class="sub-heading col-12 py-1">Form Our Blog</div>
+        <div class="col-12 pt-md-4 pt-sm-3 pt-2">
+            <div class="row newsSectionMain">
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-blog-card h-100 shadow-sm">
+                            <div class="news-img position-relative overflow-hidden">
+                                <img src="assets/img/mohit/news1.jpg" alt="news blog" class="w-100 h-100 img-fluid blog-img">
+                                <a href="javascript:;" class="news-plus position-absolute z-2 d-flex align-items-center justify-content-center">
+                                    <span class="newsPlusImg d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/img/mohit/plus.svg" alt="plus" class="h-100 w-100 img-fluid">
+                                    </span>
+                                </a>
+                                <div class="news-date fw-bold d-inline-flex flex-column z-2 position-absolute end-0 bottom-0 bg-theme2 justify-content-center align-items-center"><span>05</span>Mar</div>
+                            </div>  
+                            <div class="news-content py-3">
+                                <a href="javascript:;" class="news-blog-heading fw-bold pt-2 d-block text-decoration-none">
+                                    Excelling in Medical Entrance Exams Abroad 2023-2024: Tips for Indian Students
+                                </a>
+                                <div class="news-blog-para fw-normal pt-sm-3 pt-2">
+                                    Indian students aspiring to pursue MBBS in foreign countries often face the challenge of excelling in medical entrance exams. With the opportunity to study MBBS abroad at low cost, many...
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-sm-4 mt-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <a href="javascript:;" class="news-title d-flex align-items-center gap-1 text-decoration-none">
+                                            <span class="news-icon d-inline-flex justify-content-center align-items-center">
+                                                <img src="assets/img/mohit/newsblog.svg" alt="news-user" class="h-100 w-100 img-fluid"></span>
+                                            By Admin
+                                        </a>
+                                        <span class="news-slash">/</span>
+                                        <a href="javascript:;" class="news-title d-flex align-items-center gap-1 text-decoration-none">
+                                            <span class="news-icon d-inline-flex justify-content-center align-items-center">
+                                                <img src="assets/img/mohit/comment.svg" alt="news-user" class="h-100 w-100 img-fluid">
+                                            </span>
+                                            2 Comments
+                                        </a>
+                                    </div>
+                                    <a href="javascript:;" class="text-decoration-none readmore-btn d-inline-flex align-items-center gap-sm-2 gap-1">Read More
+                                        <span class="right-arrow d-inline-flex justify-content-center align-items-center">
+                                            <img src="assets/img/mohit/rightarrownews.svg" alt="right" class="h-100 w-100 img-fluid">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-blog-card h-100 shadow-sm">
+                            <div class="news-img position-relative overflow-hidden">
+                                <img src="assets/img/mohit/news2.jpg" alt="news blog" class="w-100 h-100 img-fluid blog-img">
+                                <a href="javascript:;" class="news-plus position-absolute z-2 d-flex align-items-center justify-content-center">
+                                    <span class="newsPlusImg d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/img/mohit/plus.svg" alt="plus" class="h-100 w-100 img-fluid">
+                                    </span>
+                                </a>
+                                <div class="news-date fw-bold d-inline-flex flex-column z-2 position-absolute end-0 bottom-0 bg-theme2 justify-content-center align-items-center">
+                                    <span>14</span>Feb
+                                </div>
+                            </div>  
+                            <div class="news-content py-3 border-opacity-50">
+                                <a href="javascript:;" class="news-blog-heading fw-bold pt-2 d-block text-decoration-none">
+                                    Study MBBS Abroad for Indian Students in Kyrgyzstan/ Kazakhstan 2023-2024
+                                </a>
+                                <div class="news-blog-para fw-normal pt-sm-3 pt-2">
+                                    Introduction:  Pursuing a medical degree is a dream for many Indian students, and studying abroad has become an increasingly popular option. The opportunity to gain international exposure, access high-quality education,
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-sm-4 mt-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <a href="javascript:;" class="news-title d-flex align-items-center gap-1 text-decoration-none">
+                                            <span class="news-icon d-inline-flex justify-content-center align-items-center">
+                                                <img src="assets/img/mohit/newsblog.svg" alt="news-user" class="h-100 w-100 img-fluid"></span>
+                                            By Admin
+                                        </a>
+                                        <span class="news-slash">/</span>
+                                        <a href="javascript:;" class="news-title d-flex align-items-center gap-1 text-decoration-none">
+                                            <span class="news-icon d-inline-flex justify-content-center align-items-center">
+                                                <img src="assets/img/mohit/comment.svg" alt="news-user" class="h-100 w-100 img-fluid">
+                                            </span>
+                                            2 Comments
+                                        </a>
+                                    </div>
+                                    <a href="javascript:;" class="text-decoration-none readmore-btn d-inline-flex align-items-center gap-sm-2 gap-1">Read More
+                                        <span class="right-arrow d-inline-flex justify-content-center align-items-center">
+                                            <img src="assets/img/mohit/rightarrownews.svg" alt="right" class="h-100 w-100 img-fluid">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-blog-card h-100 shadow-sm">
+                            <div class="news-img position-relative overflow-hidden">
+                                <img src="assets/img/mohit/news3.png" alt="news blog" class="w-100 h-100 img-fluid blog-img">
+                                <a href="javascript:;" class="news-plus position-absolute z-2 d-flex align-items-center justify-content-center">
+                                    <span class="newsPlusImg d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/img/mohit/plus.svg" alt="plus" class="h-100 w-100 img-fluid">
+                                    </span>
+                                </a>
+                                <div class="news-date fw-bold d-inline-flex flex-column z-2 position-absolute end-0 bottom-0 bg-theme2 justify-content-center align-items-center">
+                                    <span>08</span>July
+                                </div>
+                            </div>  
+                            <div class="news-content py-3">
+                                <a href="javascript:;" class="news-blog-heading fw-bold pt-2 d-block text-decoration-none">
+                                    Which country is best for MBBS study Abroad? Tips for making an informed decision
+                                </a>
+                                <div class="news-blog-para fw-normal pt-sm-3 pt-2">
+                                    Introduction:  Pursuing a medical degree is a dream shared by many aspiring doctors worldwide. Studying MBBS abroad offers a unique opportunity to gain a globally recognized qualification while experiencing a
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-sm-4 mt-3">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <a href="javascript:;" class="news-title d-flex align-items-center gap-1 text-decoration-none">
+                                            <span class="news-icon d-inline-flex justify-content-center align-items-center">
+                                                <img src="assets/img/mohit/newsblog.svg" alt="news-user" class="h-100 w-100 img-fluid"></span>
+                                            By Admin
+                                        </a>
+                                        <span class="news-slash">/</span>
+                                        <a href="javascript:;" class="news-title d-flex align-items-center gap-1 text-decoration-none">
+                                            <span class="news-icon d-inline-flex justify-content-center align-items-center">
+                                                <img src="assets/img/mohit/comment.svg" alt="news-user" class="h-100 w-100 img-fluid">
+                                            </span>
+                                            2 Comments
+                                        </a>
+                                    </div>
+                                    <a href="javascript:;" class="text-decoration-none readmore-btn d-inline-flex align-items-center gap-sm-2 gap-1">Read More
+                                        <span class="right-arrow d-inline-flex justify-content-center align-items-center">
+                                            <img src="assets/img/mohit/rightarrownews.svg" alt="right" class="h-100 w-100 img-fluid">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- recent news section end -->
+
+ <!-- footer start -->
+ <div class="container-fluid ctcFluid">
+    <div class="container ctcContainer">
+        <div class="row justify-content-center pt-5 mb-4">
+            <div class="col-12">
+                <div class="ctcBox">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="ctcHead">Get A Free Prospectus</div>
+                            <div class="ctcSub">Download a free prospectus pdf and start your MBBS journey.</div>
+                        </div>
+                        <div class="col-auto">
+                            <button class="downloadBtn px-5 py-2">DOWNLOAD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer pt-5">
+    <div class="container">
+    <div class="row py-4">
+        <div class="col-xl-4 col-lg-3 col-md-6 mt-3 mt-lg-0">
+        <a href="javascript:;" class="footer-logo mb-4 d-block"><img src="assets/img/studyLogo.png" alt="footer logo" class="h-100 w-100 img-fluid"></a>
+        <div class="d-flex align-items-center gap-2 pt-3">
+            <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/facebook.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+            <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/insta.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+            <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/youtube.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+        </div>
+        <div class="d-flex align-items-center gap-2 pt-3">
+            <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/linkedin.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+            <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/twitter.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+            <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/pintrest.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+        </div>
+        <!-- <div class="footer-para text-white-50 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst.</div> -->
+        <!-- <div class="d-flex flex-column gap-2 pt-3">
+            <a href="javascript:;" class="text-decoration-none footer-contact fw-medium d-flex align-items-center gap-2"><span class="footer-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/Footer/Email.svg" alt="Email" class="h-100 w-100 img-fluid footer-contact-img"></span></a>
+            <a href="javascript:;" class="text-decoration-none footer-contact fw-medium d-flex align-items-center gap-2"><span class="footer-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/Footer/call.svg" alt="call" class="h-100 w-100 img-fluid footer-contact-img"></span></a>
+        </div> -->
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-6 mt-3 mt-lg-0">
+        <div class="footer-heading d-flex gap-1 pb-2 align-items-center"><span class="footer-slash">||</span>MBBS IN Abroad</div>
+        <ul class="d-flex flex-column gap-2 list-unstyled pt-4">
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Kyrgyzstan</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Uzbekistan</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Armenia</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Kazakhstan</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Russia</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Georgia</a></li>
+        </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 mt-3 mt-lg-0">
+        <div class="footer-heading d-flex gap-1 pb-2 align-items-center"><span class="footer-slash">||</span>Contact Us</div>
+        <ul class="d-flex flex-column gap-2 list-unstyled pt-4">
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/location.svg" alt=""> Office-914,9th floor, Indra Prakash building, Barakhamba Road, New Delhi 110001</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/telephone.svg" alt=""> 011-44459768</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/call (1).svg" alt="">+918830477328</a></li>
+            <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/call (1).svg" alt="">+917727818162</a></li>
+        </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 mt-3 mt-lg-0">
+        <div class="footer-heading d-flex gap-1 pb-2 align-items-center"><span class="footer-slash">||</span>Newsletter</div>
+        <form action="subscribe">
+            <div class="txt">Subscribe our newsletter to get all our cool news.</div>
+            <input type="text" class="form-control bg-transparent border-0 shadow-none mt-4 footer-input border-bottom border-2 rounded-0 pb-3 border-secondary border-opacity-50" placeholder="Email">
+            <!-- <div class="form-check pt-4">
+            <input class="form-check-input rounded-pill check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label subscribe-label" for="flexCheckDefault">
+                I agree to your all <a href="javascript:;" class="text-decoration-none subscribe-label">Terms & Condition</a>
+            </label>
+            </div> -->
+            <button class="subscribeBtn px-5 py-2 mt-5">Subscribe</button>
+        </form>
+        </div>
+        <div class="col-12 divider"></div>
+        <div class="col-12 copyright">© 2023 International Education Expert. All Rights Reserved</div>
+    </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!--* navbar offcanvas start -->
+<div class="offcanvas offcanvas-start navv-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <div class="offcanvas-logo"><img src="assets/img/header/logo.png" alt="logo" class="h-100 img-fluid"></div>
+        <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/Navbar/btn-close.svg" alt="close" class="w-100">
+        </button>
+    </div>
+    <div class="offcanvas-body navv-offcanvas-body">
+        <ul class="accordion list-unstyled d-flex flex-column " id="accordionExample">
+        <li class="pb-3">
+            <a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium ">Home</a>
+        </li>
+        <li class="py-3">
+            <a href="javascript:;" class="text-decoration-none offcanvas-link collapse-link accordion-button collapsed p-0 bg-transparent border-0 shadow-none"  data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">About Us</a>
+            <div class="accordion-collapse collapse pt-3" id="collapsetwo"  data-bs-parent="#accordionExample">
+                <ul class="flex-column gap-1 list-unstyled ">
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Overview</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Our Services</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Director Message</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Scholarship</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Why Choose Us</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="py-3">
+            <a href="javascript:;" class="text-decoration-none offcanvas-link collapse-link accordion-button collapsed p-0 bg-transparent border-0 shadow-none"  data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">Universites</a>
+            <div class="accordion-collapse collapse pt-3" id="collapsethree"  data-bs-parent="#accordionExample">
+                <ul class="flex-column gap-1 list-unstyled ">
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">MBBS</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Engineering</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Language</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">MBA</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="py-3">
+            <a href="javascript:;" class="text-decoration-none offcanvas-link collapse-link accordion-button collapsed p-0 bg-transparent border-0 shadow-none"  data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">Study MBBS Abroad</a>
+            <div class="accordion-collapse collapse pt-3" id="collapsefour"  data-bs-parent="#accordionExample">
+                <ul class="flex-column gap-1 list-unstyled ">
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">MBBS</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Engineering</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Language</a>
+                    </li>
+                    <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                        <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">MBA</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="py-3">
+            <a href="javascript:;" class="text-decoration-none offcanvas-link collapse-link accordion-button p-0 bg-transparent border-0 shadow-none collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Service</a>
+            <div class="accordion-collapse pt-3 collapse" id="collapseTwo" data-bs-parent="#accordionExample" style="">
+              <ul class="flex-column gap-1 list-unstyled ">
+                <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                  <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Service-1</a>
+                </li>
+                <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                  <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Service-Detail</a>
+                </li>
+               </ul>
+            </div>
+        </li>
+        <li class="py-3"><a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium">News</a></li>
+        <li class="pt-3"><a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 pt-3 flex-column">
+        <a href="javascript:;" class="text-decoration-none map-mail fw-normal d-flex align-items-center gap-2">
+            <span class="d-inline-flex align-items-center justify-content-center map-mail-icon rounded-pill p-1"><img src="assets/img/Navbar/Phone.svg" alt="location" class="h-100 w-100 img-fluid"></span>Helpline:011-44459768</a>
+        <a href="mailto:demo123@gmail.com" class="text-decoration-none mt-1 map-mail fw-normal d-flex align-items-center gap-2">
+            <span class="d-inline-flex align-items-center justify-content-center map-mail-icon rounded-pill p-1"><img src="assets/img/Navbar/email.svg" alt="location" class="h-100 w-100 img-fluid"></span>info@internationaleducationexpert.in</a>
+        </div>
+        <div class="d-flex align-items-center gap-3 pt-4">
+        <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/twitter.svg" alt="twitter" class="h-100 w-100 img-fluid topsocial-img"></a>
+        <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/facebook.svg" alt="facebook" class="h-100 w-100 img-fluid topsocial-img"></a>
+        <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/pinterest.svg" alt="pinterest" class="h-100 w-100 img-fluid topsocial-img"></a>
+        <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/instagram.svg" alt="instagram" class="h-100 w-100 img-fluid topsocial-img"></a>
+        </div>
+    </div>
+</div>
+<!-- <div class="offcanvas offcanvas-start navv-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <div class="offcanvas-logo">
+            <img src="assets/img/Footer/footerlogo.png" alt="logo" class="h-100 w-100 img-fluid">
+        </div>
+        <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/Navbar/btn-close.svg" alt="close">
+        </button>
+    </div>
+    <div class="offcanvas-body navv-offcanvas-body">
+        <ul class="accordion list-unstyled d-flex flex-column " id="accordionExample">
+            <li class="pb-3"><a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium ">Home</a></li>
+            <li class="border-top border-1 border-white border-opacity-25 border-bottom py-3"><a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium">About</a></li>
+            <li class="py-3">
+            <a href="javascript:;" class="text-decoration-none offcanvas-link collapse-link accordion-button collapsed p-0 bg-transparent border-0 shadow-none"  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Service</a>
+            <div class="accordion-collapse collapse pt-3" id="collapseTwo"  data-bs-parent="#accordionExample">
+                <ul class="flex-column gap-1 list-unstyled ">
+                <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                    <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Service-1</a>
+                </li>
+                <li class="border-top border-1 border-white border-opacity-25 py-2 px-3">
+                    <a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Service-Detail</a>
+                </li>
+                </ul>
+            </div>
+            </li>
+            <li class="border-top border-1 border-white border-opacity-25 border-bottom py-3"><a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium">Pages</a></li>
+            <li class="py-3">
+            <a href="javascript:;" class="text-decoration-none offcanvas-link collapse-link accordion-button collapsed p-0 bg-transparent border-0 shadow-none"  data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">Features</a>
+            <div class="accordion-collapse collapse pt-3" id="collapsethree" data-bs-parent="#accordionExample">
+                <ul class="flex-column gap-1 list-unstyled ">
+                <li class="border-top border-1 border-white border-opacity-25 py-2 px-3"><a href="javascript:;" class="offcanvas-link-inner text-decoration-none ">Personal Loan Calcualtor</a></li>
+                <li class="border-top border-1 border-white border-opacity-25 border-bottom py-2 px-3"><a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Loan Eligibility</a></li>
+                <li class="py-2 px-3"><a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Home Loan Calcualtor</a></li>
+                <li class="border-top border-1 border-white border-opacity-25 border-bottom py-2 px-3"><a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Home Loan Eligibility</a></li>
+                <li class="py-2 px-3"><a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Compare Loan EMI</a></li>
+                <li class="border-top border-1 border-white border-opacity-25 pt-2 px-3"><a href="javascript:;" class="offcanvas-link-inner text-decoration-none">Monthly Calcualtor</a></li>
+                </ul>
+            </div>
+            </li>
+            <li class="border-top border-1 border-white border-opacity-25 border-bottom py-3"><a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium">News</a></li>
+            <li class="pt-3"><a href="javascript:;" class="text-decoration-none offcanvas-link fw-medium">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 pt-3 flex-column">
+            <a href="javascript:;" class="text-decoration-none map-mail fw-normal d-flex align-items-center gap-2">
+            <span class="d-inline-flex align-items-center justify-content-center map-mail-icon rounded-pill bg-theme1"><img src="assets/img/Navbar/location.svg" alt="location" class="h-100 w-100 img-fluid"></span>
+            B34, chitrakoot vaishali nagar, jaipur
+            </a>
+            <a href="mailto:demo123@gmail.com" class="text-decoration-none mt-1 map-mail fw-normal d-flex align-items-center gap-2">
+            <span class="d-inline-flex align-items-center justify-content-center map-mail-icon rounded-pill bg-theme1"><img src="assets/img/Navbar/email.svg" alt="location" class="h-100 w-100 img-fluid"></span>
+            demo123@gmail.com
+            </a>
+        </div>
+        <div class="d-flex align-items-center gap-3 pt-4">
+            <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/twitter.svg" alt="twitter" class="h-100 w-100 img-fluid topsocial-img"></a>
+            <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/facebook.svg" alt="facebook" class="h-100 w-100 img-fluid topsocial-img"></a>
+            <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/pinterest.svg" alt="pinterest" class="h-100 w-100 img-fluid topsocial-img"></a>
+            <a href="javascript:;" class="top-social-icon d-inline-flex justify-content-center align-items-center"><img src="assets/img/Navbar/instagram.svg" alt="instagram" class="h-100 w-100 img-fluid topsocial-img"></a>
+        </div>
+    </div>
+</div> -->
+<!--* navbar offcanvas End -->
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Swiper Css -->
     <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+    <!-- glightBox Js -->
+    <script src="assets/libs/glightBox/glightbox.min.js"></script>
+    <!-- *Custom Js* -->
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/libS/owlCarousel/owl.carousel.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
 </body>
+    <script>
+            $('.country').owlCarousel({
+                loop: true,
+                items: 16,
+                margin: 0,
+                nav: true,
+                dots: true,
+                center: false,
+                freeDrag: false,
+                lazyLoad: true,
+                autoplay:true,
+                autoplayTimeout:1500,
+                autoplayHoverPause:true,
+                smartSpeed: 1000,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    576: {
+                        items: 2.5,
+                    },
+                    768: {
+                        items: 3.5,
+                    },
+                    992: {
+                        items: 5,
+                    },
+                    1200: {
+                        items: 6,
+                    }
+                },
+            });
+    </script>
+    <script>
+        $('.Testimonials').owlCarousel({
+            loop: true,
+            items: 16,
+            margin: 15,
+            nav: true,
+            dots: true,
+            center: false,
+            freeDrag: false,
+            lazyLoad: true,
+            autoplay:true,
+            autoplayTimeout:1500,
+            autoplayHoverPause:true,
+            smartSpeed: 1000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                576: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                992: {
+                    items: 1.5,
+                },
+                1200: {
+                    items: 2,
+                }
+            },
+        });
+    </script>
+    <script>
+        const lightbox = GLightbox();
+    lightbox.on('open', () => {
+    // Do something
+    });
+    </script>
 </html>

@@ -45,18 +45,533 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
+    <!-- jquery -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="assets/libS/owlCarousel/owl.carousel.min.css">
+    <!-- glightBox css -->
+    <link rel="stylesheet" href="assets/libs/glightBox/glightbox.min.css">
 </head>
 
-<body >
+<body>
+    <!-- choose country start -->
+    <div class="container-fluid chooseCountryFluid">
+        <div class="container chooseCountryContainer">
+            <div class="row py-5">
+                <div class="col-12">
+                    <div class="country owl-carousel owl-theme">
+                        <div class="item h-100">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries1.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In KYRGYSTAN</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries2.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In KAZAKHSTAN</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries3.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In ARMENIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries4.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In GEORGIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries5.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In PHILIPPINES </div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries6.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In RUSSIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries4.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In UKRAINE </div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries5.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center">MBBS In POLAND</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row mx-0">
+                                <div class="col">
+                                    <div class="countryBox">
+                                        <div class="row countryBoxInner ">
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryImg"><img src="assets/img/countries6.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                <div class="countryName text-center"> MBBS In ROMANIA</div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-end flex-fill justify-content-center"><button class="readBtn">Read More</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- choose country start -->
 
+    <!-- Testimonials start -->
+    <div class="container-fluid testimonialsFluid">
+        <div class="container testimonialsContainer">
+            <div class="row py-5">
+                <div class="col-12">
+                    <div class="Testimonials owl-carousel row mx-0">
+                        <div class="item h-100 col-12">
+                            <div class="testimonialsBox h-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center mx-0">
+                                            <div class="col px-0">
+                                                <div class="row align-items-center mx-0">
+                                                    <div class="col-auto">
+                                                        <div class="testimonialsUser">
+                                                            <img src="assets/img/testImg1.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="name">Dr. Absarul Haque</div>
+                                                        <div class="position">MBBS Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto px-0">
+                                                <div class="quote">
+                                                    <img src="assets/img/quote.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="para">
+                                            I am very glad to part of International Education expert one, of the best consultancy in india they doing great work for  abroad admission in MBBS,their support and giuding always with the  student during whole course and guiding for Comptative exam like FMGE ,PLAB,USMLE,TOFEL, All other exams for PG , All relvent question that i had asked during admission or study ther answering and alwas available for us, that is good thing about IEE
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="list-unstyled starUl d-flex align-items-center mb-0">
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item h-100 col-12">
+                            <div class="testimonialsBox h-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center mx-0">
+                                            <div class="col px-0">
+                                                <div class="row align-items-center mx-0">
+                                                    <div class="col-auto">
+                                                        <div class="testimonialsUser">
+                                                            <img src="assets/img/testImg2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="name">Dr. Jatin Chauhan</div>
+                                                        <div class="position">MBBS Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto px-0">
+                                                <div class="quote">
+                                                    <img src="assets/img/quote.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="para">
+                                            IEE has been an incredible asset to me throughout my MBBS abroad journey. He was very patient and understanding, answering all my queries and guiding me every step of the way. I am thankful to have had such a reliable partner in this process who made sure that everything went smoothly and I got the best possible outcome. Highly recommend!
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="list-unstyled starUl d-flex align-items-center mb-0">
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item h-100 col-12">
+                            <div class="testimonialsBox h-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center mx-0">
+                                            <div class="col px-0">
+                                                <div class="row align-items-center mx-0">
+                                                    <div class="col-auto">
+                                                        <div class="testimonialsUser">
+                                                            <img src="assets/img/testImg3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="name">Dr. Kushal Bipul Biswas</div>
+                                                        <div class="position">MBBS Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto px-0">
+                                                <div class="quote">
+                                                    <img src="assets/img/quote.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="para">
+                                            IEE has serverd me ultimate destination for my professional journey, it has been providing great opportunity to each student for there better future throughout the medical carrier and has always been supportive to overcome every aspect that student face's during his academic sessions. I would be so proud to say that It is one of the Best agency out there for Medical students.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="list-unstyled starUl d-flex align-items-center mb-0">
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                            <li class="starLi"><img src="assets/img/stroke-fill.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials end -->
 
+    <!-- gallary start -->
+    <div class="container-fluid gallaryFluid px-0">
+        <div class="row py-5 gx-0 gallaryBox">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g1.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g1.jpg" alt="image" />
+                </a>
+            </div> 
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g2.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g2.jpg" alt="image" />
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g3.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g3.jpg" alt="image" />
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g4.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g4.jpg" alt="image" />
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g5.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g5.jpg" alt="image" />
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g6.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g6.jpg" alt="image" />
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g7.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g7.jpg" alt="image" />
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12 ">
+                <a href="assets/img/g8.jpg" class="glightbox gallary d-block">
+                    <img src="assets/img/g8.jpg" alt="image" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- gallary end -->
+
+    <!-- footer start -->
+    <div class="container-fluid ctcFluid">
+        <div class="container ctcContainer">
+            <div class="row justify-content-center pt-5 mb-4">
+                <div class="col-10">
+                    <div class="ctcBox">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <div class="ctcHead">Get A Free Prospectus</div>
+                                <div class="ctcSub">Download a free prospectus pdf and start your MBBS journey.</div>
+                            </div>
+                            <div class="col-auto">
+                                <button class="downloadBtn px-5 py-2">DOWNLOAD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer pt-5">
+        <div class="container">
+        <div class="row py-4">
+            <div class="col-xl-4 col-lg-3 col-md-6 mt-3 mt-lg-0">
+            <a href="javascript:;" class="footer-logo mb-4 d-block"><img src="assets/img/studyLogo.png" alt="footer logo" class="h-100 w-100 img-fluid"></a>
+            <div class="d-flex align-items-center gap-2 pt-3">
+                <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/facebook.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+                <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/insta.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+                <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/youtube.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+            </div>
+            <div class="d-flex align-items-center gap-2 pt-3">
+                <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/linkedin.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+                <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/twitter.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+                <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/pintrest.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
+            </div>
+            <!-- <div class="footer-para text-white-50 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst.</div> -->
+            <!-- <div class="d-flex flex-column gap-2 pt-3">
+                <a href="javascript:;" class="text-decoration-none footer-contact fw-medium d-flex align-items-center gap-2"><span class="footer-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/Footer/Email.svg" alt="Email" class="h-100 w-100 img-fluid footer-contact-img"></span></a>
+                <a href="javascript:;" class="text-decoration-none footer-contact fw-medium d-flex align-items-center gap-2"><span class="footer-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/Footer/call.svg" alt="call" class="h-100 w-100 img-fluid footer-contact-img"></span></a>
+            </div> -->
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 mt-3 mt-lg-0">
+            <div class="footer-heading d-flex gap-1 pb-2"><span class="footer-slash">||</span>MBBS IN Abroad</div>
+            <ul class="d-flex flex-column gap-2 list-unstyled pt-4">
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Kyrgyzstan</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Uzbekistan</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Armenia</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Kazakhstan</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Russia</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex">MBBS IN Georgia</a></li>
+            </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mt-3 mt-lg-0">
+            <div class="footer-heading d-flex gap-1 pb-2"><span class="footer-slash">||</span>Contact Us</div>
+            <ul class="d-flex flex-column gap-2 list-unstyled pt-4">
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/location.svg" alt=""> Office-914,9th floor, Indra Prakash building, Barakhamba Road, New Delhi 110001</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/telephone.svg" alt=""> 011-44459768</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/call (1).svg" alt="">+918830477328</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footer-link d-inline-flex"><img class="me-1" src="assets/img/call (1).svg" alt="">+917727818162</a></li>
+            </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mt-3 mt-lg-0">
+            <div class="footer-heading d-flex gap-1 pb-2"><span class="footer-slash">||</span>Newsletter</div>
+            <form action="subscribe">
+                <div class="txt">Subscribe our newsletter to get all our cool news.</div>
+                <input type="text" class="form-control bg-transparent border-0 shadow-none mt-4 footer-input border-bottom border-2 rounded-0 pb-3 border-secondary border-opacity-50" placeholder="Email">
+                <!-- <div class="form-check pt-4">
+                <input class="form-check-input rounded-pill check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label subscribe-label" for="flexCheckDefault">
+                    I agree to your all <a href="javascript:;" class="text-decoration-none subscribe-label">Terms & Condition</a>
+                </label>
+                </div> -->
+                <button class="subscribeBtn px-5 py-2 mt-5">Subscribe</button>
+            </form>
+            </div>
+            <div class="col-12 divider"></div>
+            <div class="col-12 copyright">© 2023 International Education Expert. All Rights Reserved</div>
+        </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- glightBox Js -->
+    <script src="assets/libs/glightBox/glightbox.min.js"></script>
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/libS/owlCarousel/owl.carousel.min.js"></script>
+    <script>
+            $('.country').owlCarousel({
+                loop: true,
+                items: 16,
+                margin: 0,
+                nav: true,
+                dots: true,
+                center: false,
+                freeDrag: false,
+                lazyLoad: true,
+                autoplay:true,
+                autoplayTimeout:1500,
+                autoplayHoverPause:true,
+                smartSpeed: 1000,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    576: {
+                        items: 2.5,
+                    },
+                    768: {
+                        items: 3.5,
+                    },
+                    992: {
+                        items: 5,
+                    },
+                    1200: {
+                        items: 6,
+                    }
+                },
+            });
+    </script>
+    <script>
+        $('.Testimonials').owlCarousel({
+            loop: true,
+            items: 16,
+            margin: 15,
+            nav: true,
+            dots: true,
+            center: false,
+            freeDrag: false,
+            lazyLoad: true,
+            autoplay:true,
+            autoplayTimeout:1500,
+            autoplayHoverPause:true,
+            smartSpeed: 1000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                576: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                992: {
+                    items: 1.5,
+                },
+                1200: {
+                    items: 2,
+                }
+            },
+        });
+</script>
+<script>
+        const lightbox = GLightbox();
+    lightbox.on('open', () => {
+    // Do something
+    });
+</script>
 </body>
 </html>

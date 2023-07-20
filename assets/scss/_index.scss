@@ -4,6 +4,8 @@
 @include media-breakpoint(basic) {
 
     .hero-section {
+        height: calc(100vh - 120px);
+        min-height: 500px;
         & .swiper-slide {
             background-position: center;
             background-size: cover;
@@ -81,14 +83,17 @@
             & .hero-btn {
                 animation:fadeInUp 1.8s ease backwards;
             }
-            @keyframes fadeInUp{
-                0%{
-                    transform:translate(0px, 200px);
-                     opacity: 0;
-                }
-                100%{
-                    transform:translate(0px, 0);
-                     opacity: 1;
+            
+            &.swiper-slide-active{
+                @keyframes fadeInUp{
+                    0%{
+                        transform:translate(0px, 200px);
+                        opacity: 0;
+                    }
+                    100%{
+                        transform:translate(0px, 0);
+                        opacity: 1;
+                    }
                 }
             }
         }    
@@ -98,15 +103,22 @@
         & .swiper-slider2 {
             background-image: url(../img/index/slider-2.png);
         }
-        & .swiper-button-next {
-            left: 20px;
+        & .swiper-button-next, & .swiper-button-prev{
+            left: 10px;
             height: 45px;
             width: 45px;
             border-radius: 50%;
             background-color: $white;
-            display: flex;
+            // display: flex;
             justify-content: center;
             align-items: center;
+            transition: all ease-in-out 0.3s;
+            display: none !important;
+            &:hover{
+                background-color: $theme1;
+            }
+        }
+        & .swiper-button-next {
             &::after {
                 font-size: 10px;
                 color: $black;
@@ -114,16 +126,8 @@
             }
         }
         & .swiper-button-prev {
-            left: 20px;
-            height: 45px;
+            
             top: 40%;
-            // margin: 20px 0;
-            width: 45px;
-            border-radius: 50%;
-            background-color: $white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             &::after {
                 font-size: 10px;
                 color: $black;
@@ -167,7 +171,7 @@
 
 
 // X-Large devices (large desktops, less than 1400px)
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(xxl) {
     .hero-section {
         & .swiper-slide {
             & .hero-subheading {
@@ -243,7 +247,7 @@
     }
 }
 // Large devices (desktops, less than 1200px)
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
     .hero-section {
         & .swiper-slide {
             & .hero-subheading {
@@ -319,7 +323,7 @@
     }
 }
 // Medium devices (tablets, less than 992px)
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
     .hero-section {
         & .swiper-slide {
             & .hero-subheading {
@@ -403,14 +407,12 @@
     }
 }
 // Small devices (landscape phones, less than 768px)
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     .hero-section {
         & .swiper-slide {
             & .hero-subheading {
                 font-size: 16px;
                 & .pie-chart {
-                    height: 25px;
-                    width: 25px;
                 }
             }
             @keyframes fadeInUp{
@@ -491,14 +493,14 @@
     }
 }
 // X-Small devices (portrait phones, less than 576px)
-@mixin heroSection-mixin-max-xs() {
+@include media-breakpoint-down(sm) {
     .hero-section {
         & .swiper-slide {
             & .hero-subheading {
-                font-size: 15px;
+                font-size: 14px;
                 & .pie-chart {
-                    height: 20px;
-                    width: 20px;
+                    min-height: 25px;
+                    min-width: 25px;
                 }
             }
             @keyframes fadeInUp{
