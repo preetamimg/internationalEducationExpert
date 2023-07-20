@@ -1,7 +1,7 @@
 
 .cards{
     & .card-style{
-        
+        cursor: pointer;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
         position: relative;
@@ -100,7 +100,7 @@
               
                 }
                 & .readMore{
-                    opacity: 0;
+                    opacity: 111111;
               
                 }
 
@@ -126,7 +126,7 @@
                     transition: all 0.3s ease-in-out;
                 }
                 & .pera{
-                    font-size: 14px;
+                    font-size: 15px;
                     color: #000;
                     font-weight: 400;
                     display: -webkit-box;
@@ -134,14 +134,14 @@
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                     transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
                     
                 }
                 & .pera2{
-                    font-size: 14px;
-                    font-weight: 200;
+                    font-size: 15px;
                     color: #000;
-                    line-height: 24px;
+                    font-weight: 400;
+                    line-height: 20px;
                     opacity: 0;
                     visibility: hidden;
                     position: absolute;
@@ -149,8 +149,8 @@
                      transition: all 0.3s ease-in-out;
                 }
                 & .readMore{
-                    font-size: 16px;
-                    color: $black;
+                    font-size: 15px;
+                    color: #000;
                     font-weight: 400;
                     transition: all 0.3s ease-in-out;
                     & span{
@@ -579,23 +579,25 @@
             }
             & .card-content {
                     & .icon{
-    
+                        width: 50px;
+                        height: 50px;
+                        padding: 10px;
                      
                       
                     }
                     & .cardheading{
-                        font-size: 16px;
+                        font-size: 17px;
                     }
                     & .pera{
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                     & .pera2{
                     }
                     & .readMore{
-                        font-size: 12px;
+                        font-size: 14px;
                         & span{
-                            width: 12px;
-                            height: 12px;
+                            width: 14px;
+                            height: 14px;
                         }
                     }
     
@@ -837,6 +839,279 @@
                 & .videoHeading{
                     font-size: 22px;
                     line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+// heroSectionCard
+.heroSectionCard{
+    & .heroCard{
+        & .heroCard2{
+            
+        }
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            & .card-body{
+                & .icon{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .card-body{
+            & .icon{
+                width: 40px;
+                height: 40px;
+                transition: all 0.5s ease-in-out;
+
+            }
+            & .cardHeading{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            & .pera{
+                font-size: 15px;
+                color: #000;
+                font-weight: 400;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            & .readMore{
+                font-size: 15px;
+                color: #000;
+                transition: all 0.4s ease-in-out;
+                & .readMoreIcon{
+                    width: 14px;
+                    height: 14px;
+                    transition: all 0.4s ease-in-out;
+                }
+                &:hover{
+                    & .readMoreIcon{
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .heroSectionCard{
+        & .heroCard{
+            &:hover{
+  
+                & .card-body{
+                    & .icon{
+                     
+                    }
+                    & .readMore{
+                        &::before{
+                         
+                        }
+                    }
+    
+                }
+            }
+            & .card-body{
+                & .icon{
+               
+    
+                }
+                & .cardHeading{
+                  
+                }
+                & .pera{
+        
+                }
+                & .readMore{
+         
+                    &::before{
+
+                      
+                    }
+                    &:hover{
+                        &::before{
+                   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .heroSectionCard{
+        & .heroCard{
+            &:hover{
+  
+                & .card-body{
+                    & .icon{
+                     
+                    }
+                    & .readMore{
+                        &::before{
+                         
+                        }
+                    }
+    
+                }
+            }
+            & .card-body{
+                & .icon{
+               
+    
+                }
+                & .cardHeading{
+                  
+                }
+                & .pera{
+        
+                }
+                & .readMore{
+         
+                    &::before{
+
+                      
+                    }
+                    &:hover{
+                        &::before{
+                   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .heroSectionCard{
+        & .heroCard{
+            border: none !important;
+            &:hover{
+  
+                & .card-body{
+                    & .icon{
+                     
+                    }
+                    & .readMore{
+                        & .readMoreIcon{
+                      
+                        }
+                    }
+    
+                }
+            }
+            & .card-body{
+                & .icon{
+               
+    
+                }
+                & .cardHeading{
+                    font-size: 18px;
+                }
+                & .pera{
+        
+                }
+                & .readMore{
+         
+                  
+                    & .readMoreIcon{
+                      
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heroSectionCard{
+        & .heroCard{
+            &:hover{
+  
+                & .card-body{
+                    & .icon{
+                     
+                    }
+                    & .readMore{
+                  
+                    }
+    
+                }
+            }
+            & .card-body{
+                & .icon{
+               
+    
+                }
+                & .cardHeading{
+                  
+                }
+                & .pera{
+        
+                }
+                & .readMore{
+                    & .readMoreIcon{
+                      
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .heroSectionCard{
+        & .heroCard{
+            &:hover{
+  
+                & .card-body{
+                    & .icon{
+                     
+                    }
+                
+    
+                }
+            }
+            & .card-body{
+                & .icon{
+               
+    
+                }
+                & .cardHeading{
+                  font-size: 16px;
+                }
+                & .pera{
+                    font-size: 14px;
+        
+                }
+                & .readMore{
+                    font-size: 14px;
+         
+                    & .readMoreIcon{
+                      
+                    }
                 }
             }
         }

@@ -25,3 +25,8 @@ var swiper = new Swiper(".heroslider", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// * Glight Box Video
+var lightboxVideo = GLightbox({
+    selector: '.glightbox3'
+});
