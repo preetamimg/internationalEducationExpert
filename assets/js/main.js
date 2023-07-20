@@ -12,6 +12,14 @@ function scrollFunction() {
     }
 }
 
+$(window).on("load", (function() {
+    setTimeout((function() {
+        $(".page-loader").fadeOut("slow"),
+        $("body").removeClass("overflow-hidden")
+    }
+    ), 500)
+}
+));
 
 // hero slider start
 var swiper = new Swiper(".heroslider", {

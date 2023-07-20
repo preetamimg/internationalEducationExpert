@@ -1,1 +1,20 @@
 @charset "UTF-8";
+
+.page-loader {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    background-color: $white;
+    inset: 0;
+    & .spinner {
+        min-width: 300px;
+        min-height: 300px;
+        background: $white url(../img/preloader.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

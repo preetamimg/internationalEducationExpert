@@ -909,6 +909,7 @@
             // }
             & .CardImg {
                 height: 35px;
+                transition: 0.3s linear;
                 width: 35px;
             }
             & .cardHeading {
@@ -922,6 +923,7 @@
             font-size: 15px;
             color: $black;
             line-height: 26px;
+            transition: 0.3s linear;
         }
         & .moredetaiBtn {
             font-size: 12px;
