@@ -2,11 +2,10 @@
 
 // hero section start
 @include media-breakpoint(basic) {
-
+   
     .hero-section {
-        height: calc(100vh - 120px);
-        min-height: 500px;
         & .swiper-slide {
+            padding: 70px 0px;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -160,7 +159,12 @@
 
 @include media-breakpoint-up(sm) {}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+    .hero-section{
+        height: calc(100vh - 120px);
+        min-height: 500px;
+    }
+}
 
 @include media-breakpoint-up(lg) {}
 
@@ -538,11 +542,11 @@
                         
                         100% {
                         }
-                      }
+                    }
                     }
             }
             & .hero-title {
-                font-size: 12px;
+                font-size: 14px;
             }
             & .hero-btn {
             }
