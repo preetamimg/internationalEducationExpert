@@ -82,6 +82,9 @@
             & .hero-btn {
                 animation:fadeInUp 1.8s ease backwards;
             }
+            & .slideBtn {
+                animation:fadeInUp 1.9s ease backwards;
+            }
             
             &.swiper-slide-active{
                 @keyframes fadeInUp{
