@@ -195,6 +195,11 @@
                                 line-height: 28px;
                                 color: black;
                                 margin-top: 20px;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                             }
                             & .starUl{
                                 & .starLi{
