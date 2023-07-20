@@ -874,27 +874,27 @@
     & .aboutCard {
         padding: 30px 45px;
         & .CardIcon {
-            &::before {
-                content: '';
-                position: absolute;
-                left: 0%;
-                top: 50%;
-                width: 50%;
-                height:65%;
-                transform: translateY(-50%);
-                background-color: $theme2;
-                background-image: linear-gradient(92deg, $white 0%, lighten($theme2,  39) 100%);
-            }
+            // &::before {
+            //     content: '';
+            //     position: absolute;
+            //     left: 0%;
+            //     top: 50%;
+            //     width: 50%;
+            //     height:65%;
+            //     transform: translateY(-50%);
+            //     background-color: $theme2;
+            //     background-image: linear-gradient(92deg, $white 0%, lighten($theme2,  39) 100%);
+            // }
             & .CardImg {
-                height: 50px;
-                width: 50px;
+                height: 35px;
+                width: 35px;
             }
-        }
-        & .cardHeading {
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 29px;
-            transition: all 0.3s ease-in-out;
+            & .cardHeading {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 29px;
+                transition: all 0.3s ease-in-out;
+            }
         }
         & .cardTitle {
             font-size: 14px;
