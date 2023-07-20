@@ -134,7 +134,7 @@
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                     transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
                     
                 }
                 & .pera2{
@@ -149,8 +149,8 @@
                      transition: all 0.3s ease-in-out;
                 }
                 & .readMore{
-                    font-size: 16px;
-                    color: $black;
+                    font-size: 14px;
+                    color: #000;
                     font-weight: 400;
                     transition: all 0.3s ease-in-out;
                     & span{
@@ -837,6 +837,75 @@
                 & .videoHeading{
                     font-size: 22px;
                     line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+// heroSectionCard
+.heroSectionCard{
+    & .heroCard{
+        & .heroCard2{
+            
+        }
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            & .card-body{
+                & .icon{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .card-body{
+            & .icon{
+                width: 40px;
+                height: 40px;
+                transition: all 0.5s ease-in-out;
+
+            }
+            & .cardHeading{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            & .pera{
+                font-size: 14px;
+                color: #000;
+                font-weight: 400;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            & .readMore{
+                font-size: 14px;
+                color: #000;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    background-image: url(../image/herosectioncard/RightArrow.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    width: 14px;
+                    height: 14px;
+                    left: 0;
+                    top: 50%;
+                    opacity: 0;
+                    transform: translateY(-50%);
+                    transition: all 0.5s ease-in-out;
+                  
+                }
+                &:hover{
+                    &::before{
+                        transform: translateX(79px);
+                        top: 3.5px;
+                        opacity: 1;
+                    }
                 }
             }
         }
