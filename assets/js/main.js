@@ -107,7 +107,7 @@ $('.gallaryy').owlCarousel({
 $('.country').owlCarousel({
     loop: true,
     items: 16,
-    margin: 0,
+    margin: 10,
     nav: true,
     dots: true,
     center: false,
@@ -122,11 +122,14 @@ $('.country').owlCarousel({
         0: {
             items: 1,
         },
+        450: {
+            items: 2,
+        },
         576: {
-            items: 2.5,
+            items: 3,
         },
         768: {
-            items: 3.5,
+            items: 3,
         },
         992: {
             items: 5,
