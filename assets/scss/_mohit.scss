@@ -873,6 +873,28 @@
 .AboutCardMain {
     & .aboutCard {
         padding: 30px 45px;
+        position: relative;
+        overflow: hidden;
+        &::after{
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: #263173;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: #263173;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            transition: 0.5s linear;
+        }
         & .CardIcon {
             // &::before {
             //     content: '';
@@ -897,7 +919,7 @@
             }
         }
         & .cardTitle {
-            font-size: 14px;
+            font-size: 15px;
             color: $black;
             line-height: 26px;
         }
@@ -913,7 +935,24 @@
         }
         &:hover {
             & .cardHeading {
-                color: $theme2;
+                color: white;
+            }
+            & .cardTitle{
+                color: white;
+                position: relative;
+            }
+            & .moredetaiBtn{
+                color: white;
+                position: relative;
+                border-bottom: 1px solid white !important;
+            }
+            &::before{ 
+                transform: translateX(0);
+            }
+            & .CardIcon{
+                & .CardImg{
+                    filter: brightness(100);
+                }
             }
         }
     }

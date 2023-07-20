@@ -634,8 +634,8 @@
         & .videoPlay{
             position: relative;
             & .glightbox1{
-              height: 350px;
-              width: 500px;
+                height: 350px;
+                width: 500px;
                 position: relative;
                 &::before{
                     position: absolute;
@@ -645,7 +645,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%,-50%);
-                    z-index: 222;
+                    z-index: 1;
                     animation: ripple 1s linear infinite;
                     border-radius: 90%;
                     padding: 14px;

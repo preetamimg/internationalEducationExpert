@@ -120,7 +120,7 @@ $('.country').owlCarousel({
     responsiveClass: true,
     responsive: {
         0: {
-            items: 1,
+            items: 1.5,
         },
         450: {
             items: 2,
@@ -132,9 +132,12 @@ $('.country').owlCarousel({
             items: 3,
         },
         992: {
-            items: 5,
+            items: 4,
         },
         1200: {
+            items: 5,
+        },
+        1400: {
             items: 6,
         }
     },
