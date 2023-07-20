@@ -51,10 +51,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- glightBox css -->
-        <link rel="stylesheet" href="assets/libs/glightBox/glightbox.min.css">
+      <!-- glightBox css -->
+      <link rel="stylesheet" href="assets/libs/glightBox/glightbox.min.css">
 </head>
 
 <body >
@@ -158,10 +156,10 @@
 <div class="container-fluid videoSection py-5">
   <div class="container sectionBg">
     <div class="row align-items-center py-lg-0 py-4">
-      <div class="col-lg-6 order-lg-1 order-2">
-        <div class="videoPlay">
+      <div class="col-lg-6 order-lg-1 order-2 box-container ">
+        <div class="videoPlay box">
           <!-- <a href="https://vimeo.com/115041822" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/image/videoSection/videoicon.png" alt="videoicon" class="img-fluid w-100 h-100"></a> -->
-          <a href="javascript:;" class="glightbox1 d-flex py-4">
+          <a href="https://youtu.be/CTr-xhlba84" class="glightbox1 d-flex py-4">
             <img src="assets/image/videoSection/video.jpg" alt="image" class="img-fluid h-100 w-100  object-fit-cover" />
           </a>
         </div>
@@ -258,14 +256,12 @@
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
-
-        <!-- glightBox Js -->
-        <script src="assets/libs/glightBox/glightbox.min.js"></script>
+      <!-- glightBox Js -->
+      <script src="assets/libs/glightBox/glightbox.min.js"></script>
     <script>
-          const lightbox = GLightbox1();
-      lightbox.on('open', () => {
-      // Do something
-      });
+      var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
   </script>
 </body>
 </html>
