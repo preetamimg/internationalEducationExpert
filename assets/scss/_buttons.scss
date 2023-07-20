@@ -50,44 +50,8 @@
     }
 }
 
-.themBtn1 {
-    // border: 1px solid $gray-200;
-    border: none;
-    box-shadow: none;
-    outline: none;
-    background-color: $theme1;
-    font-size: 14px;
-    padding: 6px 24px 6px 24px;
-    border-radius: 2em;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    &::before{
-        content: "";
-        position: absolute;
-        height: 0%;
-        left: 50%;
-        top: 50%;
-        width: 150%;
-        z-index: -1;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-        transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-        background-color: $theme2;
+@include media-breakpoint-down(sm) {
+    .themBtn{
+        padding: 0.5rem 1.8rem 0.5rem 1.8rem;
     }
-    &:hover{
-        z-index: 1;
-        color: $white;
-        &::before{
-            height: 300%;
-        }
-    }
-}
+} 

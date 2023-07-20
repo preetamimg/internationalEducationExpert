@@ -1,20 +1,20 @@
 
 // topbar start
 .map-mail {
-    font-size: 11px;
+    font-size: 13px;
     color: $white;
     // line-height: 27px;
     & .map-mail-icon {
-        height: 15px;
-        width: 15px;
+        height: 18px;
+        width: 18px;
         & img {
             filter: grayscale(1);
         }
     }
 }
 .top-social-icon {
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     & .topsocial-img {
         filter: grayscale(1);
         transition: all 0.3s ease-out 0s ;
@@ -186,10 +186,11 @@ background-color: darken($primary, 47);
 }
 & .navv-offcanvas-body {
     & .offcanvas-link {
-        font-size: 13px;
+        font-size: 14px;
+        display: flex;
         color: $white;
-       font-weight: 500;
-       transition: all 0.3s ease-in-out;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
     }
     & .collapse-link {
         color: $theme1;
@@ -223,8 +224,9 @@ background-color: darken($primary, 47);
         }
     }
     & .offcanvas-link-inner {
-        font-size: 12px;
+        font-size: 13px;
         color: $white;
+        display: flex;
     }
     & .map-mail-icon {
         height: 25px;
@@ -478,8 +480,6 @@ background-color: darken($primary, 47);
         }
     }
     & .menu-btn {
-        height: 27px;
-        width: 27px;
     }
 }
 .navv-offcanvas {
@@ -487,7 +487,7 @@ background-color: darken($primary, 47);
     }
     & .navv-offcanvas-body {
         & .offcanvas-link {
-            font-size: 12px;
+            font-size: 14px;
         }
         & .collapse-link {
             &::after {                  
@@ -559,8 +559,8 @@ background-color: darken($primary, 47);
         }
     }
     & .menu-btn {
-        height: 23px;
-        width: 23px;
+        height: 27px;
+        width: 27px;
     }
 }
 .navv-offcanvas {
@@ -568,7 +568,7 @@ background-color: darken($primary, 47);
     }
     & .navv-offcanvas-body {
         & .offcanvas-link {
-            font-size: 11px;
+            font-size: 14px;
         }
         & .collapse-link {
             &::after {
