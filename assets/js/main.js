@@ -63,7 +63,7 @@ $('.Testimonials').owlCarousel({
     autoplay:true,
     autoplayTimeout:1500,
     autoplayHoverPause:true,
-    smartSpeed: 1000,
+    smartSpeed: 1100,
     responsiveClass: true,
     responsive: {
         0: {
@@ -104,7 +104,7 @@ $('.gallaryy').owlCarousel({
     freeDrag: false,
     lazyLoad: true,
     autoplay:true,
-    autoplayTimeout:1500,
+    autoplayTimeout:1700,
     autoplayHoverPause:true,
     smartSpeed: 1000,
     responsiveClass: true,
