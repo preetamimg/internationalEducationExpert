@@ -18,3 +18,73 @@
         background-position: center;
     }
 }
+
+.slides{
+    & .owl-nav {
+        position: absolute;
+        top: -65px;
+        right: 0;
+        gap: 10px;
+        display: flex;
+        & button {
+            width: 60px;
+            height: 35px;
+            background-color: rgba($primary, 0.1) !important;
+            transition: all 0.3s;
+            &:hover{
+                background-color: rgba($primary, 0.2) !important;
+                & img {
+                }
+            }
+            & span {
+                display: none;
+            }
+            &.owl-prev,  &.owl-next{
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                background-size: contain !important;
+            }
+            &.owl-prev {
+                background-image: url(../img/leftarrow.svg) !important;
+            }
+            &.owl-next {
+                background-image: url(../img/rightarrow.svg) !important;
+            }
+        }
+    }
+    & .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        & button{
+            width: 7px;
+            height: 7px;
+            border-radius: 7px;
+            border: 1px solid $theme2 !important;
+            transition: all 0.3s;
+            &.active {
+                width: 14px;
+                background-color: $theme2 !important;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .slides{
+        & .owl-nav {
+            top: -60px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .slides{
+        & .owl-stage-outer {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {}

@@ -68,18 +68,28 @@ $('.Testimonials').owlCarousel({
     responsive: {
         0: {
             items: 1,
+            nav: false,
+            dots: true,
         },
         576: {
             items: 1,
+            nav: false,
+            dots: true,
         },
         768: {
             items: 1,
+            nav: true,
+            dots: false,
         },
         992: {
             items: 1.5,
+            nav: true,
+            dots: false,
         },
         1200: {
             items: 2,
+            nav: true,
+            dots: false,
         }
     },
 });
@@ -101,18 +111,28 @@ $('.gallaryy').owlCarousel({
     responsive: {
         0: {
             items: 1,
+            nav: false,
+            dots: true,
         },
         576: {
             items: 2.5,
+            nav: false,
+            dots: true,
         },
         768: {
             items: 3.5,
+            nav: true,
+            dots: false,
         },
         992: {
             items: 4,
+            nav: true,
+            dots: false,
         },
         1200: {
             items: 4,
+            nav: true,
+            dots: false,
         }
     },
 });
@@ -135,28 +155,38 @@ $('.country').owlCarousel({
     responsive: {
         0: {
             items: 1.5,
+            nav: false,
+            dots: true,
         },
         450: {
             items: 2,
+            nav: false,
+            dots: true,
         },
         576: {
             items: 3,
+            nav: false,
+            dots: true,
         },
         768: {
             items: 3,
             nav: true,
+            dots: false,
         },
         992: {
             items: 4,
             nav: true,
+            dots: false,
         },
         1200: {
             items: 5,
             nav: true,
+            dots: false,
         },
         1400: {
             items: 6,
             nav: true,
+            dots: false,
         }
     },
 }); 

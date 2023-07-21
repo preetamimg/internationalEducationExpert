@@ -148,7 +148,8 @@
     & .testimonialsContainer{
         & .Testimonials{
             & .owl-stage-outer{
-                padding: 0;
+                padding-left: 0px;
+                padding-right: 0px;
                 & .owl-stage{
                     display: flex;
                     align-items: stretch;
