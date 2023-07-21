@@ -69,7 +69,7 @@ height: 70px;
         }
         & .drop-link-main {
             left: 0;
-            top: 68px;
+            top: 63px;
             opacity: 0;
             visibility: hidden;
             z-index: 2;
@@ -211,10 +211,10 @@ animation-fill-mode: both;
         &.themBtn  {
             background-color: rgba($theme2, 0.1);
         &::before{
-            background-color: $white;
+            background-color: $theme2;
         }
         &:hover{
-            color: $black;
+            color: $white;
         }
         }
     }
