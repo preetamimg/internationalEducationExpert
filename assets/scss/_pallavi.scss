@@ -388,13 +388,13 @@
 }
 
 .ctcFluid{
-    // background-color: #000F24;
+    // background-color: $theme2;
     // height: 200px;
     & .ctcContainer{
         & .ctcBox{
-            border: 1px solid $theme1;
+            // border: 1px solid $theme1;
             // border-radius: 13px;
-            background-color: #000F24;
+            background-color: $theme2;
             padding: 50px 30px;
                 & .ctcHead{
                     font-size: 40px;
