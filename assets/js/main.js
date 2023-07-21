@@ -22,23 +22,23 @@ $(window).on("load", (function() {
 ));
 
 // hero slider start
-var swiper = new Swiper(".heroslider", {
-    spaceBetween: 30,
-    loop: true,
-    speed: 1000,
-    effect: "fade",
-    grabCursor: true,
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+// var swiper = new Swiper(".heroslider", {
+//     spaceBetween: 30,
+//     loop: true,
+//     speed: 1000,
+//     effect: "fade",
+//     grabCursor: true,
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
 
 // * Glight Box Video
 var lightboxVideo = GLightbox({

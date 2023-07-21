@@ -29,10 +29,10 @@
         & button {
             width: 60px;
             height: 35px;
-            background-color: rgba($primary, 0.1) !important;
+            background-color: rgba($theme2, 0.1) !important;
             transition: all 0.3s;
             &:hover{
-                background-color: rgba($primary, 0.2) !important;
+                background-color: rgba($theme2, 0.2) !important;
                 & img {
                 }
             }

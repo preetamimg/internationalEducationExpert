@@ -127,14 +127,14 @@
                             }
                         }
                         &::after{
-                            border: 1px solid #263173;
+                            border: 1px solid $theme2;
                         }
                         &::before{
-                            border: 1px solid #263173;
+                            border: 1px solid $theme2;
                         }
                         & .countryImg{
                             &::after{
-                            border: 2px solid #263173;
+                            border: 2px solid $theme2;
                             }
                         }
                     }
@@ -273,13 +273,15 @@
 }
 
 .footer {
-    background-image: linear-gradient(to right, darken($primary, 45), darken($primary, 45)), url(../img/Index/footer-bg.png);
+    background-image: linear-gradient(to right, darken($theme2, 45), darken($theme2, 45)), url(../img/Index/footer-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-blend-mode: luminosity;
     & .footer-logo {
-        height: 100px;
-        width: 160px;
+        height: 65px;
+        & img {
+            object-fit: contain;
+        }
     }
     & .footer-para {
         font-size: 14px;
@@ -487,6 +489,11 @@
                     }
                 }
             }
+        }
+    }
+    .footer {
+        & .footer-logo{
+            height: 50px;
         }
     }
     

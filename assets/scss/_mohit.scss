@@ -877,7 +877,7 @@
             content: '';
             width: 2px;
             height: 100%;
-            background-color: #263173;
+            background-color: $theme2;
             position: absolute;
             left: 0;
             top: 0;
@@ -887,7 +887,7 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            background-color: #263173;
+            background-color: $theme2;
             top: 0;
             left: 0;
             transform: translateX(-100%);

@@ -59,10 +59,10 @@
     <link rel="stylesheet" href="assets/libs/glightBox/glightbox.min.css">
 </head>
 
-<body class="overflow-hidden">
-    <div class="page-loader"><div class="spinner"></div></div>
+<body class="overflowhidden">
+    <!-- <div class="page-loader"><div class="spinner"></div></div> -->
 <!-- * navbar start -->
-<div class="container-fluid bg-dark top-bar py-2 d-lg-flex d-none">
+<!-- <div class="container-fluid bg-dark top-bar py-2 d-lg-flex d-none">
     <div class="container">
         <div class="row align-items-center py-1">
             <div class="col">
@@ -86,10 +86,11 @@
             </div>
         </div>
     </div>
-</div>
-<nav class="navbar navbar-expand-lg container-fluid bg-light z-3 w-100 " aria-label="Offcanvas navbar large" id="navbar">
+</div> -->
+<nav class="navbar navbar-expand-lg fixed-top container-fluid  z-3 w-100 " aria-label="Offcanvas navbar large" id="navbar">
     <div class="container"> 
-        <a class="navbar-brand nav-logo" href="index.html"><img src="assets/img/header/logo.png" alt="logo" class="nav-logo img-fluid h-100"></a>
+        <a class="navbar-brand nav-logo logo1" href="index.html"><img src="assets/img/header/ensure-logo.png" alt="logo" class="img-fluid logo1 h-100"></a>
+        <a class="navbar-brand nav-logo logo2 d-none" href="index.html"><img src="assets/img/header/logo.png" alt="logo" class="img-fluid h-100 logo2"></a>
         <ul class="navbar-nav gap-4 justify-content-end flex-grow-1 align-items-md-center align-items-start pe-3 d-lg-flex d-none">
             <li class="nav-item"><a class="nav-link p-0 position-relative fw-semibold active" href="javascript:;">Home</a></li>
             <li class="nav-item position-relative py-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -128,8 +129,8 @@
                 </ul>
             </li>
             <li class="nav-item"><a class="nav-link p-0 position-relative fw-semibold" href="javascript:;">Blog</a></li>
-            <li class="nav-item"><a class="nav-link p-0 position-relative fw-semibold" href="javascript:;">Contact</a></li>
-            <li><a href="javascript:;" class="themBtn">Apply Now</a></li>
+            <!-- <li class="nav-item"><a class="nav-link p-0 position-relative fw-semibold" href="javascript:;">Contact</a></li> -->
+            <li><a href="javascript:;" class="themBtn aplyBtn">Apply Now</a></li>
         </ul>
         <div class="d-lg-none d-flex align-items-center">
             <a class="d-flex menu-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -142,48 +143,28 @@
 <!-- * hero section start -->
 <div class="container-fluid hero-section px-0 mb-5">
     <div class="swiper mySwiper heroslider h-100 position-relative">
-        <div class="swiper-wrapper h-100">
         <div class="swiper-slide swiper-slider1 h-100">
-            <div class="container h-100">
+            <div class="container h-100 position-relative innercontainer">
                 <div class="row h-100 align-items-center">
-                    <div class="col-lg-7 col-md-10">
+                    <div class="col-xxl-7 col-xl-8 col-md-10 mx-auto">
                         <div class="row mx-0 gap-md-4 gap-3">
-                            <div class="col-12">
-                                <div class=" text-uppercase hero-subheading d-flex align-items-center gap-3"><span class="d-inline-flex justify-content-center align-items-center pie-chart"><img src="assets/img/index/university.png" alt="pie-chart" class="h-100 w-100 img-fluid"></span>Welcome To Ensure Education</div>
+                            <div class="col-auto mx-auto text-center">
+                                <!-- <div class=" text-uppercase hero-subheading d-flex align-items-center gap-3"><span class="d-inline-flex justify-content-center align-items-center pie-chart"><img src="assets/img/index/university.png" alt="pie-chart" class="h-100 w-100 img-fluid"></span>Welcome To Ensure Education</div> -->
                                 <div class="hero-heading fw-bolder">Study MBBS In  <span class="hero-animation position-relative d-inline-flex">Abroad</span></div>
+                                <!-- <div class="hero-heading fw-bolder">STUDY MBBS </div>
+                                <div class="text-end text-theme1 subHeroHeading"> IN ABROAD</div> -->
                             </div>
-                            <div class="col-12 fw-noraml hero-title text-white pb-1">Are you dreaming of becoming a doctor? Ensure Education can make your dream come true with our wide reach and decades-long experience. We have been providing our services to thousands of aspiring doctors since 1991, helping them realize their dreams.</div>   
-                            <div class="col-12 d-flex align-items-center gap-3 slideBtn">
+                            <div class="col-12 fw-noraml text-center hero-title text-white pb-1">Are you dreaming of becoming a doctor? Ensure Education can make your dream come true with our wide reach and decades-long experience. We have been providing our services to thousands of aspiring doctors since 1991, helping them realize their dreams.</div>   
+                            <div class="col-12 d-flex align-items-center gap-3 mt-4 justify-content-center slideBtn">
                                 <a href="javascript:;" class="themBtn darkBtn">Contact Us</a>
-                                <a href="javascript:;" class="themBtn darkBtn">More</a>
+                                <!-- <a href="javascript:;" class="themBtn darkBtn">More</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="scroll d-flex justify-content-center align-items-center gap-2 flex-column text-white fw-semibold">SCROLL <span class="d-inline-flex"><img src="assets/img/scroll-down.gif" alt=""></span></div>
             </div>
         </div>
-        <div class="swiper-slide swiper-slider2 h-100">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-lg-7 col-md-10">
-                        <div class="row mx-0 gap-md-4 gap-3">
-                            <div class="col-12">
-                                <div class=" text-uppercase hero-subheading d-flex align-items-center gap-3"><span class="d-inline-flex justify-content-center align-items-center pie-chart"><img src="assets/img/index/university.png" alt="pie-chart" class="h-100 w-100 img-fluid"></span>Welcome To Ensure Education</div>
-                                <div class="hero-heading fw-bolder">Study MBBS In  <span class="hero-animation position-relative d-inline-flex">Abroad</span></div>
-                            </div>
-                            <div class="col-12 fw-noraml hero-title text-white pb-1">Are you dreaming of becoming a doctor? Ensure Education can make your dream come true with our wide reach and decades-long experience. We have been providing our services to thousands of aspiring doctors since 1991, helping them realize their dreams.</div>   
-                            <div class="col-12 d-flex align-items-center gap-3 slideBtn">
-                                <a href="javascript:;" class="themBtn darkBtn">Contact Us</a>
-                                <a href="javascript:;" class="themBtn darkBtn">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="swiper-button-next d-md-flex d-none"></div>
-        <div class="swiper-button-prev d-md-flex d-none"></div>
     </div>
 </div>
 <!-- * hero section end -->
@@ -922,7 +903,7 @@
     <div class="container">
     <div class="row py-4">
         <div class="col-xl-4 col-lg-3 col-md-6 mt-3 mt-lg-0">
-        <a href="javascript:;" class="footer-logo mb-4 d-block"><img src="assets/img/studyLogo.png" alt="footer logo" class="h-100 w-100 img-fluid"></a>
+        <a href="javascript:;" class="footer-logo mb-4 d-block"><img src="assets/img/header/logo.png" alt="footer logo" class="h-100 img-fluid"></a>
         <div class="d-flex align-items-center gap-2 pt-3">
             <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/facebook.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
             <a href="javascript:;" class="text-decoration-none social-icon rounded-pill bg-dark d-inline-flex justify-content-center align-items-center"><img src="assets/img/insta.svg" alt="facebook" class="h-100 w-100 img-fluid"></a>
