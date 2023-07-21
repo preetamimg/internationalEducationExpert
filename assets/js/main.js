@@ -144,15 +144,19 @@ $('.country').owlCarousel({
         },
         768: {
             items: 3,
+            nav: true,
         },
         992: {
             items: 4,
+            nav: true,
         },
         1200: {
             items: 5,
+            nav: true,
         },
         1400: {
             items: 6,
+            nav: true,
         }
     },
 }); 

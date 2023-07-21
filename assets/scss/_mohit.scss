@@ -6,7 +6,7 @@
             font-size: 16px;
             font-weight: 400;
             color: $black;
-            line-height: 24px;
+            // line-height: 24px;
         }
         & .about-card {
             & .about-card-icon {
@@ -115,7 +115,6 @@
     .about-us {
         & .about-left {
             & .about-title2 {
-                line-height: 22px;
             }
             & .about-card {
                 & .about-card-icon {
@@ -156,7 +155,6 @@
         & .about-left {
             & .about-title2 {
                 font-size: 15px;
-                line-height: 24px;
             }
             & .about-card {
                 & .about-card-icon {
@@ -241,7 +239,6 @@
         & .about-left {
             & .about-title2 {
                 font-size: 14px;
-                line-height: normal;
             }
             & .about-card {
                 & .about-card-icon {
