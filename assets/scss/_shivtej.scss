@@ -1127,6 +1127,8 @@
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/aboutus/aboutusbackground.jpg');
+    // background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(var(--topBgImg));
+
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;

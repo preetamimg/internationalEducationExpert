@@ -71,7 +71,43 @@
     }
 }
 
+.innerTopSection {
+    // min-height: 40vh;
+    background-color: $black;
+    & .innerfluid {
+        & .content {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
 @include media-breakpoint-down(lg) {
+    .innerTopSection {
+        & .innerfluid {
+            & .content {
+                font-size: 14px;
+            }
+        }
+    }
+    
     .slides{
         & .owl-nav {
             top: -60px;
