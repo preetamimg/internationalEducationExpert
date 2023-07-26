@@ -1119,3 +1119,510 @@
         }
     }
 }
+
+
+// about us hero start
+
+.aboutUs{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/aboutus/aboutusbackground.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    & .title{
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 600;
+        color: $white;
+    }
+    & .aboutnav{
+        & ol{
+            & .navItem{
+                & a{
+                    font-size: 20px;
+                    font-weight: 600;
+                    
+                    color: $white;
+                    text-decoration: none;
+                }
+                font-size: 20px;
+                font-weight: 600;
+                color: $white;
+                position: relative;
+                &::before{
+                    color:$white;
+                    // display: none;
+                }
+              
+                &.active {
+                    color: $theme1;
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin:left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .aboutUs{
+   
+        & .title{
+         
+        }
+        & .aboutnav{
+            & ol{
+                & .navItem{
+                    & a{
+         
+                    }
+               
+                    &::before{
+                       
+                    }
+                  
+                    &.active {
+                        color: $theme1;
+                        &::after {
+                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .aboutUs{
+   
+        & .title{
+         
+        }
+        & .aboutnav{
+            & ol{
+                & .navItem{
+                    & a{
+         
+                    }
+               
+                    &::before{
+                       
+                    }
+                  
+                    &.active {
+                        color: $theme1;
+                        &::after {
+                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .aboutUs{
+   
+        & .title{
+            font-size: 50px;
+            line-height: 55px;
+        }
+        & .aboutnav{
+            & ol{
+                & .navItem{
+                    & a{
+         
+                    }
+               
+                    &::before{
+                       
+                    }
+                  
+                    &.active {
+                        color: $theme1;
+                        &::after {
+                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .aboutUs{
+        height: 40vh;
+        & .title{
+         
+        }
+        & .aboutnav{
+            & ol{
+                & .navItem{
+                    font-size: 16px;
+                    & a{
+                        font-size: 16px;
+                    }
+               
+                    &::before{
+                       
+                    }
+                  
+                    &.active {
+                        color: $theme1;
+                        &::after {
+                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .aboutUs{
+        height: 30vh;
+        & .title{
+            font-size: 40px;
+            line-height: 55px;
+        }
+        & .aboutnav{
+            & ol{
+                & .navItem{
+                    font-size: 14px;
+                    & a{
+                        font-size: 14px;
+                    }
+               
+                    &::before{
+                       
+                    }
+                  
+                    &.active {
+                        color: $theme1;
+                        &::after {
+                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// about section start 
+.aboutUsSection{
+    & .about-img{
+        max-width: 500px;
+        // height: 450px;
+        transition: all 0.7s ease-in-out;
+     
+    }
+    & .pera{
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+    }
+    & .aboutAccordin{
+        & .accordinItem{
+            &::before{
+                position: absolute;
+                content: '';
+                width: 5px;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: #ffe500;
+            }
+            & .accordinHeader{
+                & .accordinButton{
+                    background: #ebebee;
+                    border-radius: 0% !important;
+                    font-size: 17px;
+                    color: #364f6b;
+                    font-weight: 600;
+                    position: relative;
+                    &::after{
+                        background-image: url(../img/aboutus/accordinarro.svg) !important;
+                        object-fit: cover;
+                        background-position: center;
+                        width: 10px;
+                        height: 10px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 5px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: #ffe500;
+                    }
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: #ebebee;;
+                color: black;
+            }
+            .accordion-button:not(.collapsed)::after {
+                background-image: url(../img/aboutus/accordinaccroo.svg) !important;
+                transform: rotate(0deg);
+                transition: all 0.3s ease-in-out;
+                width: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .accordion-item:first-of-type{
+                border-radius: 0%;
+            }
+        }
+    }
+}
+
+
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .aboutUsSection{
+        & .about-img{
+      
+         
+        }
+        & .pera{
+     
+        }
+        & .aboutAccordin{
+            & .accordinItem{
+                &::before{
+               
+                }
+                & .accordinHeader{
+                    & .accordinButton{
+                     
+                        &::after{
+                     
+                        }
+                        &::before{
+                    
+                        }
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+               
+                }
+                .accordion-button:not(.collapsed)::after {
+    
+                }
+    
+                .accordion-item:first-of-type{
+                
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .aboutUsSection{
+        & .about-img{
+      
+        }
+        & .sub-heading{
+            font-size: 33px;
+        }
+        & .pera{
+     
+        }
+        & .aboutAccordin{
+            & .accordinItem{
+                &::before{
+               
+                }
+                & .accordinHeader{
+                    & .accordinButton{
+                     
+                        &::after{
+                     
+                        }
+                        &::before{
+                    
+                        }
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+               
+                }
+                .accordion-button:not(.collapsed)::after {
+    
+                }
+    
+                .accordion-item:first-of-type{
+                
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .aboutUsSection{
+        & .about-img{
+      
+        
+        }
+        & .pera{
+     
+        }
+        & .aboutAccordin{
+            & .accordinItem{
+                &::before{
+               
+                }
+                & .accordinHeader{
+                    & .accordinButton{
+                     
+                        &::after{
+                     
+                        }
+                        &::before{
+                    
+                        }
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+               
+                }
+                .accordion-button:not(.collapsed)::after {
+    
+                }
+    
+                .accordion-item:first-of-type{
+                
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .aboutUsSection{
+        & .about-img{
+            max-width: 390px;
+   
+        }
+        & .pera{
+            font-size: 14px;
+        }
+        & .sub-heading{
+            font-size: 26px;
+        }
+        & .aboutAccordin{
+            & .accordinItem{
+                &::before{
+               
+                }
+                & .accordinHeader{
+                    & .accordinButton{
+                        font-size: 16px;
+                        &::after{
+                     
+                        }
+                        &::before{
+                    
+                        }
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+               
+                }
+                .accordion-button:not(.collapsed)::after {
+    
+                }
+    
+                .accordion-item:first-of-type{
+                
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .aboutUsSection{
+        & .about-img{
+            max-width: 263px;
+    
+        }
+        & .pera{
+        font-size: 14px;
+        }
+        & .sub-heading{
+            font-size: 21px;
+        }
+        & .aboutAccordin{
+            & .accordinItem{
+                &::before{
+               
+                }
+                & .accordinHeader{
+                    & .accordinButton{
+                    font-size: 14px;
+                     
+                        &::after{
+                     
+                        }
+                        &::before{
+                    
+                        }
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+               
+                }
+                .accordion-button:not(.collapsed)::after {
+    
+                }
+    
+                .accordion-item:first-of-type{
+                
+                }
+            }
+        }
+    }
+}
