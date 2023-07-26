@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@include media-breakpoint(basic) {
+    .counslingCard {
+        & .innerfluid {
+            & .card {
+                position: relative;
+                box-shadow: 0px 0px 6px 0px rgba($black, 0.1);
+                &::before{
+                    transition: ease-in 0.3s;
+                    content: '';
+                    position: absolute;
+                    width: 3px;
+                    height: 100%;
+                    background-color: $theme2;
+                    left: 0;
+                    top: 0;
+                    z-index: 0;
+                }
+                & .card-body {
+                    position: relative;
+                    z-index: 1;
+                    & .cardtitle, & .cardContent{
+                        transition: all 0.3s ease-in-out;
+                    }
+                    & .cardtitle {
+                        font-size: 25px;
+                    }
+                    & .cardContent {
+                        font-size: 16px;
+                    }
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                    & .cardtitle, & .cardContent{
+                        color: $white;
+                    }
+                }
+                // &.comman{
+                //     &::before{
+                //         width: 100%;
+                //     }
+                //     & .cardtitle, & .cardContent{
+                //         color: $white;
+                //     }
+                // }
+            }
+        }
+    }
+    .directorSection {
+        & .innerfluid {
+            & .content {
+                font-size: 16px;
+            }
+            & .username {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .counslingCard {
+        & .innerfluid {
+            & .card {
+                &::before{
+                }
+                & .card-body {
+                    & .cardtitle, & .cardContent{
+                    }
+                    & .cardtitle {
+                        font-size: 22px;
+                    }
+                    & .cardContent {
+                        font-size: 14px;
+                    }
+                }
+                &:hover{
+                    &::before{
+                    }
+                    & .cardtitle, & .cardContent{
+                    }
+                }
+            }
+        }
+    }
+    .directorSection {
+        & .innerfluid {
+            & .content {
+                font-size: 14px;
+            }
+            & .username {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
