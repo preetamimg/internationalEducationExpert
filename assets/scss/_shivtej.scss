@@ -1626,3 +1626,443 @@
         }
     }
 }
+
+
+// <!-- our Mission section start -->
+.ourMission{
+    & .pera{
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+    }
+    & .ourPera{
+        font-size: 14px;
+        color: #000;
+        position: relative;
+        padding-left: 20px;
+        &::before{
+            position: absolute;
+            content: '';
+            background-color: $theme2;
+            width: 10px;
+            height: 10px;
+            top: 4px;
+            border-radius: 50%;
+            left: 0;
+            // transform: translateY(-50%);
+
+        }
+    }
+    & .ourImg{
+        height: 450px;
+       
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .ourMission{
+        & .pera{
+  
+        }
+        & .ourPera{
+     
+            &::before{
+ 
+    
+            }
+        }
+        & .ourImg{
+          
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .ourMission{
+        & .pera{
+  
+        }
+        & .ourPera{
+     
+            &::before{
+ 
+    
+            }
+        }
+        & .ourImg{
+          
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .ourMission{
+        & .pera{
+  
+        }
+        & .ourPera{
+     
+            &::before{
+ 
+    
+            }
+        }
+        & .ourImg{
+          
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .ourMission{
+        & .pera{
+        font-size: 14px;
+        }
+        & .ourPera{
+     
+            &::before{
+ 
+    
+            }
+        }
+        & .ourImg{
+            height: 350px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .ourMission{
+        & .pera{
+  
+        }
+        & .ourPera{
+     
+            &::before{
+ 
+    
+            }
+        }
+        & .ourImg{
+            height: 350px;
+        }
+    }
+}
+
+// ourexperience 
+
+.ourexperience{
+    & .experience-img{
+        max-width: 500px;
+    }
+    & .how-to-play-circle{
+        min-height: 500px;
+        margin: 50px 0px;
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../img/aboutus/howto_play_circle.svg);
+            background-size: auto 100%;
+            width: 100px;
+            height: 438px;
+            left: -10px;
+            top: 10px;
+            z-index: -22222;
+        }
+        & ul{
+            & li{
+                min-height: 100px;
+                & .media{
+                    & .media-left{
+                        & .media-icons{
+                            border: #ffe500 2px solid;
+                            width: 60px;
+                            height: 60px;
+                            padding: 10px;
+                            text-align: center;
+                            line-height: 52px;
+                            font-size: 20px;
+                            font-weight: 700;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                    & .media-right {
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #000;
+                    }
+                }
+                &:nth-child(1){
+                    margin-left: -15px;
+                }
+                &:nth-child(2){
+                    margin-left: 47px;
+                }
+                &:nth-child(3){
+                    margin-left: 56px;
+                }
+                &:nth-child(4){
+                    margin-left: 47px;
+                }
+                &:nth-child(5){
+                    margin-left: -15px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .ourexperience{
+        & .experience-img{
+         
+        }
+        & .how-to-play-circle{
+          
+            &::before{
+     
+            }
+            & ul{
+                & li{
+                   
+                    & .media{
+                        & .media-left{
+                            & .media-icons{
+                  
+                            }
+                        }
+                        & .media-right {
+                      
+                        }
+                    }
+                    &:nth-child(1){
+                      
+                    }
+                    &:nth-child(2){
+                      
+                    }
+                    &:nth-child(3){
+                       
+                    }
+                    &:nth-child(4){
+                       
+                    }
+                    &:nth-child(5){
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .ourexperience{
+        & .experience-img{
+            max-width: 450px;
+        }
+        & .how-to-play-circle{
+          
+            &::before{
+     
+            }
+            & ul{
+                & li{
+                   
+                    & .media{
+                        & .media-left{
+                            & .media-icons{
+                  
+                            }
+                        }
+                        & .media-right {
+                      
+                        }
+                    }
+                    &:nth-child(1){
+                      
+                    }
+                    &:nth-child(2){
+                      
+                    }
+                    &:nth-child(3){
+                       
+                    }
+                    &:nth-child(4){
+                       
+                    }
+                    &:nth-child(5){
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .ourexperience{
+        & .experience-img{
+         margin: auto;
+        }
+        & .how-to-play-circle{
+          min-height: auto;
+          margin: 20px 0;
+            &::before{
+     
+            }
+            & ul{
+                & li{
+                   
+                    & .media{
+                        & .media-left{
+                            & .media-icons{
+                  
+                            }
+                        }
+                        & .media-right {
+                      
+                        }
+                    }
+                    &:nth-child(1){
+                      
+                    }
+                    &:nth-child(2){
+                      
+                    }
+                    &:nth-child(3){
+                       
+                    }
+                    &:nth-child(4){
+                       
+                    }
+                    &:nth-child(5){
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .ourexperience{
+        & .experience-img{
+         max-width: auto;
+        }
+        & .how-to-play-circle{
+          
+            &::before{
+                display: none;
+            }
+            & ul{
+                & li{
+                    min-height: 70px;
+                    & .media{
+                        & .media-left{
+                            & .media-icons{
+                                width: 42px;
+                                height: 42px;
+                                padding: 9px;
+                            }
+                        }
+                        & .media-right {
+                            font-size: 17px;
+                        }
+                    }
+                    &:nth-child(1){
+                      margin: 0;
+                    }
+                    &:nth-child(2){
+                        margin: 0;
+                      
+                    }
+                    &:nth-child(3){
+                      margin: 0;
+                       
+                    }
+                    &:nth-child(4){
+                      margin: 0;
+                       
+                    }
+                    &:nth-child(5){
+                      margin: 0;
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .ourexperience{
+        & .experience-img{
+         
+        }
+        & .how-to-play-circle{
+          
+            &::before{
+     
+            }
+            & ul{
+                & li{
+                    min-height: 50px;
+                    & .media{
+                        & .media-left{
+                            & .media-icons{
+                                width: 37px;
+                                height: 37px;
+                            }
+                        }
+                        & .media-right {
+                      font-size: 15px;
+                        }
+                    }
+                    &:nth-child(1){
+                      
+                    }
+                    &:nth-child(2){
+                      
+                    }
+                    &:nth-child(3){
+                       
+                    }
+                    &:nth-child(4){
+                       
+                    }
+                    &:nth-child(5){
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
