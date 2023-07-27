@@ -90,6 +90,48 @@
             }
         }
     }
+    .blogPage {
+        & .newsSectionMain {
+            & nav {
+                & .pagination {
+                    & .page-item {
+                        & .page-link {
+                            margin: 0px;
+                            font-size: 14px;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        &.active{
+                            & .page-link{
+                                background-color: $theme2;
+                                border-color: $theme2;
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        & .innerFluid {
+            & .contactCard {
+                & .card-body {
+                    & .addHeading {
+                        font-size: 18px;
+                    }
+                    & .content {
+                        font-size: 16px;
+                        & span {
+                            min-width: 18px;
+                            min-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {}

@@ -138,7 +138,7 @@ $('.gallaryy').owlCarousel({
 });
 
 
-$('.country').owlCarousel({
+$('.countryCarousel').owlCarousel({
     loop: true,
     items: 16,
     margin: 10,
