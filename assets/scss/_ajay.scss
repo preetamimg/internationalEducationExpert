@@ -132,6 +132,90 @@
             }
         }
     }
+    
+// **********************Contact Us Page******************
+.contactsSection {
+    & .inner_section {
+        & .cardsection {
+        & .card {
+            border: 1px dotted $theme2 !important;
+            & .card-body {
+            & .chooseList {
+                height: 60px;
+                width: 60px;
+                z-index: 2;
+                box-shadow: 0px 0px 10px 0px rgba($black, 0.2) !important;
+                transition: all ease-in-out 0.3s;
+                & img {
+                transition: all ease-in-out 0.3s;
+                }
+                &:hover{
+                background-color: $theme2 !important;
+                & img {
+                    filter: brightness(100);
+                    transform: scale(1.1);
+                }
+                }
+            }
+            & .dashBorder {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-bottom: 2px dashed rgba($theme1, 0.1);
+                z-index: 1;
+            }
+            }
+            & .subBody {
+            & .card-text {
+                transition: all 0.3s;
+                font-size: 18px;
+            }
+            & .subText {
+                font-size: 16px;
+            }
+            }
+            &:hover {
+            & .subBody {
+                & .card-text {
+                color: $theme1 !important;
+                }
+            }
+            }
+        }
+        }
+    }
+}
+
+.contactMapSection {
+    & .inner_section {
+        & .contentForm {
+        backdrop-filter: blur(50px);;
+        }
+    }
+}
+.contentForm  {
+    & .form-control , .form-select{
+        background: transparent;
+        // border: 1px solid $theme2 !important;
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark;
+        &::placeholder{
+            color: $dark;
+        }
+        &:focus-visible{
+            border-color: $theme1;
+        }
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus {
+            -webkit-text-fill-color: $dark;
+            transition: background-color 5000s ease-in-out 0s;
+            -webkit-background-origin: unset;
+            caret-color: $dark;
+        }
+    }
+}
 }
 
 @include media-breakpoint-up(sm) {}
@@ -203,6 +287,40 @@
                 }
                 &:hover{
                 }
+            }
+        }
+    }
+    .contactsSection {
+        & .inner_section {
+            & .cardsection {
+            & .card {
+                & .card-body {
+                & .chooseList {
+                    & img {
+                    }
+                    &:hover{
+                    & img {
+                    }
+                    }
+                }
+                & .dashBorder {
+                }
+                }
+                & .subBody {
+                & .card-text {
+                    font-size: 16px;
+                }
+                & .subText {
+                    font-size: 14px;
+                }
+                }
+                &:hover {
+                & .subBody {
+                    & .card-text {
+                    }
+                }
+                }
+            }
             }
         }
     }
