@@ -1,621 +1,490 @@
-
-.cards{
-    & .card-style{
+.cards {
+    & .card-style {
         cursor: pointer;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
         position: relative;
         border: 1px solid #e3dcd9;
-        &.card-style2{
-            &::after{
+        &.card-style2 {
+            &::after {
                 position: absolute;
-                content: '';
+                content: "";
                 background-color: rgba(255, 171, 51, 0.18);
                 left: 0;
                 bottom: 0;
                 transition: all 0.3s ease-in-out;
                 height: 0;
                 opacity: 1;
-    
             }
         }
-        &.card-style3{
-            &::after{
+        &.card-style3 {
+            &::after {
                 position: absolute;
-                content: '';
+                content: "";
                 background-color: rgba(255, 160, 194, 0.18);
                 left: 0;
                 bottom: 0;
                 transition: all 0.3s ease-in-out;
                 height: 0;
                 opacity: 1;
-    
             }
         }
-        &.card-style4{
-            &::after{
+        &.card-style4 {
+            &::after {
                 position: absolute;
-                content: '';
+                content: "";
                 background-color: rgba(108, 55, 221, 0.1);
                 left: 0;
                 bottom: 0;
                 transition: all 0.3s ease-in-out;
                 height: 0;
                 opacity: 1;
-    
             }
         }
-        &.card-style5{
-            &::after{
+        &.card-style5 {
+            &::after {
                 position: absolute;
-                content: '';
+                content: "";
                 background-color: rgba(68, 255, 0, 0.18);
                 left: 0;
                 bottom: 0;
                 transition: all 0.3s ease-in-out;
                 height: 0;
                 opacity: 1;
-    
             }
         }
-        &::after{
+        &::after {
             position: absolute;
-            content: '';
+            content: "";
             background-color: rgba(56, 232, 255, 0.1);
             left: 0;
             bottom: 0;
             transition: all 0.3s ease-in-out;
             height: 0;
             opacity: 1;
-
         }
-      
-        &:hover{
-            &::after{
+
+        &:hover {
+            &::after {
                 opacity: 1;
                 width: 100%;
                 height: 100%;
-          
             }
             & .card-content {
-                & .card-icon{
-                    & i{
+                & .card-icon {
+                    & i {
                         z-index: 333;
                     }
-                  
                 }
-                & .cardheading{
+                & .cardheading {
                     opacity: 0;
-       
                 }
-                & .pera{
+                & .pera {
                     opacity: 0;
-
-                    
                 }
-                & .pera2{
+                & .pera2 {
                     opacity: 1;
                     visibility: visible;
                     top: 33%;
-              
                 }
-                & .readMore{
+                & .readMore {
                     opacity: 111111;
-              
                 }
-
-          
-        }
-          
+            }
         }
         & .card-content {
-                & .icon{
-                        padding: 18px;
-                        background-color: rgba(100, 219, 226, 0.18);
-                        height: 75px;
-                        width: 75px;
-                        color: rgb(10, 250, 238);
-                        transition: all 0.3s ease-in-out;
-
-                 
-                  
+            & .icon {
+                padding: 18px;
+                background-color: rgba(100, 219, 226, 0.18);
+                height: 75px;
+                width: 75px;
+                color: rgb(10, 250, 238);
+                transition: all 0.3s ease-in-out;
+            }
+            & .cardheading {
+                font-size: 20px;
+                font-weight: 700;
+                transition: all 0.3s ease-in-out;
+            }
+            & .pera {
+                font-size: 16px;
+                color: #000;
+                font-weight: 400;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: all 0.3s ease-in-out;
+            }
+            & .pera2 {
+                font-size: 16px;
+                color: #000;
+                font-weight: 400;
+                line-height: 20px;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                padding: 15px 10px 20px 10px;
+                transition: all 0.3s ease-in-out;
+                //  transition: all 0s ease-out;
+                //  bottom: 0;
+            }
+            & .readMore {
+                font-size: 15px;
+                color: #000;
+                font-weight: 400;
+                transition: all 0.3s ease-in-out;
+                & span {
+                    width: 14px;
+                    height: 14px;
                 }
-                & .cardheading{
-                    font-size: 20px;
-                    font-weight: 700;
-                    transition: all 0.3s ease-in-out;
-                }
-                & .pera{
-                    font-size: 16px;
-                    color: #000;
-                    font-weight: 400;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    transition: all 0.3s ease-in-out;
-                    
-                }
-                & .pera2{
-                    font-size: 16px;
-                    color: #000;
-                    font-weight: 400;
-                    line-height: 20px;
-                    opacity: 0;
-                    visibility: hidden;
-                    position: absolute;
-                    padding: 15px 10px 20px 10px;
-                    transition: all 0.3s ease-in-out;
-                    //  transition: all 0s ease-out;
-                    //  bottom: 0;
-                }
-                & .readMore{
-                    font-size: 15px;
-                    color: #000;
-                    font-weight: 400;
-                    transition: all 0.3s ease-in-out;
-                    & span{
-                        width: 14px;
-                        height: 14px;
-                    }
-                }
-
-          
+            }
         }
-
     }
 }
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .cards{
-        & .card-style{
-            &.card-style2{
-                &::after{
-        
+    .cards {
+        & .card-style {
+            &.card-style2 {
+                &::after {
                 }
             }
-            &.card-style3{
-                &::after{
-        
+            &.card-style3 {
+                &::after {
                 }
             }
-            &.card-style4{
-                &::after{
-        
+            &.card-style4 {
+                &::after {
                 }
             }
-            &.card-style5{
-                &::after{
-        
+            &.card-style5 {
+                &::after {
                 }
             }
-            &::after{
-    
+            &::after {
             }
-          
-            &:hover{
-                &::after{
-              
+
+            &:hover {
+                &::after {
                 }
                 & .card-content {
-                    & .card-icon{
-                        & i{
-                        
+                    & .card-icon {
+                        & i {
                         }
-                      
                     }
-                    & .cardheading{
-                   
-           
+                    & .cardheading {
                     }
-                    & .pera{
-                        
+                    & .pera {
                     }
-                    & .pera2{
-                  
+                    & .pera2 {
                     }
-                    & .readMore{
-                  
+                    & .readMore {
                     }
-    
-              
-            }
-              
+                }
             }
             & .card-content {
-                    & .icon{
-    
-                     
-                      
+                & .icon {
+                }
+                & .cardheading {
+                }
+                & .pera {
+                }
+                & .pera2 {
+                }
+                & .readMore {
+                    & span {
                     }
-                    & .cardheading{
-                    }
-                    & .pera{
-                        
-                    }
-                    & .pera2{
-                    }
-                    & .readMore{
-                        & span{
-                       
-                        }
-                    }
-    
-              
+                }
             }
-    
         }
     }
 }
 
 @include media-breakpoint-down(xl) {
-    .cards{
-        & .card-style{
-            &.card-style2{
-                &::after{
-        
+    .cards {
+        & .card-style {
+            &.card-style2 {
+                &::after {
                 }
             }
-            &.card-style3{
-                &::after{
-        
+            &.card-style3 {
+                &::after {
                 }
             }
-            &.card-style4{
-                &::after{
-        
+            &.card-style4 {
+                &::after {
                 }
             }
-            &.card-style5{
-                &::after{
-        
+            &.card-style5 {
+                &::after {
                 }
             }
-            &::after{
-    
+            &::after {
             }
-          
-            &:hover{
-                &::after{
-              
+
+            &:hover {
+                &::after {
                 }
                 & .card-content {
-                    & .card-icon{
-                        & i{
-                        
+                    & .card-icon {
+                        & i {
                         }
-                      
                     }
-                    & .cardheading{
-                   
-           
+                    & .cardheading {
                     }
-                    & .pera{
-                        
+                    & .pera {
                     }
-                    & .pera2{
-                  
+                    & .pera2 {
                     }
-                    & .readMore{
-                  
+                    & .readMore {
                     }
-    
-              
-            }
-              
+                }
             }
             & .card-content {
-                    & .icon{
-                        height: 60px;
-                        width: 60px;
-                      
+                & .icon {
+                    height: 60px;
+                    width: 60px;
+                }
+                & .cardheading {
+                    font-size: 18px;
+                }
+                & .pera {
+                    font-size: 14px;
+                }
+                & .pera2 {
+                    font-size: 14px;
+                }
+                & .readMore {
+                    font-size: 14px;
+                    & span {
                     }
-                    & .cardheading{
-                        font-size: 18px;
-                    }
-                    & .pera{
-                        font-size: 14px;
-                    }
-                    & .pera2{
-                        font-size: 14px;
-                    }
-                    & .readMore{
-                        font-size: 14px;
-                        & span{
-                       
-                        }
-                    }
-    
-              
+                }
             }
-    
         }
     }
 }
 
 @include media-breakpoint-down(lg) {
-    .cards{
-        & .card-style{
-            &.card-style2{
-                &::after{
-        
+    .cards {
+        & .card-style {
+            &.card-style2 {
+                &::after {
                 }
             }
-            &.card-style3{
-                &::after{
-        
+            &.card-style3 {
+                &::after {
                 }
             }
-            &.card-style4{
-                &::after{
-        
+            &.card-style4 {
+                &::after {
                 }
             }
-            &.card-style5{
-                &::after{
-        
+            &.card-style5 {
+                &::after {
                 }
             }
-            &::after{
-    
+            &::after {
             }
-          
-            &:hover{
-                &::after{
-              
+
+            &:hover {
+                &::after {
                 }
                 & .card-content {
-                    & .card-icon{
-                        & i{
-                        
+                    & .card-icon {
+                        & i {
                         }
-                      
                     }
-                    & .cardheading{
-                   
-           
+                    & .cardheading {
                     }
-                    & .pera{
-                        
+                    & .pera {
                     }
-                    & .pera2{
-                  
+                    & .pera2 {
                     }
-                    & .readMore{
-                  
+                    & .readMore {
                     }
-    
-              
-            }
-              
+                }
             }
             & .card-content {
-                    & .icon{
-    
-                     
-                      
+                & .icon {
+                }
+                & .cardheading {
+                }
+                & .pera {
+                }
+                & .pera2 {
+                }
+                & .readMore {
+                    & span {
                     }
-                    & .cardheading{
-                    }
-                    & .pera{
-                        
-                    }
-                    & .pera2{
-                    }
-                    & .readMore{
-                        & span{
-                       
-                        }
-                    }
-    
-              
+                }
             }
-    
         }
     }
 }
 
 @include media-breakpoint-down(md) {
-    .cards{
-        & .card-style{
-            &.card-style2{
-                &::after{
+    .cards {
+        & .card-style {
+            &.card-style2 {
+                &::after {
                     // display: none;
-        
                 }
             }
-            &.card-style3{
-                &::after{
+            &.card-style3 {
+                &::after {
                     // display: none;
-        
                 }
             }
-            &.card-style4{
-                &::after{
+            &.card-style4 {
+                &::after {
                     // display: none;
-        
                 }
             }
-            &.card-style5{
-                &::after{
+            &.card-style5 {
+                &::after {
                     // display: none;
-        
                 }
             }
-            &::after{
+            &::after {
                 display: none;
-                
             }
-          
-            &:hover{
-                &::after{
+
+            &:hover {
+                &::after {
                     display: none;
-              
                 }
                 & .card-content {
-                    & .card-icon{
-                        & i{
-                        
+                    & .card-icon {
+                        & i {
                         }
-                      
                     }
-                    & .cardheading{
-                   opacity: 1;
-           
-                    }
-                    & .pera{
-                   opacity: 1;
-                        
-                    }
-                    & .pera2{
-                  display: none;
-                    }
-                    & .readMore{
+                    & .cardheading {
                         opacity: 1;
-                  
                     }
-    
-              
-            }
-              
+                    & .pera {
+                        opacity: 1;
+                    }
+                    & .pera2 {
+                        display: none;
+                    }
+                    & .readMore {
+                        opacity: 1;
+                    }
+                }
             }
             & .card-content {
-                    & .icon{
-    
-                     
-                      
+                & .icon {
+                }
+                & .cardheading {
+                }
+                & .pera {
+                    // text-overflow: unset;
+                    // overflow: unset;
+                    display: block;
+                }
+                & .pera2 {
+                    display: none;
+                }
+                & .readMore {
+                    & span {
                     }
-                    & .cardheading{
-                    }
-                    & .pera{
-                        // text-overflow: unset;
-                        // overflow: unset;
-                        display: block;
-                    }
-                    & .pera2{
-                     display: none;
-
-                    }
-                    & .readMore{
-                        & span{
-                       
-                        }
-                    }
-    
-              
+                }
             }
-    
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
-    .cards{
-        & .card-style{
-            &.card-style2{
-                &::after{
-        
+    .cards {
+        & .card-style {
+            &.card-style2 {
+                &::after {
                 }
             }
-            &.card-style3{
-                &::after{
-        
+            &.card-style3 {
+                &::after {
                 }
             }
-            &.card-style4{
-                &::after{
-        
+            &.card-style4 {
+                &::after {
                 }
             }
-            &.card-style5{
-                &::after{
-        
+            &.card-style5 {
+                &::after {
                 }
             }
-            &::after{
-    
+            &::after {
             }
-          
-            &:hover{
-                &::after{
-              
+
+            &:hover {
+                &::after {
                 }
                 & .card-content {
-                    & .card-icon{
-                        & i{
-                        
+                    & .card-icon {
+                        & i {
                         }
-                      
                     }
-                    & .cardheading{
-                   
-           
+                    & .cardheading {
                     }
-                    & .pera{
-                        
+                    & .pera {
                     }
-                    & .pera2{
-                  
+                    & .pera2 {
                     }
-                    & .readMore{
-                  
+                    & .readMore {
                     }
-    
-              
-            }
-              
+                }
             }
             & .card-content {
-                    & .icon{
-                        width: 50px;
-                        height: 50px;
-                        padding: 10px;
-                     
-                      
+                & .icon {
+                    width: 50px;
+                    height: 50px;
+                    padding: 10px;
+                }
+                & .cardheading {
+                    font-size: 17px;
+                }
+                & .pera {
+                    font-size: 14px;
+                }
+                & .pera2 {
+                }
+                & .readMore {
+                    font-size: 14px;
+                    & span {
+                        width: 14px;
+                        height: 14px;
                     }
-                    & .cardheading{
-                        font-size: 17px;
-                    }
-                    & .pera{
-                        font-size: 14px;
-                    }
-                    & .pera2{
-                    }
-                    & .readMore{
-                        font-size: 14px;
-                        & span{
-                            width: 14px;
-                            height: 14px;
-                        }
-                    }
-    
-              
+                }
             }
-    
         }
     }
 }
 
-// video section start 
+// video section start
 
-.videoSection{
-    & .sectionBg{
+.videoSection {
+    & .sectionBg {
         position: relative;
-        &::before{
+        &::before {
             top: 0;
             left: 0;
             width: 85%;
@@ -628,33 +497,30 @@
             left: auto;
             // background-color: #fdf5ff;
             background-color: rgba($theme2, 0.1);
-        
-
         }
-        & .videoPlay{
+        & .videoPlay {
             position: relative;
-            & .glightbox1{
+            & .glightbox1 {
                 height: 350px;
                 width: 500px;
                 position: relative;
-                &::before{
+                &::before {
                     position: absolute;
-                    content: '';
+                    content: "";
                     width: 50px;
                     height: 50px;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     z-index: 1;
                     animation: ripple 1s linear infinite;
                     border-radius: 90%;
                     padding: 14px;
                     background: red;
-
                 }
-                &::after{
+                &::after {
                     position: absolute;
-                    content: '';
+                    content: "";
                     background-image: url(../image/videoSection/videoicon.png);
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -663,25 +529,40 @@
                     height: 22px;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     z-index: 2;
                 }
                 @keyframes ripple {
                     0% {
-                        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 35px rgba(255, 255, 255, 0.2);
-                        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 35px rgba(255, 255, 255, 0.2);
+                        -webkit-box-shadow:
+                            0 0 0 0 rgba(255, 255, 255, 0.2),
+                            0 0 0 5px rgba(255, 255, 255, 0.2),
+                            0 0 0 20px rgba(255, 255, 255, 0.2),
+                            0 0 0 35px rgba(255, 255, 255, 0.2);
+                        box-shadow:
+                            0 0 0 0 rgba(255, 255, 255, 0.2),
+                            0 0 0 5px rgba(255, 255, 255, 0.2),
+                            0 0 0 20px rgba(255, 255, 255, 0.2),
+                            0 0 0 35px rgba(255, 255, 255, 0.2);
                     }
-                
+
                     100% {
-                        -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 35px rgba(255, 255, 255, 0.2), 0 0 0 45px rgba(255, 255, 255, 0);
-                        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 35px rgba(255, 255, 255, 0.2), 0 0 0 45px rgba(255, 255, 255, 0);
+                        -webkit-box-shadow:
+                            0 0 0 5px rgba(255, 255, 255, 0.2),
+                            0 0 0 20px rgba(255, 255, 255, 0.2),
+                            0 0 0 35px rgba(255, 255, 255, 0.2),
+                            0 0 0 45px rgba(255, 255, 255, 0);
+                        box-shadow:
+                            0 0 0 5px rgba(255, 255, 255, 0.2),
+                            0 0 0 20px rgba(255, 255, 255, 0.2),
+                            0 0 0 35px rgba(255, 255, 255, 0.2),
+                            0 0 0 45px rgba(255, 255, 255, 0);
                     }
-                
                 }
             }
         }
-        & .videoContent{
-            & .videoHeading{
+        & .videoContent {
+            & .videoHeading {
                 font-size: 40px;
                 font-weight: bold;
                 line-height: 1.2em;
@@ -690,40 +571,38 @@
     }
 }
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .videoSection{
-        & .sectionBg{
-         
-            &::before{
-            
-    
+    .videoSection {
+        & .sectionBg {
+            &::before {
             }
-            & .videoPlay{
-                & .glightbox1{
-                    &::before{
-    
+            & .videoPlay {
+                & .glightbox1 {
+                    &::before {
                     }
-                    &::after{
+                    &::after {
                     }
-            
                 }
             }
-            & .videoContent{
-                & .videoHeading{
-                 
+            & .videoContent {
+                & .videoHeading {
                 }
             }
         }
@@ -731,28 +610,22 @@
 }
 
 @include media-breakpoint-down(xl) {
-    .videoSection{
-        & .sectionBg{
-         
-            &::before{
-          
-    
+    .videoSection {
+        & .sectionBg {
+            &::before {
             }
-            & .videoPlay{
-                & .glightbox1{
+            & .videoPlay {
+                & .glightbox1 {
                     width: 430px;
-                    &::before{
-    
+                    &::before {
                     }
-                    &::after{
+                    &::after {
                     }
-            
                 }
             }
-            & .videoContent{
-                & .videoHeading{
+            & .videoContent {
+                & .videoHeading {
                     font-size: 30px;
-                 
                 }
             }
         }
@@ -760,28 +633,24 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .videoSection{
-        & .sectionBg{
-         
-            &::before{
-            width: 100%;
-    
+    .videoSection {
+        & .sectionBg {
+            &::before {
+                width: 100%;
             }
-            & .videoPlay{
-                & .glightbox1{
+            & .videoPlay {
+                & .glightbox1 {
                     width: 100%;
                     height: 400px;
 
-                    &::before{
-    
+                    &::before {
                     }
-                    &::after{
+                    &::after {
                     }
-            
                 }
             }
-            & .videoContent{
-                & .videoHeading{
+            & .videoContent {
+                & .videoHeading {
                 }
             }
         }
@@ -789,29 +658,24 @@
 }
 
 @include media-breakpoint-down(md) {
-    .videoSection{
-        & .sectionBg{
-         
-            &::before{
-            
-    
+    .videoSection {
+        & .sectionBg {
+            &::before {
             }
-            & .videoPlay{
-                & .glightbox1{
+            & .videoPlay {
+                & .glightbox1 {
                     height: 350px;
-                    &::before{
-    
+                    &::before {
                     }
-                    &::after{
+                    &::after {
                     }
-            
                 }
             }
-            & .videoContent{
-                & .videoHeading{
+            & .videoContent {
+                & .videoHeading {
                     // display: none;
-                 font-size: 25px;
-                 line-height: 36px;
+                    font-size: 25px;
+                    line-height: 36px;
                 }
             }
         }
@@ -819,26 +683,21 @@
 }
 
 @include media-breakpoint-down(sm) {
-    .videoSection{
-        & .sectionBg{
-         
-            &::before{
-            
-    
+    .videoSection {
+        & .sectionBg {
+            &::before {
             }
-            & .videoPlay{
-                & .glightbox1{
+            & .videoPlay {
+                & .glightbox1 {
                     height: 297px;
-                    &::before{
-    
+                    &::before {
                     }
-                    &::after{
+                    &::after {
                     }
-            
                 }
             }
-            & .videoContent{
-                & .videoHeading{
+            & .videoContent {
+                & .videoHeading {
                     font-size: 22px;
                     line-height: 30px;
                 }
@@ -847,34 +706,31 @@
     }
 }
 
-
 // heroSectionCard
-.heroSectionCard{
-    & .heroCard{
-        & .heroCard2{
-            
+.heroSectionCard {
+    & .heroCard {
+        & .heroCard2 {
         }
         transition: all 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            & .card-body{
-                & .icon{
+            & .card-body {
+                & .icon {
                     transform: scale(1.1);
                 }
             }
         }
-        & .card-body{
-            & .icon{
+        & .card-body {
+            & .icon {
                 width: 40px;
                 height: 40px;
                 transition: all 0.5s ease-in-out;
-
             }
-            & .cardHeading{
+            & .cardHeading {
                 font-size: 20px;
                 font-weight: 700;
             }
-            & .pera{
+            & .pera {
                 font-size: 15px;
                 color: #000;
                 font-weight: 400;
@@ -884,17 +740,17 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            & .readMore{
+            & .readMore {
                 font-size: 15px;
                 color: #000;
                 transition: all 0.4s ease-in-out;
-                & .readMoreIcon{
+                & .readMoreIcon {
                     width: 14px;
                     height: 14px;
                     transition: all 0.4s ease-in-out;
                 }
-                &:hover{
-                    & .readMoreIcon{
+                &:hover {
+                    & .readMoreIcon {
                         transform: translateX(10px);
                     }
                 }
@@ -903,56 +759,48 @@
     }
 }
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .heroSectionCard{
-        & .heroCard{
-            &:hover{
-  
-                & .card-body{
-                    & .icon{
-                     
+    .heroSectionCard {
+        & .heroCard {
+            &:hover {
+                & .card-body {
+                    & .icon {
                     }
-                    & .readMore{
-                        &::before{
-                         
+                    & .readMore {
+                        &::before {
                         }
                     }
-    
                 }
             }
-            & .card-body{
-                & .icon{
-               
-    
+            & .card-body {
+                & .icon {
                 }
-                & .cardHeading{
-                  
+                & .cardHeading {
                 }
-                & .pera{
-        
+                & .pera {
                 }
-                & .readMore{
-         
-                    &::before{
-
-                      
+                & .readMore {
+                    &::before {
                     }
-                    &:hover{
-                        &::before{
-                   
+                    &:hover {
+                        &::before {
                         }
                     }
                 }
@@ -962,42 +810,30 @@
 }
 
 @include media-breakpoint-down(xl) {
-    .heroSectionCard{
-        & .heroCard{
-            &:hover{
-  
-                & .card-body{
-                    & .icon{
-                     
+    .heroSectionCard {
+        & .heroCard {
+            &:hover {
+                & .card-body {
+                    & .icon {
                     }
-                    & .readMore{
-                        &::before{
-                         
+                    & .readMore {
+                        &::before {
                         }
                     }
-    
                 }
             }
-            & .card-body{
-                & .icon{
-               
-    
+            & .card-body {
+                & .icon {
                 }
-                & .cardHeading{
-                  
+                & .cardHeading {
                 }
-                & .pera{
-        
+                & .pera {
                 }
-                & .readMore{
-         
-                    &::before{
-
-                      
+                & .readMore {
+                    &::before {
                     }
-                    &:hover{
-                        &::before{
-                   
+                    &:hover {
+                        &::before {
                         }
                     }
                 }
@@ -1007,39 +843,29 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .heroSectionCard{
-        & .heroCard{
+    .heroSectionCard {
+        & .heroCard {
             border: none !important;
-            &:hover{
-  
-                & .card-body{
-                    & .icon{
-                     
+            &:hover {
+                & .card-body {
+                    & .icon {
                     }
-                    & .readMore{
-                        & .readMoreIcon{
-                      
+                    & .readMore {
+                        & .readMoreIcon {
                         }
                     }
-    
                 }
             }
-            & .card-body{
-                & .icon{
-               
-    
+            & .card-body {
+                & .icon {
                 }
-                & .cardHeading{
+                & .cardHeading {
                     font-size: 18px;
                 }
-                & .pera{
-        
+                & .pera {
                 }
-                & .readMore{
-         
-                  
-                    & .readMoreIcon{
-                      
+                & .readMore {
+                    & .readMoreIcon {
                     }
                 }
             }
@@ -1048,34 +874,25 @@
 }
 
 @include media-breakpoint-down(md) {
-    .heroSectionCard{
-        & .heroCard{
-            &:hover{
-  
-                & .card-body{
-                    & .icon{
-                     
+    .heroSectionCard {
+        & .heroCard {
+            &:hover {
+                & .card-body {
+                    & .icon {
                     }
-                    & .readMore{
-                  
+                    & .readMore {
                     }
-    
                 }
             }
-            & .card-body{
-                & .icon{
-               
-    
+            & .card-body {
+                & .icon {
                 }
-                & .cardHeading{
-                  
+                & .cardHeading {
                 }
-                & .pera{
-        
+                & .pera {
                 }
-                & .readMore{
-                    & .readMoreIcon{
-                      
+                & .readMore {
+                    & .readMoreIcon {
                     }
                 }
             }
@@ -1084,35 +901,27 @@
 }
 
 @include media-breakpoint-down(sm) {
-    .heroSectionCard{
-        & .heroCard{
-            &:hover{
-  
-                & .card-body{
-                    & .icon{
-                     
+    .heroSectionCard {
+        & .heroCard {
+            &:hover {
+                & .card-body {
+                    & .icon {
                     }
-                
-    
                 }
             }
-            & .card-body{
-                & .icon{
-               
-    
+            & .card-body {
+                & .icon {
                 }
-                & .cardHeading{
-                  font-size: 16px;
+                & .cardHeading {
+                    font-size: 16px;
                 }
-                & .pera{
+                & .pera {
                     font-size: 14px;
-        
                 }
-                & .readMore{
+                & .readMore {
                     font-size: 14px;
-         
-                    & .readMoreIcon{
-                      
+
+                    & .readMoreIcon {
                     }
                 }
             }
@@ -1120,31 +929,31 @@
     }
 }
 
-
 // about us hero start
 
-.aboutUs{
+.aboutUs {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/aboutus/aboutusbackground.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/aboutus/aboutusbackground.jpg");
     // background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(var(--topBgImg));
 
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    & .title{
+    & .title {
         font-size: 60px;
         line-height: 65px;
         font-weight: 600;
         color: $white;
     }
-    & .aboutnav{
-        & ol{
-            & .navItem{
-                & a{
+    & .aboutnav {
+        & ol {
+            & .navItem {
+                & a {
                     font-size: 20px;
                     font-weight: 600;
-                    
+
                     color: $white;
                     text-decoration: none;
                 }
@@ -1152,16 +961,16 @@
                 font-weight: 600;
                 color: $white;
                 position: relative;
-                &::before{
-                    color:$white;
+                &::before {
+                    color: $white;
                     // display: none;
                 }
-              
+
                 &.active {
                     color: $theme1;
                     &::after {
                         transform: scaleX(1);
-                        transform-origin:left;
+                        transform-origin: left;
                     }
                 }
             }
@@ -1169,41 +978,39 @@
     }
 }
 
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(lg) {}
-
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .aboutUs{
-   
-        & .title{
-         
+    .aboutUs {
+        & .title {
         }
-        & .aboutnav{
-            & ol{
-                & .navItem{
-                    & a{
-         
+        & .aboutnav {
+            & ol {
+                & .navItem {
+                    & a {
                     }
-               
-                    &::before{
-                       
+
+                    &::before {
                     }
-                  
+
                     &.active {
                         color: $theme1;
                         &::after {
-                         
                         }
                     }
                 }
@@ -1213,26 +1020,21 @@
 }
 
 @include media-breakpoint-down(xl) {
-    .aboutUs{
-   
-        & .title{
-         
+    .aboutUs {
+        & .title {
         }
-        & .aboutnav{
-            & ol{
-                & .navItem{
-                    & a{
-         
+        & .aboutnav {
+            & ol {
+                & .navItem {
+                    & a {
                     }
-               
-                    &::before{
-                       
+
+                    &::before {
                     }
-                  
+
                     &.active {
                         color: $theme1;
                         &::after {
-                         
                         }
                     }
                 }
@@ -1242,27 +1044,23 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .aboutUs{
-   
-        & .title{
+    .aboutUs {
+        & .title {
             font-size: 50px;
             line-height: 55px;
         }
-        & .aboutnav{
-            & ol{
-                & .navItem{
-                    & a{
-         
+        & .aboutnav {
+            & ol {
+                & .navItem {
+                    & a {
                     }
-               
-                    &::before{
-                       
+
+                    &::before {
                     }
-                  
+
                     &.active {
                         color: $theme1;
                         &::after {
-                         
                         }
                     }
                 }
@@ -1272,27 +1070,24 @@
 }
 
 @include media-breakpoint-down(md) {
-    .aboutUs{
+    .aboutUs {
         height: 40vh;
-        & .title{
-         
+        & .title {
         }
-        & .aboutnav{
-            & ol{
-                & .navItem{
+        & .aboutnav {
+            & ol {
+                & .navItem {
                     font-size: 16px;
-                    & a{
+                    & a {
                         font-size: 16px;
                     }
-               
-                    &::before{
-                       
+
+                    &::before {
                     }
-                  
+
                     &.active {
                         color: $theme1;
                         &::after {
-                         
                         }
                     }
                 }
@@ -1302,28 +1097,26 @@
 }
 
 @include media-breakpoint-down(sm) {
-    .aboutUs{
+    .aboutUs {
         height: 30vh;
-        & .title{
+        & .title {
             font-size: 40px;
             line-height: 55px;
         }
-        & .aboutnav{
-            & ol{
-                & .navItem{
+        & .aboutnav {
+            & ol {
+                & .navItem {
                     font-size: 14px;
-                    & a{
+                    & a {
                         font-size: 14px;
                     }
-               
-                    &::before{
-                       
+
+                    &::before {
                     }
-                  
+
                     &.active {
                         color: $theme1;
                         &::after {
-                         
                         }
                     }
                 }
@@ -1332,40 +1125,38 @@
     }
 }
 
-
-// about section start 
-.aboutUsSection{
-    & .about-img{
+// about section start
+.aboutUsSection {
+    & .about-img {
         max-width: 500px;
         // height: 450px;
         transition: all 0.7s ease-in-out;
-     
     }
-    & .pera{
+    & .pera {
         font-size: 16px;
         font-weight: 400;
         color: #000;
     }
-    & .aboutAccordin{
-        & .accordinItem{
-            &::before{
+    & .aboutAccordin {
+        & .accordinItem {
+            &::before {
                 position: absolute;
-                content: '';
+                content: "";
                 width: 5px;
                 height: 100%;
                 top: 0;
                 left: 0;
                 background-color: #ffe500;
             }
-            & .accordinHeader{
-                & .accordinButton{
+            & .accordinHeader {
+                & .accordinButton {
                     background: #ebebee;
                     border-radius: 0% !important;
                     font-size: 17px;
                     color: #364f6b;
                     font-weight: 600;
                     position: relative;
-                    &::after{
+                    &::after {
                         background-image: url(../img/aboutus/accordinarro.svg) !important;
                         object-fit: cover;
                         background-position: center;
@@ -1373,9 +1164,9 @@
                         height: 10px;
                         transition: all 0.3s ease-in-out;
                     }
-                    &::before{
+                    &::before {
                         position: absolute;
-                        content: '';
+                        content: "";
                         width: 5px;
                         height: 100%;
                         top: 0;
@@ -1385,7 +1176,7 @@
                 }
             }
             .accordion-button:not(.collapsed) {
-                background-color: #ebebee;;
+                background-color: #ebebee;
                 color: black;
             }
             .accordion-button:not(.collapsed)::after {
@@ -1398,62 +1189,54 @@
                 background-size: cover;
             }
 
-            .accordion-item:first-of-type{
+            .accordion-item:first-of-type {
                 border-radius: 0%;
             }
         }
     }
 }
 
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(md) {}
-
-@include media-breakpoint-up(lg) {}
-
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .aboutUsSection{
-        & .about-img{
-      
-         
+    .aboutUsSection {
+        & .about-img {
         }
-        & .pera{
-     
+        & .pera {
         }
-        & .aboutAccordin{
-            & .accordinItem{
-                &::before{
-               
+        & .aboutAccordin {
+            & .accordinItem {
+                &::before {
                 }
-                & .accordinHeader{
-                    & .accordinButton{
-                     
-                        &::after{
-                     
+                & .accordinHeader {
+                    & .accordinButton {
+                        &::after {
                         }
-                        &::before{
-                    
+                        &::before {
                         }
                     }
                 }
                 .accordion-button:not(.collapsed) {
-               
                 }
                 .accordion-button:not(.collapsed)::after {
-    
                 }
-    
-                .accordion-item:first-of-type{
-                
+
+                .accordion-item:first-of-type {
                 }
             }
         }
@@ -1461,41 +1244,32 @@
 }
 
 @include media-breakpoint-down(xl) {
-    .aboutUsSection{
-        & .about-img{
-      
+    .aboutUsSection {
+        & .about-img {
         }
-        & .sub-heading{
+        & .sub-heading {
             font-size: 33px;
         }
-        & .pera{
-     
+        & .pera {
         }
-        & .aboutAccordin{
-            & .accordinItem{
-                &::before{
-               
+        & .aboutAccordin {
+            & .accordinItem {
+                &::before {
                 }
-                & .accordinHeader{
-                    & .accordinButton{
-                     
-                        &::after{
-                     
+                & .accordinHeader {
+                    & .accordinButton {
+                        &::after {
                         }
-                        &::before{
-                    
+                        &::before {
                         }
                     }
                 }
                 .accordion-button:not(.collapsed) {
-               
                 }
                 .accordion-button:not(.collapsed)::after {
-    
                 }
-    
-                .accordion-item:first-of-type{
-                
+
+                .accordion-item:first-of-type {
                 }
             }
         }
@@ -1503,39 +1277,29 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .aboutUsSection{
-        & .about-img{
-      
-        
+    .aboutUsSection {
+        & .about-img {
         }
-        & .pera{
-     
+        & .pera {
         }
-        & .aboutAccordin{
-            & .accordinItem{
-                &::before{
-               
+        & .aboutAccordin {
+            & .accordinItem {
+                &::before {
                 }
-                & .accordinHeader{
-                    & .accordinButton{
-                     
-                        &::after{
-                     
+                & .accordinHeader {
+                    & .accordinButton {
+                        &::after {
                         }
-                        &::before{
-                    
+                        &::before {
                         }
                     }
                 }
                 .accordion-button:not(.collapsed) {
-               
                 }
                 .accordion-button:not(.collapsed)::after {
-    
                 }
-    
-                .accordion-item:first-of-type{
-                
+
+                .accordion-item:first-of-type {
                 }
             }
         }
@@ -1543,42 +1307,35 @@
 }
 
 @include media-breakpoint-down(md) {
-    .aboutUsSection{
-        & .about-img{
+    .aboutUsSection {
+        & .about-img {
             max-width: 390px;
-   
         }
-        & .pera{
+        & .pera {
             font-size: 14px;
         }
-        & .sub-heading{
+        & .sub-heading {
             font-size: 26px;
         }
-        & .aboutAccordin{
-            & .accordinItem{
-                &::before{
-               
+        & .aboutAccordin {
+            & .accordinItem {
+                &::before {
                 }
-                & .accordinHeader{
-                    & .accordinButton{
+                & .accordinHeader {
+                    & .accordinButton {
                         font-size: 16px;
-                        &::after{
-                     
+                        &::after {
                         }
-                        &::before{
-                    
+                        &::before {
                         }
                     }
                 }
                 .accordion-button:not(.collapsed) {
-               
                 }
                 .accordion-button:not(.collapsed)::after {
-    
                 }
-    
-                .accordion-item:first-of-type{
-                
+
+                .accordion-item:first-of-type {
                 }
             }
         }
@@ -1586,65 +1343,57 @@
 }
 
 @include media-breakpoint-down(sm) {
-    .aboutUsSection{
-        & .about-img{
+    .aboutUsSection {
+        & .about-img {
             max-width: 263px;
-    
         }
-        & .pera{
-        font-size: 14px;
+        & .pera {
+            font-size: 14px;
         }
-        & .sub-heading{
+        & .sub-heading {
             font-size: 21px;
         }
-        & .aboutAccordin{
-            & .accordinItem{
-                &::before{
-               
+        & .aboutAccordin {
+            & .accordinItem {
+                &::before {
                 }
-                & .accordinHeader{
-                    & .accordinButton{
-                    font-size: 14px;
-                     
-                        &::after{
-                     
+                & .accordinHeader {
+                    & .accordinButton {
+                        font-size: 14px;
+
+                        &::after {
                         }
-                        &::before{
-                    
+                        &::before {
                         }
                     }
                 }
                 .accordion-button:not(.collapsed) {
-               
                 }
                 .accordion-button:not(.collapsed)::after {
-    
                 }
-    
-                .accordion-item:first-of-type{
-                
+
+                .accordion-item:first-of-type {
                 }
             }
         }
     }
 }
 
-
 // <!-- our Mission section start -->
-.ourMission{
-    & .pera{
+.ourMission {
+    & .pera {
         font-size: 16px;
         font-weight: 400;
         color: #000;
     }
-    & .ourPera{
+    & .ourPera {
         font-size: 14px;
         color: #000;
         position: relative;
         padding-left: 20px;
-        &::before{
+        &::before {
             position: absolute;
-            content: '';
+            content: "";
             background-color: $theme2;
             width: 10px;
             height: 10px;
@@ -1652,10 +1401,9 @@
             border-radius: 50%;
             left: 0;
             // transform: translateY(-50%);
-
         }
     }
-    & .ourImg{
+    & .ourImg {
         max-height: 450px;
         height: 100%;
         & img {
@@ -1664,119 +1412,101 @@
     }
 }
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .ourMission{
-        & .pera{
-  
+    .ourMission {
+        & .pera {
         }
-        & .ourPera{
-     
-            &::before{
- 
-    
+        & .ourPera {
+            &::before {
             }
         }
-        & .ourImg{
-          
+        & .ourImg {
         }
     }
 }
 
 @include media-breakpoint-down(xl) {
-    .ourMission{
-        & .pera{
-  
+    .ourMission {
+        & .pera {
         }
-        & .ourPera{
-     
-            &::before{
- 
-    
+        & .ourPera {
+            &::before {
             }
         }
-        & .ourImg{
-          
+        & .ourImg {
         }
     }
 }
 
 @include media-breakpoint-down(lg) {
-    .ourMission{
-        & .pera{
-  
+    .ourMission {
+        & .pera {
         }
-        & .ourPera{
-     
-            &::before{
- 
-    
+        & .ourPera {
+            &::before {
             }
         }
-        & .ourImg{
-          
+        & .ourImg {
         }
     }
 }
 
 @include media-breakpoint-down(md) {
-    .ourMission{
-        & .pera{
-        font-size: 14px;
+    .ourMission {
+        & .pera {
+            font-size: 14px;
         }
-        & .ourPera{
-     
-            &::before{
- 
-    
+        & .ourPera {
+            &::before {
             }
         }
-        & .ourImg{
+        & .ourImg {
             height: 350px;
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
-    .ourMission{
-        & .pera{
-  
+    .ourMission {
+        & .pera {
         }
-        & .ourPera{
-     
-            &::before{
- 
-    
+        & .ourPera {
+            &::before {
             }
         }
-        & .ourImg{
+        & .ourImg {
             height: 350px;
         }
     }
 }
 
-// ourexperience 
+// ourexperience
 
-.ourexperience{
-    & .experience-img{
+.ourexperience {
+    & .experience-img {
         max-width: 500px;
     }
-    & .how-to-play-circle{
+    & .how-to-play-circle {
         min-height: 500px;
         margin: 50px 0px;
-        &::before{
+        &::before {
             position: absolute;
             content: "";
             background: url(../img/aboutus/howto_play_circle.svg);
@@ -1787,12 +1517,12 @@
             top: 10px;
             z-index: -22222;
         }
-        & ul{
-            & li{
+        & ul {
+            & li {
                 min-height: 100px;
-                & .media{
-                    & .media-left{
-                        & .media-icons{
+                & .media {
+                    & .media-left {
+                        & .media-icons {
                             border: #ffe500 2px solid;
                             width: 60px;
                             height: 60px;
@@ -1808,19 +1538,19 @@
                         font-size: 20px;
                     }
                 }
-                &:nth-child(1){
+                &:nth-child(1) {
                     margin-left: -15px;
                 }
-                &:nth-child(2){
+                &:nth-child(2) {
                     margin-left: 47px;
                 }
-                &:nth-child(3){
+                &:nth-child(3) {
                     margin-left: 56px;
                 }
-                &:nth-child(4){
+                &:nth-child(4) {
                     margin-left: 47px;
                 }
-                &:nth-child(5){
+                &:nth-child(5) {
                     margin-left: -15px;
                 }
             }
@@ -1828,56 +1558,49 @@
     }
 }
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .ourexperience{
-        & .experience-img{
-         
+    .ourexperience {
+        & .experience-img {
         }
-        & .how-to-play-circle{
-          
-            &::before{
-     
+        & .how-to-play-circle {
+            &::before {
             }
-            & ul{
-                & li{
-                   
-                    & .media{
-                        & .media-left{
-                            & .media-icons{
-                  
+            & ul {
+                & li {
+                    & .media {
+                        & .media-left {
+                            & .media-icons {
                             }
                         }
                         & .media-right {
-                      
                         }
                     }
-                    &:nth-child(1){
-                      
+                    &:nth-child(1) {
                     }
-                    &:nth-child(2){
-                      
+                    &:nth-child(2) {
                     }
-                    &:nth-child(3){
-                       
+                    &:nth-child(3) {
                     }
-                    &:nth-child(4){
-                       
+                    &:nth-child(4) {
                     }
-                    &:nth-child(5){
-                       
+                    &:nth-child(5) {
                     }
                 }
             }
@@ -1886,42 +1609,32 @@
 }
 
 @include media-breakpoint-down(xl) {
-    .ourexperience{
-        & .experience-img{
+    .ourexperience {
+        & .experience-img {
             max-width: 450px;
         }
-        & .how-to-play-circle{
-          
-            &::before{
-     
+        & .how-to-play-circle {
+            &::before {
             }
-            & ul{
-                & li{
-                   
-                    & .media{
-                        & .media-left{
-                            & .media-icons{
-                  
+            & ul {
+                & li {
+                    & .media {
+                        & .media-left {
+                            & .media-icons {
                             }
                         }
                         & .media-right {
-                      
                         }
                     }
-                    &:nth-child(1){
-                      
+                    &:nth-child(1) {
                     }
-                    &:nth-child(2){
-                      
+                    &:nth-child(2) {
                     }
-                    &:nth-child(3){
-                       
+                    &:nth-child(3) {
                     }
-                    &:nth-child(4){
-                       
+                    &:nth-child(4) {
                     }
-                    &:nth-child(5){
-                       
+                    &:nth-child(5) {
                     }
                 }
             }
@@ -1930,43 +1643,34 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .ourexperience{
-        & .experience-img{
-         margin: auto;
+    .ourexperience {
+        & .experience-img {
+            margin: auto;
         }
-        & .how-to-play-circle{
-          min-height: auto;
-          margin: 20px 0;
-            &::before{
-     
+        & .how-to-play-circle {
+            min-height: auto;
+            margin: 20px 0;
+            &::before {
             }
-            & ul{
-                & li{
-                   
-                    & .media{
-                        & .media-left{
-                            & .media-icons{
-                  
+            & ul {
+                & li {
+                    & .media {
+                        & .media-left {
+                            & .media-icons {
                             }
                         }
                         & .media-right {
-                      
                         }
                     }
-                    &:nth-child(1){
-                      
+                    &:nth-child(1) {
                     }
-                    &:nth-child(2){
-                      
+                    &:nth-child(2) {
                     }
-                    &:nth-child(3){
-                       
+                    &:nth-child(3) {
                     }
-                    &:nth-child(4){
-                       
+                    &:nth-child(4) {
                     }
-                    &:nth-child(5){
-                       
+                    &:nth-child(5) {
                     }
                 }
             }
@@ -1975,21 +1679,20 @@
 }
 
 @include media-breakpoint-down(md) {
-    .ourexperience{
-        & .experience-img{
-         max-width: auto;
+    .ourexperience {
+        & .experience-img {
+            max-width: auto;
         }
-        & .how-to-play-circle{
-          
-            &::before{
+        & .how-to-play-circle {
+            &::before {
                 display: none;
             }
-            & ul{
-                & li{
+            & ul {
+                & li {
                     min-height: 70px;
-                    & .media{
-                        & .media-left{
-                            & .media-icons{
+                    & .media {
+                        & .media-left {
+                            & .media-icons {
                                 width: 42px;
                                 height: 42px;
                                 padding: 9px;
@@ -1999,24 +1702,20 @@
                             font-size: 17px;
                         }
                     }
-                    &:nth-child(1){
-                      margin: 0;
-                    }
-                    &:nth-child(2){
+                    &:nth-child(1) {
                         margin: 0;
-                      
                     }
-                    &:nth-child(3){
-                      margin: 0;
-                       
+                    &:nth-child(2) {
+                        margin: 0;
                     }
-                    &:nth-child(4){
-                      margin: 0;
-                       
+                    &:nth-child(3) {
+                        margin: 0;
                     }
-                    &:nth-child(5){
-                      margin: 0;
-                       
+                    &:nth-child(4) {
+                        margin: 0;
+                    }
+                    &:nth-child(5) {
+                        margin: 0;
                     }
                 }
             }
@@ -2025,43 +1724,35 @@
 }
 
 @include media-breakpoint-down(sm) {
-    .ourexperience{
-        & .experience-img{
-         
+    .ourexperience {
+        & .experience-img {
         }
-        & .how-to-play-circle{
-          
-            &::before{
-     
+        & .how-to-play-circle {
+            &::before {
             }
-            & ul{
-                & li{
+            & ul {
+                & li {
                     min-height: 50px;
-                    & .media{
-                        & .media-left{
-                            & .media-icons{
+                    & .media {
+                        & .media-left {
+                            & .media-icons {
                                 width: 37px;
                                 height: 37px;
                             }
                         }
                         & .media-right {
-                      font-size: 15px;
+                            font-size: 15px;
                         }
                     }
-                    &:nth-child(1){
-                      
+                    &:nth-child(1) {
                     }
-                    &:nth-child(2){
-                      
+                    &:nth-child(2) {
                     }
-                    &:nth-child(3){
-                       
+                    &:nth-child(3) {
                     }
-                    &:nth-child(4){
-                       
+                    &:nth-child(4) {
                     }
-                    &:nth-child(5){
-                       
+                    &:nth-child(5) {
                     }
                 }
             }
@@ -2069,17 +1760,17 @@
     }
 }
 
-// kyrgyzstanSection start 
+// kyrgyzstanSection start
 
-.kyrgyzstanSection{
-    & .leftSection{
+.kyrgyzstanSection {
+    & .leftSection {
         top: 80px;
-        & .sectionTitle{
+        & .sectionTitle {
             font-size: 20px;
             color: $theme2;
             font-weight: 700;
             position: relative;
-            &::before{
+            &::before {
                 content: "";
                 position: absolute;
                 left: 133px;
@@ -2089,790 +1780,598 @@
                 background: #ffe500;
                 border-radius: 2px;
             }
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 left: 125px;
-                top:11px;
+                top: 11px;
                 width: 20px;
                 height: 4px;
                 background: #ffe500;
                 border-radius: 2px;
             }
         }
-        & .contactUs{
+        & .contactUs {
             padding: 15px 20px;
-    
         }
-        & .countries{
+        & .countries {
             padding: 15px 20px;
-            & .sectionTitle{
-                &::before{
+            & .sectionTitle {
+                &::before {
                     left: 165px;
                 }
-                &::after{
+                &::after {
                     left: 157px;
                 }
             }
-            & .cart-list{
-                & ul{
-                    & li{
+            & .cart-list {
+                & ul {
+                    & li {
                         border-bottom: 1px dashed #000;
-                       
-                        & .pera{
+
+                        & .pera {
                             font-size: 16px;
                             color: #000;
                             transition: all 0.3s ease-in-out;
                             font-weight: 400;
-                            & .icon{
+                            & .icon {
                                 width: 13px;
                                 height: 13px;
                                 filter: brightness(0.5);
                                 transition: all 0.3s ease-in-out;
-    
                             }
-                            &:hover{
+                            &:hover {
                                 color: #ffe500;
-                                & .icon{
+                                & .icon {
                                     filter: none;
                                 }
-    
                             }
                         }
                     }
                 }
             }
         }
-        & .consultation{
-            padding: 15px 20px;
-            & .sectionTitle{
-                &::before{
-                    left: 181px;
-    
-                }
-                &::after{
-                    left: 171px;
-                }
-            }
-            & .formSection{
-                & .inputGroup{
-                    & .inputText{
-                        width: 40px;
-                        height: 40px;
-                        padding: 12px;
-                        background:$white;
-                        transition: all 0.3s ease-in-out;
-                    }
-                    & .formInput{
-                        font-size: 16px;
-                        color: #000;
-                        font-weight: 400;
-                        transition: all 0.3s ease-in-out;
-                        
-                        &::placeholder{
-                            font-size: 16px;
-                            color: #000;
-                            font-weight: 400;
-                        }
-                        // &:focus{
-                        //     & label{
-                        //         background-color: red;
-                        //     }
-                        // }
-                   
-                    }
-                    & .formSelect{
-                        font-size: 16px;
-                        color: #000;
-                        font-weight: 400;
-                        & option{
-                            font-size: 16px;
-                        color: #000;
-                        font-weight: 400;
-                        }
-                    }
-                   
-                }
-                & .inputGroup .formInput:focus + .inputText {
-                    color: white;
-                    background: $theme1 !important;
-                    
-                }
-            }
-    
-    
-        }
     }
-    & .unversityPera{
+    & .unversityPera {
         font-size: 16px;
         font-weight: 400;
         color: #000;
     }
-    & .tableSection{
-        & .tableSectionDesign{
-            & thead{
+    & .tableSection {
+        & .tableSectionDesign {
+            & thead {
                 width: 100%;
-                & tr{
+                & tr {
                     width: 100%;
                     background-color: $theme2;
-                    & th{
+                    & th {
                         font-size: 16px;
                         color: $white;
                     }
                 }
             }
-            & tbody{
-                & tr{
-                    & td{
+            & tbody {
+                & tr {
+                    & td {
                         font-size: 14px;
-                        color:#000;
+                        color: #000;
                         font-weight: 400;
                     }
                 }
             }
         }
     }
-    & .pera{
+    & .pera {
         font-size: 16px;
         color: #000;
         font-weight: 400;
     }
 }
+.consultation {
+    padding: 15px 20px;
+    & .sectionTitle {
+        &::before {
+            left: 181px;
+        }
+        &::after {
+            left: 171px;
+        }
+    }
+    & .formSection {
+        & .inputGroup {
+            & .inputText {
+                width: 40px;
+                height: 40px;
+                padding: 12px;
+                background: $white;
+                transition: all 0.3s ease-in-out;
+            }
+            & .formInput {
+                font-size: 16px;
+                color: #000;
+                font-weight: 400;
+                transition: all 0.3s ease-in-out;
 
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+                &::placeholder {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 400;
+                }
+                // &:focus{
+                //     & label{
+                //         background-color: red;
+                //     }
+                // }
+            }
+            & .formSelect {
+                font-size: 16px;
+                color: #000;
+                font-weight: 400;
+                & option {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 400;
+                }
+            }
+        }
+        & .inputGroup .formInput:focus + .inputText {
+            color: white;
+            background: $theme1 !important;
+        }
+    }
+}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {
+}
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 @include media-breakpoint-up(xxl) {
 }
 
-
 @include media-breakpoint-down(xxl) {
-    .kyrgyzstanSection{
-        & .leftSection{
-            
-            & .sectionTitle{
-                
-                &::before{
-         
+    .kyrgyzstanSection {
+        & .leftSection {
+            & .sectionTitle {
+                &::before {
                 }
-                &::after{
-             
+                &::after {
                 }
             }
-            & .contactUs{
-               
-        
+            & .contactUs {
             }
-            & .countries{
-                
-                & .sectionTitle{
-                    &::before{
-                       
+            & .countries {
+                & .sectionTitle {
+                    &::before {
                     }
-                    &::after{
-                       
+                    &::after {
                     }
                 }
-                & .cart-list{
-                    & ul{
-                        & li{
-                       
-                           
-                            & .pera{
-                           
-                                & .icon{
-       
-        
+                & .cart-list {
+                    & ul {
+                        & li {
+                            & .pera {
+                                & .icon {
                                 }
-                                &:hover{
-                                
-                                    & .icon{
-                                      
+                                &:hover {
+                                    & .icon {
                                     }
-        
                                 }
                             }
                         }
                     }
                 }
             }
-            & .consultation{
-             
-                & .sectionTitle{
-                    &::before{
-                       
-        
-                    }
-                    &::after{
-                       
-                    }
-                }
-                & .formSection{
-                    & .inputGroup{
-                        & .inputText{
-                       
-                        }
-                        & .formInput{
-                    
-                            
-                            &::placeholder{
-                      
-                            }
-                      
-                       
-                        }
-                        & .formSelect{
-                      
-                            & option{
-                
-                            }
-                        }
-                       
-                    }
-                    & .inputGroup .formInput:focus + .inputText {
-               
-                        
-                    }
-                }
-        
-        
-            }
         }
-        & .unversityPera{
-      
+        & .unversityPera {
         }
-        & .tableSection{
-            & .tableSectionDesign{
-                & thead{
-                  
-                    & tr{
-                     
-                        & th{
-                     
+        & .tableSection {
+            & .tableSectionDesign {
+                & thead {
+                    & tr {
+                        & th {
                         }
                     }
                 }
-                & tbody{
-                    & tr{
-                        & td{
-                     
+                & tbody {
+                    & tr {
+                        & td {
                         }
                     }
                 }
             }
         }
-        & .pera{
-      
+        & .pera {
+        }
+    }
+    .consultation {
+        & .sectionTitle {
+            &::before {
+            }
+            &::after {
+            }
+        }
+        & .formSection {
+            & .inputGroup {
+                & .inputText {
+                }
+                & .formInput {
+                    &::placeholder {
+                    }
+                }
+                & .formSelect {
+                    & option {
+                    }
+                }
+            }
+            & .inputGroup .formInput:focus + .inputText {
+            }
         }
     }
 }
 
 @include media-breakpoint-down(xl) {
-    .kyrgyzstanSection{
-        & .leftSection{
-            
-            & .sectionTitle{
-                
-                &::before{
-         
+    .kyrgyzstanSection {
+        & .leftSection {
+            & .sectionTitle {
+                &::before {
                 }
-                &::after{
-             
+                &::after {
                 }
             }
-            & .contactUs{
-               
-        
+            & .contactUs {
             }
-            & .countries{
-                
-                & .sectionTitle{
-                    &::before{
-                       
+            & .countries {
+                & .sectionTitle {
+                    &::before {
                     }
-                    &::after{
-                       
+                    &::after {
                     }
                 }
-                & .cart-list{
-                    & ul{
-                        & li{
-                       
-                           
-                            & .pera{
-                           
-                                & .icon{
-       
-        
+                & .cart-list {
+                    & ul {
+                        & li {
+                            & .pera {
+                                & .icon {
                                 }
-                                &:hover{
-                                
-                                    & .icon{
-                                      
+                                &:hover {
+                                    & .icon {
                                     }
-        
                                 }
                             }
                         }
                     }
                 }
-            }
-            & .consultation{
-             
-                & .sectionTitle{
-                    &::before{
-                       
-        
-                    }
-                    &::after{
-                       
-                    }
-                }
-                & .formSection{
-                    & .inputGroup{
-                        & .inputText{
-                       
-                        }
-                        & .formInput{
-                    
-                            
-                            &::placeholder{
-                      
-                            }
-                      
-                       
-                        }
-                        & .formSelect{
-                      
-                            & option{
-                
-                            }
-                        }
-                       
-                    }
-                    & .inputGroup .formInput:focus + .inputText {
-               
-                        
-                    }
-                }
-        
-        
             }
         }
         & .sub-heading {
             font-size: 30px;
         }
-        & .unversityPera{
-      
+        & .unversityPera {
         }
-        & .tableSection{
-            & .tableSectionDesign{
-                & thead{
-                  
-                    & tr{
-                     
-                        & th{
-                     
+        & .tableSection {
+            & .tableSectionDesign {
+                & thead {
+                    & tr {
+                        & th {
                         }
                     }
                 }
-                & tbody{
-                    & tr{
-                        & td{
-                     
+                & tbody {
+                    & tr {
+                        & td {
                         }
                     }
                 }
             }
         }
-        & .pera{
-      
+        & .pera {
+        }
+    }
+    .consultation {
+        & .sectionTitle {
+            &::before {
+            }
+            &::after {
+            }
+        }
+        & .formSection {
+            & .inputGroup {
+                & .inputText {
+                }
+                & .formInput {
+                    &::placeholder {
+                    }
+                }
+                & .formSelect {
+                    & option {
+                    }
+                }
+            }
+            & .inputGroup .formInput:focus + .inputText {
+            }
         }
     }
 }
 
 @include media-breakpoint-down(lg) {
-    .kyrgyzstanSection{
-        & .leftSection{
-            
-            & .sectionTitle{
-                
-                &::before{
-         
+    .kyrgyzstanSection {
+        & .leftSection {
+            & .sectionTitle {
+                &::before {
                 }
-                &::after{
-             
+                &::after {
                 }
             }
-            & .contactUs{
-               
-        
+            & .contactUs {
             }
-            & .countries{
-                
-                & .sectionTitle{
-                    &::before{
-                       
+            & .countries {
+                & .sectionTitle {
+                    &::before {
                     }
-                    &::after{
-                       
+                    &::after {
                     }
                 }
-                & .cart-list{
-                    & ul{
-                        & li{
-                       
-                           
-                            & .pera{
-                           
-                                & .icon{
-       
-        
+                & .cart-list {
+                    & ul {
+                        & li {
+                            & .pera {
+                                & .icon {
                                 }
-                                &:hover{
-                                
-                                    & .icon{
-                                      
+                                &:hover {
+                                    & .icon {
                                     }
-        
                                 }
                             }
                         }
                     }
                 }
             }
-            & .consultation{
-             
-                & .sectionTitle{
-                    &::before{
-                       
-        
-                    }
-                    &::after{
-                       
-                    }
-                }
-                & .formSection{
-                    & .inputGroup{
-                        & .inputText{
-                       
-                        }
-                        & .formInput{
-                    
-                            
-                            &::placeholder{
-                      
-                            }
-                      
-                       
-                        }
-                        & .formSelect{
-                      
-                            & option{
-                
-                            }
-                        }
-                       
-                    }
-                    & .inputGroup .formInput:focus + .inputText {
-               
-                        
-                    }
-                }
-        
-        
-            }
         }
-        & .unversityPera{
-      
+        & .unversityPera {
         }
-        & .tableSection{
-            & .tableSectionDesign{
-                & thead{
-                  
-                    & tr{
-                     
-                        & th{
-                     
+        & .tableSection {
+            & .tableSectionDesign {
+                & thead {
+                    & tr {
+                        & th {
                         }
                     }
                 }
-                & tbody{
-                    & tr{
-                        & td{
-                     
+                & tbody {
+                    & tr {
+                        & td {
                         }
                     }
                 }
             }
         }
-        & .pera{
-      
+        & .pera {
+        }
+    }
+    .consultation {
+        & .sectionTitle {
+            &::before {
+            }
+            &::after {
+            }
+        }
+        & .formSection {
+            & .inputGroup {
+                & .inputText {
+                }
+                & .formInput {
+                    &::placeholder {
+                    }
+                }
+                & .formSelect {
+                    & option {
+                    }
+                }
+            }
+            & .inputGroup .formInput:focus + .inputText {
+            }
         }
     }
 }
 
 @include media-breakpoint-down(md) {
-    .kyrgyzstanSection{
-        & .leftSection{
-            
-            & .sectionTitle{
-                
-                &::before{
-         
+    .kyrgyzstanSection {
+        & .leftSection {
+            & .sectionTitle {
+                &::before {
                 }
-                &::after{
-             
+                &::after {
                 }
             }
-            & .contactUs{
-               
-        
+            & .contactUs {
             }
-            & .countries{
-                
-                & .sectionTitle{
-                    &::before{
-                       
+            & .countries {
+                & .sectionTitle {
+                    &::before {
                     }
-                    &::after{
-                       
+                    &::after {
                     }
                 }
-                & .cart-list{
-                    & ul{
-                        & li{
-                       
-                           
-                            & .pera{
-                           
-                                & .icon{
-       
-        
+                & .cart-list {
+                    & ul {
+                        & li {
+                            & .pera {
+                                & .icon {
                                 }
-                                &:hover{
-                                
-                                    & .icon{
-                                      
+                                &:hover {
+                                    & .icon {
                                     }
-        
                                 }
                             }
                         }
                     }
                 }
-            }
-            & .consultation{
-             
-                & .sectionTitle{
-                    &::before{
-                       
-        
-                    }
-                    &::after{
-                       
-                    }
-                }
-                & .formSection{
-                    & .inputGroup{
-                        & .inputText{
-                       
-                        }
-                        & .formInput{
-                    
-                            
-                            &::placeholder{
-                      
-                            }
-                      
-                       
-                        }
-                        & .formSelect{
-                      
-                            & option{
-                
-                            }
-                        }
-                       
-                    }
-                    & .inputGroup .formInput:focus + .inputText {
-               
-                        
-                    }
-                }
-        
-        
             }
         }
-       & .sub-heading {
+        & .sub-heading {
             font-size: 25px;
         }
-        & .unversityPera{
+        & .unversityPera {
             font-size: 14px;
         }
-        & .tableSection{
-            & .tableSectionDesign{
-                & thead{
-                  
-                    & tr{
-                     
-                        & th{
-                     
+        & .tableSection {
+            & .tableSectionDesign {
+                & thead {
+                    & tr {
+                        & th {
                         }
                     }
                 }
-                & tbody{
-                    & tr{
-                        & td{
-                     
+                & tbody {
+                    & tr {
+                        & td {
                         }
                     }
                 }
             }
         }
-        & .pera{
-      
+        & .pera {
+        }
+    }
+    .consultation {
+        & .sectionTitle {
+            &::before {
+            }
+            &::after {
+            }
+        }
+        & .formSection {
+            & .inputGroup {
+                & .inputText {
+                }
+                & .formInput {
+                    &::placeholder {
+                    }
+                }
+                & .formSelect {
+                    & option {
+                    }
+                }
+            }
+            & .inputGroup .formInput:focus + .inputText {
+            }
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
-    .kyrgyzstanSection{
-        & .leftSection{
-            
-            & .sectionTitle{
+    .kyrgyzstanSection {
+        & .leftSection {
+            & .sectionTitle {
                 font-size: 18px;
-                &::before{
+                &::before {
                     left: 122px;
                     height: 3px;
                     top: 16px;
                 }
-                &::after{
+                &::after {
                     left: 113px;
                     height: 3px;
                 }
             }
-            & .contactUs{
-               
-        
+            & .contactUs {
             }
-            & .countries{
-                
-                & .sectionTitle{
-                    &::before{
+            & .countries {
+                & .sectionTitle {
+                    &::before {
                         left: 148px;
                     }
-                    &::after{
+                    &::after {
                         left: 140px;
                     }
                 }
-                & .cart-list{
-                    & ul{
-                        & li{
-                       
-                           
-                            & .pera{
+                & .cart-list {
+                    & ul {
+                        & li {
+                            & .pera {
                                 font-size: 14px;
-                                & .icon{
-       
-        
+                                & .icon {
                                 }
-                                &:hover{
-                                
-                                    & .icon{
-                                      
+                                &:hover {
+                                    & .icon {
                                     }
-        
                                 }
                             }
                         }
                     }
                 }
-            }
-            & .consultation{
-             
-                & .sectionTitle{
-                    &::before{
-                        left: 166px;
-        
-                    }
-                    &::after{
-                        left: 157px;
-                    }
-                }
-                & .formSection{
-                    & .inputGroup{
-                        & .inputText{
-                            width: 35px;
-                            height: 35px;
-                            padding: 9px;
-                        }
-                        & .formInput{
-                        font-size: 14px;
-                            
-                            &::placeholder{
-                                font-size: 14px;
-                      
-                            }
-                      
-                       
-                        }
-                        & .formSelect{
-                            font-size: 14px;
-                      
-                            & option{
-                                font-size: 14px;
-                
-                            }
-                        }
-                       
-                    }
-                    & .inputGroup .formInput:focus + .inputText {
-               
-                        
-                    }
-                }
-        
-        
             }
         }
         & .sub-heading {
             font-size: 20px;
         }
-        & .unversityPera{
-      
+        & .unversityPera {
         }
-        & .tableSection{
-            & .tableSectionDesign{
-                ::-webkit-scrollbar{
+        & .tableSection {
+            & .tableSectionDesign {
+                ::-webkit-scrollbar {
                     height: 2px;
                 }
-                & thead{
-                  
-                    & tr{
-                     
-                        & th{
+                & thead {
+                    & tr {
+                        & th {
                             font-size: 14px;
                         }
                     }
                 }
-                & tbody{
-                    & tr{
-                        & td{
-                     
+                & tbody {
+                    & tr {
+                        & td {
                         }
                     }
                 }
             }
         }
-        & .pera{
-      
+        & .pera {
+        }
+    }
+    .consultation {
+        & .sectionTitle {
+            &::before {
+                left: 166px;
+            }
+            &::after {
+                left: 157px;
+            }
+        }
+        & .formSection {
+            & .inputGroup {
+                & .inputText {
+                    width: 35px;
+                    height: 35px;
+                    padding: 9px;
+                }
+                & .formInput {
+                    font-size: 14px;
+
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+                & .formSelect {
+                    font-size: 14px;
+
+                    & option {
+                        font-size: 14px;
+                    }
+                }
+            }
+            & .inputGroup .formInput:focus + .inputText {
+            }
         }
     }
 }

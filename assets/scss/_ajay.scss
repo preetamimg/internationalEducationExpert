@@ -138,7 +138,8 @@
     & .inner_section {
         & .cardsection {
         & .card {
-            border: 1px dotted $theme2 !important;
+            border: 1px dotted $theme2;
+            transition: all 0.3s ease-in-out;
             & .card-body {
             & .chooseList {
                 height: 60px;
@@ -175,9 +176,10 @@
             }
             }
             &:hover {
+                border-style: solid;
             & .subBody {
                 & .card-text {
-                color: $theme1 !important;
+                color: $theme2 !important;
                 }
             }
             }
