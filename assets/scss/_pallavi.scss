@@ -420,7 +420,39 @@
         }
     }
 }
-// footer end
+
+.gallaryyFluid{
+    & .gallaryyContainer{
+        margin-top: 100px;
+        & .gallaryySubHead{
+            font-size: 20px;
+            font-weight: 700;
+            color: $theme1;
+            text-align: center;
+        }
+        & .gallaryyHead{
+            font-size: 60px;
+            font-weight: 700;
+            color: $theme2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        & .imageParent{
+            transition: 0.3s linear;
+            &:hover{
+                & img{
+                    transform: scale(1.2);
+                }
+            }
+            & .jg-caption{
+                height: 100%;
+            }
+            & img{
+                transition: 0.3s linear;
+            }
+        }
+    }
+}
 
 
 @include media-breakpoint(basic) {
