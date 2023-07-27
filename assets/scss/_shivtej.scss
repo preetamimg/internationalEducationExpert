@@ -2375,3 +2375,100 @@
         }
     }
 }
+
+
+// bloginnerSection start 
+.bloginnerSection{
+    & .pera{
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        line-height: 24px;
+    }
+    & .sectionHeading{
+        font-size: 25px;
+        line-height: 33px;
+        font-weight: 700;
+        color: $theme2;
+
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .bloginnerSection{
+        & .pera{
+       
+        }
+        & .sectionHeading{
+   
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .bloginnerSection{
+        & .sub-heading {
+            font-size: 32px;
+        }
+        & .pera{
+       
+        }
+        & .sectionHeading{
+   
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .bloginnerSection{
+        & .sub-heading {
+            font-size: 28px;
+        }
+        & .pera{
+       
+        }
+        & .sectionHeading{
+            font-size: 22px;
+            font-weight: 30px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .bloginnerSection{
+        & .sub-heading {
+            font-size: 22px;
+        }
+        & .pera{
+            font-size: 14px;
+            font-weight: 24px;
+        }
+        & .sectionHeading{
+   
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .bloginnerSection{
+        & .pera{
+       
+        }
+        & .sectionHeading{
+   
+        }
+    }
+}
