@@ -22,17 +22,23 @@ $(window).on("load", (function() {
 ));
 
 // hero slider start
-var swiper = new Swiper(".heroslider", {
-    spaceBetween: 30,
-    loop: true,
-    speed: 1000,
-    effect: "fade",
-    grabCursor: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+// var swiper = new Swiper(".heroslider", {
+//     spaceBetween: 30,
+//     loop: true,
+//     speed: 1000,
+//     effect: "fade",
+//     grabCursor: true,
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
 
 // * Glight Box Video
 var lightboxVideo = GLightbox({
@@ -57,23 +63,33 @@ $('.Testimonials').owlCarousel({
     autoplay:true,
     autoplayTimeout:1500,
     autoplayHoverPause:true,
-    smartSpeed: 1000,
+    smartSpeed: 1100,
     responsiveClass: true,
     responsive: {
         0: {
             items: 1,
+            nav: false,
+            dots: true,
         },
         576: {
             items: 1,
+            nav: false,
+            dots: true,
         },
         768: {
             items: 1,
+            nav: true,
+            dots: false,
         },
         992: {
             items: 1.5,
+            nav: true,
+            dots: false,
         },
         1200: {
             items: 2,
+            nav: true,
+            dots: false,
         }
     },
 });
@@ -88,25 +104,35 @@ $('.gallaryy').owlCarousel({
     freeDrag: false,
     lazyLoad: true,
     autoplay:true,
-    autoplayTimeout:1500,
+    autoplayTimeout:1700,
     autoplayHoverPause:true,
     smartSpeed: 1000,
     responsiveClass: true,
     responsive: {
         0: {
             items: 1,
+            nav: false,
+            dots: true,
         },
         576: {
             items: 2.5,
+            nav: false,
+            dots: true,
         },
         768: {
             items: 3.5,
+            nav: true,
+            dots: false,
         },
         992: {
             items: 4,
+            nav: true,
+            dots: false,
         },
         1200: {
             items: 4,
+            nav: true,
+            dots: false,
         }
     },
 });
@@ -129,24 +155,38 @@ $('.country').owlCarousel({
     responsive: {
         0: {
             items: 1.5,
+            nav: false,
+            dots: true,
         },
         450: {
             items: 2,
+            nav: false,
+            dots: true,
         },
         576: {
             items: 3,
+            nav: false,
+            dots: true,
         },
         768: {
             items: 3,
+            nav: true,
+            dots: false,
         },
         992: {
             items: 4,
+            nav: true,
+            dots: false,
         },
         1200: {
             items: 5,
+            nav: true,
+            dots: false,
         },
         1400: {
             items: 6,
+            nav: true,
+            dots: false,
         }
     },
 }); 

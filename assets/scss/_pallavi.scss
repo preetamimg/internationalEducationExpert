@@ -127,14 +127,14 @@
                             }
                         }
                         &::after{
-                            border: 1px solid #263173;
+                            border: 1px solid $theme2;
                         }
                         &::before{
-                            border: 1px solid #263173;
+                            border: 1px solid $theme2;
                         }
                         & .countryImg{
                             &::after{
-                            border: 2px solid #263173;
+                            border: 2px solid $theme2;
                             }
                         }
                     }
@@ -148,7 +148,8 @@
     & .testimonialsContainer{
         & .Testimonials{
             & .owl-stage-outer{
-                padding: 0;
+                padding-left: 0px;
+                padding-right: 0px;
                 & .owl-stage{
                     display: flex;
                     align-items: stretch;
@@ -272,13 +273,15 @@
 }
 
 .footer {
-    background-image: linear-gradient(to right, darken($primary, 45), darken($primary, 45)), url(../img/Index/footer-bg.png);
+    background-image: linear-gradient(to right, darken($theme2, 45), darken($theme2, 45)), url(../img/Index/footer-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-blend-mode: luminosity;
     & .footer-logo {
-        height: 100px;
-        width: 160px;
+        height: 65px;
+        & img {
+            object-fit: contain;
+        }
     }
     & .footer-para {
         font-size: 14px;
@@ -385,13 +388,13 @@
 }
 
 .ctcFluid{
-    // background-color: #000F24;
+    // background-color: $theme2;
     // height: 200px;
     & .ctcContainer{
         & .ctcBox{
-            border: 1px solid $theme1;
+            // border: 1px solid $theme1;
             // border-radius: 13px;
-            background-color: #000F24;
+            background-color: $theme2;
             padding: 50px 30px;
                 & .ctcHead{
                     font-size: 40px;
@@ -488,6 +491,11 @@
             }
         }
     }
+    .footer {
+        & .footer-logo{
+            height: 50px;
+        }
+    }
     
 }
 
@@ -523,7 +531,10 @@
                     & .owl-stage{
                         & .owl-item{
                             & .testimonialsBox{
+                                padding: 20px;
                                 & .testimonialsUser{
+                                    height: 65px;
+                                    width: 65px;
                                     & img{
                                     }   
                                 }
@@ -532,6 +543,8 @@
                                 & .position{
                                 }
                                 & .quote{
+                                    width: 50px;
+                                    height: 30px;
                                     & img{
                                     }
                                 }

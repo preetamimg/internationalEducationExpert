@@ -2,10 +2,10 @@
 
 // hero section start
 @include media-breakpoint(basic) {
-   
     .hero-section {
+        position: relative;
         & .swiper-slide {
-            padding: 70px 0px;
+            // padding: 70px 0px;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -23,64 +23,71 @@
             & .hero-heading {
                 font-size:60px;
                 color: $white;
-                line-height: normal;
+                line-height: 100%;
                 animation:fadeInUp 1.5s ease backwards;
-                & .hero-animation {
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        width: 100%;
-                        background: url(../img/index/main-slide.png) no-repeat;
-                        background-size: 100%;
-                        background-position: center center;
-                        z-index: -1;
-                        animation: zoom-fade 5s linear 0s infinite;
-                    }
-                    @keyframes zoom-fade {
-                        0% {
-                          transform: scale(1);
-                        }
+                // & .hero-animation {
+                //     &::before {
+                //         content: '';
+                //         position: absolute;
+                //         top: 0;
+                //         left: 0;
+                //         height: 100%;
+                //         width: 100%;
+                //         background: url(../img/index/main-slide.png) no-repeat;
+                //         background-size: 100%;
+                //         background-position: center center;
+                //         z-index: -1;
+                //         animation: zoom-fade 5s linear 0s infinite;
+                //     }
+                //     @keyframes zoom-fade {
+                //         0% {
+                //           transform: scale(1);
+                //         }
                         
-                        10% {
-                          transform: scale(1.05);
-                        }
+                //         10% {
+                //           transform: scale(1.05);
+                //         }
                         
-                        20% {
-                            transform: scale(1.1);
-                        }
+                //         20% {
+                //             transform: scale(1.1);
+                //         }
                         
-                         30% {
-                            transform: scale(1);
-                        }
+                //          30% {
+                //             transform: scale(1);
+                //         }
                         
-                        40% {
-                          transform: scale(1.1);
-                        }
+                //         40% {
+                //           transform: scale(1.1);
+                //         }
                         
-                        50% {
-                          transform: scale(1.1);
-                        }
+                //         50% {
+                //           transform: scale(1.1);
+                //         }
                         
-                        90% {
-                          transform: scale(1);
-                        }
+                //         90% {
+                //           transform: scale(1);
+                //         }
                         
-                        100% {
-                          opacity: 1;
-                          transform: scale(1);
-                        }
-                      }
-                    }
+                //         100% {
+                //           opacity: 1;
+                //           transform: scale(1);
+                //         }
+                //       }
+                //     }
+            }
+            & .subHeroHeading {
+                font-size: 20px;
+                font-weight: 500;
             }
             & .hero-title {
-                font-size: 15px;
+                font-size: 17px;
                 animation:fadeInUp 1.7s ease backwards;
             }
             & .hero-btn {
                 animation:fadeInUp 1.8s ease backwards;
+            }
+            & .slideBtn {
+                animation:fadeInUp 1.9s ease backwards;
             }
             
             &.swiper-slide-active{
@@ -97,7 +104,10 @@
             }
         }    
         & .swiper-slider1 {
-            background-image: url(../img/index/slider-1.png);
+            background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url(../img/index/heroimg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         } 
         & .swiper-slider2 {
             background-image: url(../img/index/slider-2.png);
@@ -153,6 +163,33 @@
                 }
             }
         }
+        & .innercontainer {
+            // &::before{
+            //     content: '01';
+            //     position: absolute;
+            //     z-index: 2;
+            //     bottom: 10px;
+            //     left: 15px;
+            //     font-size: 25px;
+            //     font-weight: 600;
+            //     color: $theme1;
+            // }
+            & .scroll{
+                position: absolute;
+                transform: rotate(90deg);
+                color: $white;
+                font-weight: 500;
+                left: 50%;
+                bottom: 0px;
+                transform: translateX(-50%);
+                & span {
+                    height: 40px;
+                    & img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
     }
 }
 // hero section end
@@ -161,8 +198,9 @@
 
 @include media-breakpoint-up(md) {
     .hero-section{
-        height: calc(100vh - 120px);
-        min-height: 500px;
+        // height: calc(100vh - 120px);
+        height: 100vh;
+        min-height: 550px;
     }
 }
 
@@ -301,6 +339,7 @@
             }
         }    
         & .swiper-slider1 {
+            background-position: right;
         } 
         & .swiper-slider2 {
         }
@@ -343,7 +382,7 @@
                 }
             }
             & .hero-heading {
-                font-size: 44px;
+                font-size: 45px;
                 & .hero-animation {
                     &::before {
                     }
@@ -374,7 +413,7 @@
                     }
             }
             & .hero-title {
-                font-size: 14px;
+                font-size: 16px;
             }
             & .hero-btn {
             }
@@ -413,6 +452,12 @@
 // Small devices (landscape phones, less than 768px)
 @include media-breakpoint-down(md) {
     .hero-section {
+        & .innercontainer {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         & .swiper-slide {
             & .hero-subheading {
                 font-size: 16px;
@@ -427,7 +472,7 @@
                 }
             }
             & .hero-heading {
-                font-size: 36px;
+                font-size: 40px;
                 & .hero-animation {
                     &::before {
                     }
@@ -515,7 +560,7 @@
                 }
             }
             & .hero-heading {
-                font-size: 30px;
+                font-size: 35px;
                 & .hero-animation {
                     &::before {
                     }

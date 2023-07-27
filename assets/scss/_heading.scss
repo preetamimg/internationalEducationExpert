@@ -12,6 +12,7 @@
     color: $theme2;
     line-height: normal;
     padding-left: 24px;
+    text-transform: uppercase;
     &::after {
         content: '| |';
         font-size: 12px;

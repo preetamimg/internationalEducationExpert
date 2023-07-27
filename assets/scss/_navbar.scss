@@ -29,9 +29,9 @@
 
 // navbar start
 .navbar {
-height: 80px;
+height: 70px;
 & .nav-logo {
-    height: 80px;
+    height: 65px;
 }
 & .navbar-nav {
     & .nav-item {
@@ -39,6 +39,7 @@ height: 80px;
             font-size: 16px;
             z-index: 1;
             transition: all 0.3s ease-in-out;
+            color: $white;
             &::after {
                 content: "";
                 position: absolute;
@@ -46,20 +47,20 @@ height: 80px;
                 bottom: 0;
                 width: 100%;
                 height: 2px;
-                background-color: $theme2; 
+                background-color: $theme1; 
                 transform: scaleX(0);
                 transform-origin: right;
                 transition: transform 0.3s ease-in-out;     
             }
             &:hover {
-                color: $theme2;
+                color: $theme1;
                 &::after {
                     transform: scaleX(1);
                     transform-origin:left;
                 }
             }
             &.active {
-                color: $theme2;
+                color: $theme1;
                 &::after {
                     transform: scaleX(1);
                     transform-origin:left;
@@ -68,18 +69,21 @@ height: 80px;
         }
         & .drop-link-main {
             left: 0;
-            top: 68px;
-            opacity: 0;
-            visibility: hidden;
+            top: 63px;
+            // opacity: 0;
+            // visibility: hidden;
+            display: none;
             z-index: 2;
             transition: all 0.3s ease-in-out;
+            box-shadow: 0px 0px 6px rgba($black, .1);
             & .drop-list {
-                padding: 10px 0;
+                // padding: 10px 0;
                 & .drop-link {
                     font-size: 14px;
                     white-space: nowrap;
                     color: $black;
                     transition: all 0.3s ease-in-out;
+                    background: transparent;
                 }
                 &::before {
                     content: "";
@@ -88,13 +92,13 @@ height: 80px;
                     bottom: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: $theme2; 
+                    background: $theme2; 
                     transform: scaleX(0);
                     transform-origin: right;
                     transition: transform 0.3s ease-in-out;  
                     z-index: -1;
                 }
-                &:hover {
+                &:hover, &.active {
                     &::before {
                         // width: 100%;
                         transform: scaleX(1);
@@ -108,9 +112,21 @@ height: 80px;
         }
         &:hover {
             & .drop-link-main {
-                opacity: 1;
-                visibility: visible;
+                // opacity: 1;
+                // visibility: visible;
+                display: block;
             }
+        }
+    }
+    & .aplyBtn {
+        &.themBtn  {
+            background-color: $theme1;
+        &::before{
+            background-color: $white;
+        }
+        &:hover{
+            color: $black;
+        }
         }
     }
 }
@@ -131,8 +147,11 @@ height: 80px;
     height: 30px;
     width: 30px;
 }
-}
-.fixed-navbar {
+&.fixed-navbar {
+background-color: $white;
+// background: rgb(234,234,234);
+// background: linear-gradient(0deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 43%);
+box-shadow: 0px 0px 5px rgba($black, .1);
 top: 0;
 position: fixed !important;
 -webkit-backface-visibility: visible !important;
@@ -173,16 +192,52 @@ animation-fill-mode: both;
     transform: perspective(400px);
 }
 }
+& .logo1{
+    display: none;
+}
+& .logo2 {
+    display: block !important;
+}
+& .navbar-nav {
+    & .nav-item {
+        & .nav-link {
+            color: $black;
+            &::after{
+                background-color: $theme2;
+            }
+            &.active{
+                color: $theme2;
+            }
+        }
+    }
+    & .aplyBtn {
+        &.themBtn  {
+            background-color: rgba($theme2, 0.1);
+        &::before{
+            background-color: $theme2;
+        }
+        &:hover{
+            color: $white;
+        }
+        }
+    }
+}
+& .menu-btn {
+    & img {
+        filter: invert(1);
+    }
+}
+}
 }
 .navv-offcanvas {
 width: 280px !important;
 background-color: darken($primary, 47);
 & .offcanvas-logo {
     height: auto;
-    height: 50px;
+    height: 40px;
 }
 & .btn-close {
-    width: 20px;
+    width: 18px;
 }
 & .navv-offcanvas-body {
     & .offcanvas-link {
@@ -378,8 +433,10 @@ background-color: darken($primary, 47);
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(lg) {
 .navbar {
+    height: 60px;
+    padding: 0px;
     & .nav-logo {
-        height: 65px;
+        height: 55px;
     }
     & .navbar-nav {
         & .nav-item {
@@ -512,7 +569,7 @@ background-color: darken($primary, 47);
     height: 65px;
     & .nav-logo {
         width: auto;
-        height: 48px;
+        height: 58px;
     }
     & .navbar-nav {
         & .nav-item {
