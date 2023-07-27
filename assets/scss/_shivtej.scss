@@ -2066,3 +2066,810 @@
     }
 }
 
+// kyrgyzstanSection start 
+
+.kyrgyzstanSection{
+    & .leftSection{
+        top: 80px;
+        & .sectionTitle{
+            font-size: 20px;
+            color: $theme2;
+            font-weight: 700;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 133px;
+                top: 18px;
+                width: 20px;
+                height: 4px;
+                background: #ffe500;
+                border-radius: 2px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: 125px;
+                top:11px;
+                width: 20px;
+                height: 4px;
+                background: #ffe500;
+                border-radius: 2px;
+            }
+        }
+        & .contactUs{
+            padding: 15px 20px;
+    
+        }
+        & .countries{
+            padding: 15px 20px;
+            & .sectionTitle{
+                &::before{
+                    left: 165px;
+                }
+                &::after{
+                    left: 157px;
+                }
+            }
+            & .cart-list{
+                & ul{
+                    & li{
+                        border-bottom: 1px dashed #000;
+                       
+                        & .pera{
+                            font-size: 16px;
+                            color: #000;
+                            transition: all 0.3s ease-in-out;
+                            font-weight: 400;
+                            & .icon{
+                                width: 13px;
+                                height: 13px;
+                                filter: brightness(0.5);
+                                transition: all 0.3s ease-in-out;
+    
+                            }
+                            &:hover{
+                                color: #ffe500;
+                                & .icon{
+                                    filter: none;
+                                }
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .consultation{
+            padding: 15px 20px;
+            & .sectionTitle{
+                &::before{
+                    left: 181px;
+    
+                }
+                &::after{
+                    left: 171px;
+                }
+            }
+            & .formSection{
+                & .inputGroup{
+                    & .inputText{
+                        width: 40px;
+                        height: 40px;
+                        padding: 12px;
+                        background:$white;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    & .formInput{
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        transition: all 0.3s ease-in-out;
+                        
+                        &::placeholder{
+                            font-size: 16px;
+                            color: #000;
+                            font-weight: 400;
+                        }
+                        // &:focus{
+                        //     & label{
+                        //         background-color: red;
+                        //     }
+                        // }
+                   
+                    }
+                    & .formSelect{
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        & option{
+                            font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        }
+                    }
+                   
+                }
+                & .inputGroup .formInput:focus + .inputText {
+                    color: white;
+                    background: $theme1 !important;
+                    
+                }
+            }
+    
+    
+        }
+    }
+    & .unversityPera{
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+    }
+    & .tableSection{
+        & .tableSectionDesign{
+            & thead{
+                width: 100%;
+                & tr{
+                    width: 100%;
+                    background-color: $theme2;
+                    & th{
+                        font-size: 16px;
+                        color: $white;
+                    }
+                }
+            }
+            & tbody{
+                & tr{
+                    & td{
+                        font-size: 14px;
+                        color:#000;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    & .pera{
+        font-size: 16px;
+        color: #000;
+        font-weight: 400;
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .kyrgyzstanSection{
+        & .leftSection{
+            
+            & .sectionTitle{
+                
+                &::before{
+         
+                }
+                &::after{
+             
+                }
+            }
+            & .contactUs{
+               
+        
+            }
+            & .countries{
+                
+                & .sectionTitle{
+                    &::before{
+                       
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .cart-list{
+                    & ul{
+                        & li{
+                       
+                           
+                            & .pera{
+                           
+                                & .icon{
+       
+        
+                                }
+                                &:hover{
+                                
+                                    & .icon{
+                                      
+                                    }
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .consultation{
+             
+                & .sectionTitle{
+                    &::before{
+                       
+        
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .formSection{
+                    & .inputGroup{
+                        & .inputText{
+                       
+                        }
+                        & .formInput{
+                    
+                            
+                            &::placeholder{
+                      
+                            }
+                      
+                       
+                        }
+                        & .formSelect{
+                      
+                            & option{
+                
+                            }
+                        }
+                       
+                    }
+                    & .inputGroup .formInput:focus + .inputText {
+               
+                        
+                    }
+                }
+        
+        
+            }
+        }
+        & .unversityPera{
+      
+        }
+        & .tableSection{
+            & .tableSectionDesign{
+                & thead{
+                  
+                    & tr{
+                     
+                        & th{
+                     
+                        }
+                    }
+                }
+                & tbody{
+                    & tr{
+                        & td{
+                     
+                        }
+                    }
+                }
+            }
+        }
+        & .pera{
+      
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .kyrgyzstanSection{
+        & .leftSection{
+            
+            & .sectionTitle{
+                
+                &::before{
+         
+                }
+                &::after{
+             
+                }
+            }
+            & .contactUs{
+               
+        
+            }
+            & .countries{
+                
+                & .sectionTitle{
+                    &::before{
+                       
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .cart-list{
+                    & ul{
+                        & li{
+                       
+                           
+                            & .pera{
+                           
+                                & .icon{
+       
+        
+                                }
+                                &:hover{
+                                
+                                    & .icon{
+                                      
+                                    }
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .consultation{
+             
+                & .sectionTitle{
+                    &::before{
+                       
+        
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .formSection{
+                    & .inputGroup{
+                        & .inputText{
+                       
+                        }
+                        & .formInput{
+                    
+                            
+                            &::placeholder{
+                      
+                            }
+                      
+                       
+                        }
+                        & .formSelect{
+                      
+                            & option{
+                
+                            }
+                        }
+                       
+                    }
+                    & .inputGroup .formInput:focus + .inputText {
+               
+                        
+                    }
+                }
+        
+        
+            }
+        }
+        & .sub-heading {
+            font-size: 30px;
+        }
+        & .unversityPera{
+      
+        }
+        & .tableSection{
+            & .tableSectionDesign{
+                & thead{
+                  
+                    & tr{
+                     
+                        & th{
+                     
+                        }
+                    }
+                }
+                & tbody{
+                    & tr{
+                        & td{
+                     
+                        }
+                    }
+                }
+            }
+        }
+        & .pera{
+      
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .kyrgyzstanSection{
+        & .leftSection{
+            
+            & .sectionTitle{
+                
+                &::before{
+         
+                }
+                &::after{
+             
+                }
+            }
+            & .contactUs{
+               
+        
+            }
+            & .countries{
+                
+                & .sectionTitle{
+                    &::before{
+                       
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .cart-list{
+                    & ul{
+                        & li{
+                       
+                           
+                            & .pera{
+                           
+                                & .icon{
+       
+        
+                                }
+                                &:hover{
+                                
+                                    & .icon{
+                                      
+                                    }
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .consultation{
+             
+                & .sectionTitle{
+                    &::before{
+                       
+        
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .formSection{
+                    & .inputGroup{
+                        & .inputText{
+                       
+                        }
+                        & .formInput{
+                    
+                            
+                            &::placeholder{
+                      
+                            }
+                      
+                       
+                        }
+                        & .formSelect{
+                      
+                            & option{
+                
+                            }
+                        }
+                       
+                    }
+                    & .inputGroup .formInput:focus + .inputText {
+               
+                        
+                    }
+                }
+        
+        
+            }
+        }
+        & .unversityPera{
+      
+        }
+        & .tableSection{
+            & .tableSectionDesign{
+                & thead{
+                  
+                    & tr{
+                     
+                        & th{
+                     
+                        }
+                    }
+                }
+                & tbody{
+                    & tr{
+                        & td{
+                     
+                        }
+                    }
+                }
+            }
+        }
+        & .pera{
+      
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .kyrgyzstanSection{
+        & .leftSection{
+            
+            & .sectionTitle{
+                
+                &::before{
+         
+                }
+                &::after{
+             
+                }
+            }
+            & .contactUs{
+               
+        
+            }
+            & .countries{
+                
+                & .sectionTitle{
+                    &::before{
+                       
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .cart-list{
+                    & ul{
+                        & li{
+                       
+                           
+                            & .pera{
+                           
+                                & .icon{
+       
+        
+                                }
+                                &:hover{
+                                
+                                    & .icon{
+                                      
+                                    }
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .consultation{
+             
+                & .sectionTitle{
+                    &::before{
+                       
+        
+                    }
+                    &::after{
+                       
+                    }
+                }
+                & .formSection{
+                    & .inputGroup{
+                        & .inputText{
+                       
+                        }
+                        & .formInput{
+                    
+                            
+                            &::placeholder{
+                      
+                            }
+                      
+                       
+                        }
+                        & .formSelect{
+                      
+                            & option{
+                
+                            }
+                        }
+                       
+                    }
+                    & .inputGroup .formInput:focus + .inputText {
+               
+                        
+                    }
+                }
+        
+        
+            }
+        }
+       & .sub-heading {
+            font-size: 25px;
+        }
+        & .unversityPera{
+            font-size: 14px;
+        }
+        & .tableSection{
+            & .tableSectionDesign{
+                & thead{
+                  
+                    & tr{
+                     
+                        & th{
+                     
+                        }
+                    }
+                }
+                & tbody{
+                    & tr{
+                        & td{
+                     
+                        }
+                    }
+                }
+            }
+        }
+        & .pera{
+      
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .kyrgyzstanSection{
+        & .leftSection{
+            
+            & .sectionTitle{
+                font-size: 18px;
+                &::before{
+                    left: 122px;
+                    height: 3px;
+                    top: 16px;
+                }
+                &::after{
+                    left: 113px;
+                    height: 3px;
+                }
+            }
+            & .contactUs{
+               
+        
+            }
+            & .countries{
+                
+                & .sectionTitle{
+                    &::before{
+                        left: 148px;
+                    }
+                    &::after{
+                        left: 140px;
+                    }
+                }
+                & .cart-list{
+                    & ul{
+                        & li{
+                       
+                           
+                            & .pera{
+                                font-size: 14px;
+                                & .icon{
+       
+        
+                                }
+                                &:hover{
+                                
+                                    & .icon{
+                                      
+                                    }
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .consultation{
+             
+                & .sectionTitle{
+                    &::before{
+                        left: 166px;
+        
+                    }
+                    &::after{
+                        left: 157px;
+                    }
+                }
+                & .formSection{
+                    & .inputGroup{
+                        & .inputText{
+                            width: 35px;
+                            height: 35px;
+                            padding: 9px;
+                        }
+                        & .formInput{
+                        font-size: 14px;
+                            
+                            &::placeholder{
+                                font-size: 14px;
+                      
+                            }
+                      
+                       
+                        }
+                        & .formSelect{
+                            font-size: 14px;
+                      
+                            & option{
+                                font-size: 14px;
+                
+                            }
+                        }
+                       
+                    }
+                    & .inputGroup .formInput:focus + .inputText {
+               
+                        
+                    }
+                }
+        
+        
+            }
+        }
+        & .sub-heading {
+            font-size: 20px;
+        }
+        & .unversityPera{
+      
+        }
+        & .tableSection{
+            & .tableSectionDesign{
+                ::-webkit-scrollbar{
+                    height: 2px;
+                }
+                & thead{
+                  
+                    & tr{
+                     
+                        & th{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                & tbody{
+                    & tr{
+                        & td{
+                     
+                        }
+                    }
+                }
+            }
+        }
+        & .pera{
+      
+        }
+    }
+}
