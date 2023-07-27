@@ -1656,8 +1656,11 @@
         }
     }
     & .ourImg{
-        height: 450px;
-       
+        max-height: 450px;
+        height: 100%;
+        & img {
+            object-fit: contain;
+        }
     }
 }
 
