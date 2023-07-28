@@ -23,10 +23,10 @@
         top: 50%;
         width: 150%;
         z-index: -1;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
         -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
         transform: translateX(-50%) translateY(-50%) rotate(-25deg);
         background-color: $theme2;
@@ -35,7 +35,7 @@
         z-index: 1;
         color: $white;
         &::before{
-            height: 500%;
+            height: 800%;
         }
     }
     &.darkBtn{
