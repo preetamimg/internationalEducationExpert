@@ -1141,3 +1141,14 @@
 
     // }
 }
+
+// gallery section start
+@media screen and (max-width:400px) {
+    
+    .gallaryFluid {
+        & .galleryCard {
+            width: 100%;
+        }
+    }
+}
+// gallery section end
