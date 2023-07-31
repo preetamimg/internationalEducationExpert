@@ -1110,3 +1110,34 @@
 }
 
 // hero card end
+
+.ctadownload {
+    & .shapeOne {
+        left: -9%;
+        & .shapeoneinner {
+            opacity: 0.5;
+            fill: $warning;
+        }
+    }
+    & .shapeTwo {
+        right: -5%;
+        & .shapeTwoInner {
+            fill:$info;
+            opacity: 0.4;
+        }
+    }
+    & .dotsMain {
+        & .dotOne {
+            fill: $orange;
+        }
+        & .dotTwo {
+            fill: $warning;
+        }
+        & .dotThree {
+            fill: $primary;
+        }
+    }
+    // &::before {
+
+    // }
+}
