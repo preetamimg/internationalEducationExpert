@@ -81,6 +81,9 @@
         }
     }
 }
+.coomantoSection {
+    padding-top: 120px;
+}
 
 @include media-breakpoint(basic) {}
 @include media-breakpoint-up(sm) {}
@@ -100,6 +103,9 @@
 @include media-breakpoint-down(xl) {}
 
 @include media-breakpoint-down(lg) {
+    .coomantoSection {
+        padding-top: 100px;
+    }
     .innerTopSection {
         & .innerfluid {
             & .content {

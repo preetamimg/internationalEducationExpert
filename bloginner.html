@@ -62,13 +62,14 @@
 <body class="overflow-hidden">
     <div class="page-loader"><div class="spinner"></div></div>
 <!-- * navbar start -->
-<nav class="navbar navbar-expand-lg fixed-top container-fluid   z-3 w-100 " aria-label="Offcanvas navbar large" id="navbar">
+<nav class="navbar navbar-expand-lg fixed-top container-fluid  z-3 w-100 fixed-navbar" aria-label="Offcanvas navbar large" id="">
     <div class="container"> 
         <a class="navbar-brand nav-logo logo1" href="index.html"><img src="assets/img/header/ensure-logo.png" alt="logo" class="img-fluid logo1 h-100"></a>
         <a class="navbar-brand nav-logo logo2 d-none" href="index.html"><img src="assets/img/header/logo.png" alt="logo" class="img-fluid h-100 logo2"></a>
         <ul class="navbar-nav gap-4 justify-content-end flex-grow-1 align-items-md-center align-items-start pe-3 d-lg-flex d-none">
-            <li class="nav-item py-4"><a class="nav-link p-0 position-relative fw-semibold active" href="javascript:;">Home</a></li>
-            <li class="dropdown vipDropdown nav-item position-relative py-4">
+            <li class="nav-item py-4"><a class="nav-link p-0 position-relative fw-semibold" href="index.html">Home</a></li>
+            <li class="nav-item py-4"><a class="nav-link p-0 position-relative fw-semibold" href="about.html">About</a></li>
+            <!-- <li class="dropdown vipDropdown nav-item position-relative py-4">
                 <a href="javascript:;" class="text-decoration-none nav-link p-0 position-relative fw-semibold dropdowntoggle dropToggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                 <ul class="dropdown-menu drop-link-main popover-header list-unstyled bg-white position-absolute rounded-0 top-100 border-0">
                     <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="overview.html">Overview</a></li>
@@ -77,20 +78,20 @@
                     <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="scholarship.html">Scholarship</a></li>
                     <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="why-choose-us.html">Why Choose Us</a></li>
                 </ul>
-            </li>
+            </li> -->
             <li class="dropdown vipDropdown nav-item position-relative py-4">
                 <a href="javascript:;" class="text-decoration-none nav-link p-0 position-relative fw-semibold dropdowntoggle dropToggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Universites</a>
                 <ul class="dropdown-menu drop-link-main popover-header list-unstyled bg-white position-absolute rounded-0 top-100 border-0">
-                    <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="javascript:;">MBBS</a></li>
+                    <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="mbbs.html">MBBS</a></li>
                     <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="javascript:;">Engineering</a></li>
                     <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="javascript:;">Language</a></li>
                     <li class="drop-list position-relative"><a class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5" href="javascript:;">MBA</a></li>
                 </ul>
             </li>
             <li class="dropdown vipDropdown nav-item position-relative py-4">
-                <a href="javascript:;" class="text-decoration-none nav-link p-0 position-relative fw-semibold dropdowntoggle dropToggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Study MBBS Abroad</a>
+                <a href="javascript:;" class="text-decoration-none nav-link p-0 position-relative fw-semibold dropdowntoggle dropToggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false">Study MBBS Abroad</a>
                 <ul class="dropdown-menu drop-link-main popover-header list-unstyled bg-white position-absolute rounded-0 top-100 border-0">
-                    <li class="drop-list position-relative"><a href="kyrgyzstan.html" class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5">KYRGYZSTAN</a></li>
+                    <li class="drop-list position-relative active"><a href="kyrgyzstan.html" class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5">KYRGYZSTAN</a></li>
                     <li class="drop-list position-relative"><a href="javascript:;" class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5">ARMENIA</a></li>
                     <li class="drop-list position-relative"><a href="javascript:;" class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5">UZBEKISTAN</a></li>
                     <li class="drop-list position-relative"><a href="javascript:;" class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5">GEORGIA</a></li>
@@ -103,9 +104,9 @@
                     <li class="drop-list position-relative"><a href="javascript:;" class="dropdown-item text-decoration-none drop-link fw-medium ps-3 py-2 pe-5">MOLDOVA</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a class="nav-link p-0 position-relative fw-semibold" href="javascript:;">Blog</a></li>
+            <li class="nav-item"><a class="nav-link p-0 position-relative fw-semibold" href="blog.html">Blog</a></li>
             <!-- <li class="nav-item"><a class="nav-link p-0 position-relative fw-semibold" href="javascript:;">Contact</a></li> -->
-            <li><a href="javascript:;" class="themBtn aplyBtn">Apply Now</a></li>
+            <li><a href="javascript:;" class="themBtn aplyBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Apply Now</a></li>
         </ul>
         <div class="d-lg-none d-flex align-items-center">
             <a class="d-flex menu-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -118,7 +119,7 @@
 <!-- ! @@@@@@@ Content Start @@@@@@@@ -->
 
 <!-- * Top Section -->
-<div class="container-fluid aboutUs">
+<!-- <div class="container-fluid aboutUs">
     <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
             <div class="col-12 pt-5">
@@ -135,10 +136,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- * Top Section -->
 <!-- blog Section inner start -->
-<div class="container-fluid py-lg-5 my-5 bloginnerSection">
+<div class="container-fluid pb-lg-5 mb-5 bloginnerSection coomantoSection">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-sm-11 mx-auto">
@@ -195,100 +196,7 @@
 </div>
 <!-- blog Section inner end -->
 
-<!-- coFounder Section  -->
-<div class="container-fluid py-5 coFounder">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="row pb-4">
-                    <div class="col-12"><span class="heading fw-semibold position-relative text-uppercase">"THE BEST WAY TO PREDICT YOUR FUTURE IS TO CREATE IT "</span></div>
-                    <div class="col-12 sub-heading pt-1 z-1">Director Message</div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row align-items-center">
-                    <div class="col-lg-7  overflow-hidden">
-                        <div class="coFounderImg overflow-hidden"><img src="assets/img/director1.jpg" alt="director-message" class="img-fluid w-100 h-100"></div>
-                    </div>
-                    <div class="col-lg-5">
-                        <!-- <div class="outterCard d-flex align-items-center flip-card">
-                            <div class=" flip-card-inner">
 
-                                <div class="row mx-0 gap-3 ">
-                                    <div class="col-12 lip-card-front">
-                                        <div class="row mx-0 gap-3">
-                                            <div class="col-12 pt-2">
-                                                <div class="subtitle">Founder & Director</div>
-                                                <div class="title">Dr. Inaya khan</div>
-                                                <div class="subtitle">+91 8830477328</div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="pera">ENSURE EDUCATION , a Delhi based Education consultancy was formed to ensure the highest standard of education to the aspiring students of MBBS in INDIA as well as ABROAD.</div>
-                                                <div class="pera pt-1">As said Learning is not attained by chance it must be sought for with ardour and diligence. I being the DIRECTING MANAGER of ENSURE EDUCATION try to be backbone of every student at every point they need me. I frmly believe that providing guidance and help in terms of education is the only pure foam of help one can do for the individual and the country itself.</div>
-                                                <div class="">
-                                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore pera pt-1"> Read More <span class="d-inline-flex ms-2 readMoreIcon"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 pb-2">
-                                                <div class="icon d-inline-flex"><img src="assets/img/aboutus/Linkedin.svg" alt="linkedin" class="img-fluid w-100 h-100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 flip-card-back">
-                                        <div class="pera2">I take this opportunity to thank you everyone for showing trust in us and considering us to be part of your educational journey. It give me immense pleasure to share that our consultancy has helped more than 1000+ aspirants to fulfil their dreams of becoming doctor form INDIA and ABROAD. We strongly believe that the success of an organisation is not just based on the profts measured in numbers, but also the quality, service standards and customer satisfaction. Moreover, our team focus on the success, career, fnance aid so that it become more convinent for students to study anywhere aroud the world .</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  -->
-                        <div class="flip-card outterCard">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
-                                <div class="row gap-3">
-                                    <div class="col-12 pt-2">
-                                        <div class="subtitle">Founder & Director</div>
-                                        <div class="title">Dr. Inaya khan</div>
-                                        <div class="subtitle">+91 8830477328</div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="pera">ENSURE EDUCATION , a Delhi based Education consultancy was formed to ensure the highest standard of education to the aspiring students of MBBS in INDIA as well as ABROAD.</div>
-                                        <div class="pera pt-1">As said Learning is not attained by chance it must be sought for with ardour and diligence. I being the DIRECTING MANAGER of ENSURE EDUCATION try to be backbone of every student at every point they need me. I frmly believe that providing guidance and help in terms of education is the only pure foam of help one can do for the individual and the country itself.</div>
-                                        <div class="">
-                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore pera pt-1"> Read More <span class="d-inline-flex ms-2 readMoreIcon"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 pb-2">
-                                        <div class="icon d-inline-flex"><img src="assets/img/aboutus/Linkedin.svg" alt="linkedin" class="img-fluid w-100 h-100"></div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="flip-card-back">
-                                <div class="row gap-3">
-                                    <div class="col-12 pt-2">
-                                        <div class="subtitle">Founder & Director</div>
-                                        <div class="title">Dr. Inaya khan</div>
-                                        <div class="subtitle">+91 8830477328</div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="pera">I take this opportunity to thank you everyone for showing trust in us and considering us to be part of your educational journey. It give me immense pleasure to share that our consultancy has helped more than 1000+ aspirants to fulfil their dreams of becoming doctor form INDIA and ABROAD. We strongly believe that the success of an organisation is not just based on the profts measured in numbers, but also the quality, service standards and customer satisfaction. Moreover, our team focus on the success, career, fnance aid so that it become more convinent for students to study anywhere aroud the world .</div>
-                                        <div class="pera pt-1"> I once again thank you for believing in us and giving us the opportunity to serve you .  </div>
-                                        <div class="pera pt-2">  Yours Sincerely , </div>
-                                        <!-- <div class="">
-                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center readMore pera pt-1"> Read More <span class="d-inline-flex ms-2 readMoreIcon"><img src="assets/image/EducationCard/RightArrow.png" alt="RightArrow" class="img-fluid w-100 h-100"></span></a>
-                                        </div> -->
-                                    </div>
-                                    <div class="col-12 pb-2">
-                                        <div class="icon d-inline-flex"><img src="assets/img/aboutus/Linkedin.svg" alt="linkedin" class="img-fluid w-100 h-100"></div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- ! @@@@@@@ Content End @@@@@@@@ -->
@@ -492,5 +400,75 @@
     <script src="assets/libs/owlCarousel/owlcarousel.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
+
+
+      <!-- Modal apply-->
+      <div class="modal fade pdfModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modaldialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modalContent rounded-0">
+            <div class="modal-header modalheader border-0 pt0">
+                <div class="modal-title modalTitle" id="exampleModalLabel">APPLY ONLINE</div>
+                <button type="button" class=" modalBtn bg-transparent border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/kazisthan/Close.svg" alt="close" class="img-fluid w-100 h-100"></button>
+            </div>
+            <div class="modal-body pt-0">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="consultation">
+                        <div class="formSection">
+                            <label for="formInput1" class="mb-2 formLabel">Name</label>
+                            <div class="input-group mb-3 inputGroup">
+                                <label for="formInput1" class="input-group-text inputText border-start border-theme2 border-end-0  rounded-0 shadow-none" id="basic-addon1"> <img src="assets/img/kazisthan/user.svg" alt="user" class="img-fluid w-100 h-100"></label>
+                                <input type="text" class="form-control rounded-0 shadow-none border border-theme2 border-start-0  formInput" placeholder="Enter Your Name" aria-label="Username" aria-describedby="basic-addon1" id="formInput1">
+                            </div>
+                            <label for="formInput2" class="mb-2 formLabel"> Email</label>
+                            <div class="input-group mb-3 inputGroup">
+                                <label for="formInput2" class="input-group-text rounded-0 inputText border-start border-theme2 border-end-0 shadow-none" id="basic-addon1"> <img src="assets/img/kazisthan/email.svg" alt="email" class="img-fluid w-100 h-100"></label>
+                                <input type="email" class="form-control border border-theme2 border-start-0 rounded-0 shadow-none  formInput" placeholder="Enter Your Email" aria-label="Email" aria-describedby="basic-addon1" id="formInput2">
+                            </div>
+                            <label for="formInput3" class="mb-2 formLabel"> City</label>
+                            <div class="input-group mb-3 inputGroup">
+                                <label for="formInput3" class="input-group-text rounded-0 inputText border-start border-theme2 border-end-0 shadow-none" id="basic-addon1"> <img src="assets/img/kazisthan/Global.svg" alt="email" class="img-fluid w-100 h-100"></label>
+                                <select class="form-select border border-theme2 border-start-0 shadow-none rounded-0 formSelect" aria-label="Default select example" id="formInput3">
+                                    <option selected> Select Your City</option>
+                                    <option value="1">INDIA</option>
+                                    <option value="2">KYRGYSTAN</option>
+                                    <option value="3">KAZAKHSTAN</option>
+                                    <option value="4">ARMENIA</option>
+                                    <option value="5">GEORGIA</option>
+                                    <option value="6">PHILIPPINES </option>
+                                    <option value="7">RUSSIA</option>
+                                    <option value="8">UKRAINE  </option>
+                                    <option value="9">POLAND</option>
+                                    <option value="10">ROMANIA</option>
+                                    <option value="11">SALOVAKIA REPUBLIC</option>
+                                    <option value="12">MALDOVA</option>
+                                </select>
+                            </div>
+                            <label for="formInput4" class="mb-2 formLabel">Phone Number</label>
+                            <div class="input-group mb-3 inputGroup">
+                                <label for="formInput4" class="input-group-text rounded-0 inputText border-start border-theme2 border-end-0 shadow-none" id="basic-addon1"> <img src="assets/img/kazisthan/Phone.svg" alt="phone" class="img-fluid w-100 h-100"></label>
+                                <input type="text" class="form-control border border-theme2 border-start-0  shadow-none rounded-0 formInput" placeholder=" Enter Your Phone Number" aria-label="phonenumber" aria-describedby="basic-addon1" id="formInput4">
+                            </div>
+                            <label for="formInput5" class="mb-2 formLabel"> State</label>
+                            <div class="input-group mb-3 inputGroup">
+                                <label for="formInput5" class="input-group-text inputText rounded-0 border-start border-theme2 border-end-0 shadow-none" id="basic-addon1"> <img src="assets/img/kazisthan/location1.svg" alt="city" class="img-fluid w-100 h-100"></label>
+                                <input type="text" class="form-control border border-theme2 border-start-0  shadow-none rounded-0 formInput" placeholder="Enter Your State" aria-label="state" aria-describedby="basic-addon1" id="formInput5">
+                            </div>
+                            <label for="formInput6" class="mb-2 formLabel"> City</label>
+                            <div class="input-group mb-3 inputGroup">
+                                <label for="formInput6" class="input-group-text inputText border-start border-theme2 border-end-0 rounded-0 shadow-none" id="basic-addon1"> <img src="assets/img/kazisthan/Location.svg" alt="city" class="img-fluid w-100 h-100"></label>
+                                <input type="text" class="form-control border border-theme2 border-start-0  shadow-none rounded-0 formInput" placeholder="Enter Your City" aria-label="city" aria-describedby="basic-addon1" id="formInput6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer d-block border-0 pt-3">
+                <div> <a href="javascript:;" class="themBtn">Apply Now</a></div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
