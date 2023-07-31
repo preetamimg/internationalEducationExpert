@@ -1404,7 +1404,7 @@
         }
     }
     & .ourImg {
-        max-height: 450px;
+        max-height: 400px;
         height: 100%;
         & img {
             object-fit: contain;
@@ -1852,7 +1852,7 @@
                     width: 100%;
                     background-color: $theme2;
                     & th {
-                        font-size: 16px;
+                        font-size: 18px;
                         color: $white;
                     }
                 }
@@ -1860,7 +1860,7 @@
             & tbody {
                 & tr {
                     & td {
-                        font-size: 14px;
+                        font-size: 16px;
                         color: #000;
                         font-weight: 400;
                     }
@@ -2349,13 +2349,14 @@
                 & thead {
                     & tr {
                         & th {
-                            font-size: 14px;
+                            font-size: 16px;
                         }
                     }
                 }
                 & tbody {
                     & tr {
                         & td {
+                            font-size: 14;
                         }
                     }
                 }
