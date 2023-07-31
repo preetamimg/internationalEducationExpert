@@ -457,6 +457,111 @@
     }
 }
 
+.contactsSection {
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: -300px;
+        background-image: url(./../img/graph.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    & .inner_section {
+        & .leftImg{
+            height: 400px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & .consultation{
+            & .sectionTitle{
+                font-size: 45px;
+                font-weight: 700;
+                color: $theme2;
+            }
+            & .inpImg{
+                height: 50px !important;
+            }
+        }
+        & .cardsection {
+        & .card {
+            &.active{
+                background-color: $theme2;
+                & .subBody{
+                    & .card-text {
+                        color: white !important;
+                    }
+                    & .subText{
+                        color: white !important;
+                    }
+                }
+            }
+            border: none !important;
+            transition: all 0.3s ease-in-out;
+            & .card-body {
+            & .chooseList {
+                height: 60px;
+                width: 60px;
+                z-index: 2;
+                box-shadow: 0px 0px 10px 0px rgba($black, 0.2) !important;
+                transition: all ease-in-out 0.3s;
+                & img {
+                transition: all ease-in-out 0.3s;
+                }
+                &:hover{
+                background-color: $theme2 !important;
+                & img {
+                    filter: brightness(100);
+                    transform: scale(1.1);
+                }
+                }
+            }
+            & .dashBorder {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                // border-bottom: 2px dashed rgba($theme1, 0.1);
+                z-index: 1;
+            }
+            }
+            & .subBody {
+            & .card-text {
+                transition: all 0.3s;
+                font-size: 18px;
+
+            }
+            & .subText {
+                transition: all 0.3s;
+                font-size: 16px;
+            }
+            }
+            &:hover {
+                // border-style: solid;
+                border-radius: 0 !important;
+                background-color: $theme2;
+                & .subBody{
+                    & .card-text {
+                        color: white !important;
+                    }
+                    & .subText{
+                        color: white !important;
+                    }
+                }
+            & .subBody {
+                & .card-text {
+                }
+            }
+            }
+        }
+        }
+    }
+}
 
 @include media-breakpoint(basic) {
     .testimonialsFluid{
@@ -600,6 +705,66 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .contactsSection {
+        &::after{
+        }
+        & .inner_section {
+            & .leftImg{
+                & img{
+                }
+            }
+            & .consultation{
+                & .sectionTitle{
+                    font-size: 30px;
+                }
+                & .inpImg{
+                }
+            }
+            & .cardsection {
+            & .card {
+                &.active{
+                    & .subBody{
+                        & .card-text {
+                        }
+                        & .subText{
+                        }
+                    }
+                }
+                & .card-body {
+                & .chooseList {
+                    & img {
+                    }
+                    &:hover{
+                    & img {
+                    }
+                    }
+                }
+                & .dashBorder {
+                }
+                }
+                & .subBody {
+                & .card-text {
+    
+                }
+                & .subText {
+                }
+                }
+                &:hover {
+                    & .subBody{
+                        & .card-text {
+                        }
+                        & .subText{
+                        }
+                    }
+                & .subBody {
+                    & .card-text {
+                    }
+                }
+                }
+            }
             }
         }
     }
