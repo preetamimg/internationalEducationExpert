@@ -1128,7 +1128,7 @@
 // about section start
 .aboutUsSection {
     & .about-img {
-        max-width: 500px;
+        max-width: 900px;
         // height: 450px;
         transition: all 0.7s ease-in-out;
     }
@@ -1309,7 +1309,7 @@
 @include media-breakpoint-down(md) {
     .aboutUsSection {
         & .about-img {
-            max-width: 390px;
+            max-width: 790px;
         }
         & .pera {
             font-size: 14px;
@@ -1345,7 +1345,7 @@
 @include media-breakpoint-down(sm) {
     .aboutUsSection {
         & .about-img {
-            max-width: 263px;
+            max-width: 600px;
         }
         & .pera {
             font-size: 14px;
