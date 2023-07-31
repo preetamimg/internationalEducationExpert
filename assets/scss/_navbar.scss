@@ -32,6 +32,9 @@
 height: 70px;
 & .nav-logo {
     height: 65px;
+    & img {
+        object-fit: contain;
+    }
 }
 & .navbar-nav {
     & .nav-item {
