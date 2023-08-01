@@ -424,6 +424,40 @@
     }
 }
 
+// .gallaryyFluid{
+//     & .gallaryyContainer{
+//         // margin-top: 100px;
+//         & .gallaryySubHead{
+//             font-size: 20px;
+//             font-weight: 700;
+//             color: $theme1;
+//             text-align: center;
+//         }
+//         & .gallaryyHead{
+//             font-size: 60px;
+//             font-weight: 700;
+//             color: $theme2;
+//             text-align: center;
+//             margin-bottom: 20px;
+//         }
+//         & .imageParent{
+//             transition: 0.3s linear;
+//             &:hover{
+//                 & img{
+//                     transform: scale(1.2);
+//                 }
+//             }
+//             & .jg-caption{
+//                 height: 100%;
+//             }
+//             & img{
+//                 transition: 0.3s linear;
+//             }
+//         }
+//     }
+// }
+
+// gallery section 
 .gallaryyFluid{
     & .gallaryyContainer{
         // margin-top: 100px;
@@ -441,17 +475,49 @@
             margin-bottom: 20px;
         }
         & .imageParent{
-            transition: 0.3s linear;
+      
+            overflow: hidden;
+            
             &:hover{
-                & img{
-                    transform: scale(1.2);
+                &::after{
+                    height: 100%;
+                }
+                &::before{
+                    opacity: 5;
+                    top: 50%;
                 }
             }
-            & .jg-caption{
-                height: 100%;
+            &::after{
+                content: '';
+                width: 100%;
+                height: 0%;
+                background-color: rgba(0,0,0,0.4);
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 0.3s linear;
+                // border-radius: 8px;
+            }
+            &::before{
+                content: '';
+                background-image: url(./../img/expand.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px;
+                position: absolute;
+                top: 0%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 150px;
+                height: 150px;
+                opacity: 0;
+                z-index: 5;
+                transition: 0.3s linear;
             }
             & img{
-                transition: 0.3s linear;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
