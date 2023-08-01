@@ -1128,7 +1128,7 @@
 // about section start
 .aboutUsSection {
     & .about-img {
-        max-width: 900px;
+        // max-width: 900px;
         // height: 450px;
         transition: all 0.7s ease-in-out;
     }
@@ -1309,7 +1309,7 @@
 @include media-breakpoint-down(md) {
     .aboutUsSection {
         & .about-img {
-            max-width: 790px;
+            // max-width: 790px;
         }
         & .pera {
             font-size: 14px;
@@ -1345,7 +1345,7 @@
 @include media-breakpoint-down(sm) {
     .aboutUsSection {
         & .about-img {
-            max-width: 600px;
+            // max-width: 600px;
         }
         & .pera {
             font-size: 14px;
@@ -1408,6 +1408,17 @@
         height: 100%;
         & img {
             object-fit: contain;
+        }
+    }
+}
+.bloginnerSection{
+    & .blogImg{
+        max-height: 400px;
+        height: 100%;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -1763,6 +1774,9 @@
 // kyrgyzstanSection start
 
 .kyrgyzstanSection {
+    & .sub-heading{
+        font-size: 35px;
+    }
     & .leftSection {
         top: 80px;
         & .sectionTitle {
@@ -1833,8 +1847,8 @@
         }
     }
     & .sectionHeading{
-        font-size: 25px;
-        line-height: 33px;
+        font-size: 22px;
+        line-height: 30px;
         font-weight: 700;
         color: $theme2;
 
@@ -2412,8 +2426,8 @@
         line-height: 24px;
     }
     & .sectionHeading{
-        font-size: 25px;
-        line-height: 33px;
+        font-size: 22px;
+        line-height: 30px;
         font-weight: 700;
         color: $theme2;
 
