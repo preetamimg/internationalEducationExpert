@@ -1763,6 +1763,9 @@
 // kyrgyzstanSection start
 
 .kyrgyzstanSection {
+    & .sub-heading{
+        font-size: 35px;
+    }
     & .leftSection {
         top: 80px;
         & .sectionTitle {
@@ -1833,8 +1836,8 @@
         }
     }
     & .sectionHeading{
-        font-size: 25px;
-        line-height: 33px;
+        font-size: 22px;
+        line-height: 30px;
         font-weight: 700;
         color: $theme2;
 
@@ -2412,8 +2415,8 @@
         line-height: 24px;
     }
     & .sectionHeading{
-        font-size: 25px;
-        line-height: 33px;
+        font-size: 22px;
+        line-height: 30px;
         font-weight: 700;
         color: $theme2;
 
