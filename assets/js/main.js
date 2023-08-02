@@ -154,37 +154,37 @@ $('.countryCarousel').owlCarousel({
     responsiveClass: true,
     responsive: {
         0: {
-            items: 1.5,
+            items: 1,
             nav: false,
             dots: true,
         },
         450: {
-            items: 2,
+            items: 1.5,
             nav: false,
             dots: true,
         },
         576: {
-            items: 3,
+            items: 2,
             nav: false,
             dots: true,
         },
         768: {
-            items: 3,
+            items: 2.5,
             nav: true,
             dots: false,
         },
         992: {
-            items: 4,
+            items: 3,
             nav: true,
             dots: false,
         },
         1200: {
-            items: 5,
+            items: 3,
             nav: true,
             dots: false,
         },
         1400: {
-            items: 6,
+            items: 3,
             nav: true,
             dots: false,
         }
