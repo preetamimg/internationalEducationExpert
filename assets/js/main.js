@@ -60,9 +60,9 @@ $('.Testimonials').owlCarousel({
     center: false,
     freeDrag: false,
     lazyLoad: true,
-    autoplay:true,
-    autoplayTimeout:1500,
-    autoplayHoverPause:true,
+    // autoplay:true,
+    // autoplayTimeout:1500,
+    // autoplayHoverPause:true,
     smartSpeed: 1100,
     responsiveClass: true,
     responsive: {
