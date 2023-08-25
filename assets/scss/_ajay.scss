@@ -218,6 +218,38 @@
         }
     }
 }
+
+
+.studycardsection{
+    & .innersection {
+        & .card {
+            box-shadow: 0px 0px 10px 0px rgba($black, 0.09);
+            & .card-body{
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 3px;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: $theme2;
+                }
+                & .studyheading {
+                    font-size: 20px;
+                    transition: all 0.3s;
+                }
+            }
+            &:hover{
+                & .card-body{
+                    & .studyheading {
+                        color: $theme2 !important;
+                    }
+                }
+            }
+        }
+    }
+}
 }
 
 @include media-breakpoint-up(sm) {}
@@ -231,9 +263,33 @@
 @include media-breakpoint-up(xxl) {}
 
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+    .studycardsection{
+        & .innersection {
+            & .card {
+                & .card-body{
+                    & .studyheading {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .studycardsection{
+        & .innersection {
+            & .card {
+                & .card-body{
+                    & .studyheading {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(lg) {
     .counslingCard {
@@ -328,6 +384,18 @@
     }
 }
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .studycardsection{
+        & .innersection {
+            & .card {
+                & .card-body{
+                    & .studyheading {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(sm) {}
