@@ -20,35 +20,35 @@
 
 @include media-breakpoint-up(xxl) {
     .navbar {
-        height: 107px;
+        height: 87.5px;
     }
     .navbar .nav-logo {
-        height: 94px;
+        height: 81.25px;
     }
     .navbar .navbar-nav .nav-item .nav-link {
-        font-size: 23px;
+        font-size: 20px;
     }
     .themBtn {
-        font-size: 23px;
-        padding: 0.7rem 2.4rem 0.7rem 2.4rem;
+        font-size: 18.75px;
+        // padding: 0.7rem 2.4rem 0.7rem 2.4rem;
     }
     .container {
-        max-width: 1780px;
+        max-width: 1650px;
     }
     .hero-section .swiper-slide .hero-heading {
-        font-size: 99px;
+        font-size: 75px;
     }
     .hero-section .swiper-slide .hero-title {
-        font-size: 26px;
+        font-size: 21.25px;
     }
     .hero-section .innercontainer .scroll {
-        font-size: 23px;
+        font-size: 20px;
     }
     .hero-section .innercontainer .scroll span img {
-        height: 40px;
+        height: 37.5px;
     }
     .hero-section {
-        min-height: 920px;
+        min-height: 562.5px;
     }
 }
 
