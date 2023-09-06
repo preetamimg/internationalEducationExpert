@@ -1,22 +1,73 @@
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint(basic) {
 
-@include media-breakpoint-up(md) {}
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(sm) {
 
-@include media-breakpoint-up(xl) {}
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) {
+
+}
+
+@include media-breakpoint-up(xl) {
+
+}
 
 @include media-breakpoint-up(xxl) {
+    .navbar {
+        height: 107px;
+    }
+    .navbar .nav-logo {
+        height: 94px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 23px;
+    }
+    .themBtn {
+        font-size: 23px;
+        padding: 0.7rem 2.4rem 0.7rem 2.4rem;
+    }
+    .container {
+        max-width: 1780px;
+    }
+    .hero-section .swiper-slide .hero-heading {
+        font-size: 99px;
+    }
+    .hero-section .swiper-slide .hero-title {
+        font-size: 26px;
+    }
+    .hero-section .innercontainer .scroll {
+        font-size: 23px;
+    }
+    .hero-section .innercontainer .scroll span img {
+        height: 40px;
+    }
+    .hero-section {
+        min-height: 920px;
+    }
 }
 
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
 
-@include media-breakpoint-down(lg) {}
+}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(lg) {
 
-@include media-breakpoint-down(sm) {}
+}
+
+@include media-breakpoint-down(md) {
+
+}
+
+@include media-breakpoint-down(sm) {
+
+}
