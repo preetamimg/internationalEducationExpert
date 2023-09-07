@@ -147,7 +147,7 @@ $('.countryCarousel').owlCarousel({
     center: false,
     freeDrag: false,
     lazyLoad: true,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:1500,
     autoplayHoverPause:true,
     smartSpeed: 1000,
