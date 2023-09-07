@@ -719,8 +719,12 @@
         line-height: 1.875;
         border-radius: 0.46875rem;
     }
-    .form-control::placeholder {
+    .form-control::placeholder,
+    .form-select {
         font-size: 1.25rem !important;
+        & option {
+            font-size: 1.25rem !important;
+        }
     }
     .gap-md-0 {
         gap: 0 !important;
