@@ -1859,10 +1859,14 @@
         color: #000;
     }
     & .unversityImg {
-        max-height: 450px;
+        max-height: 500px;
         height: 100%;
         & img {
             object-fit: cover;
+            &.topimg{
+
+                object-position: top;
+            }
         }
     }
     & .tableSection {

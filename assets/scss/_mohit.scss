@@ -949,7 +949,7 @@
             overflow: hidden; 
             text-overflow: ellipsis; 
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -1056,7 +1056,7 @@
 
 @include media-breakpoint-down(lg) {
     .AboutCardMain {
-        gap: 25px 0;
+        gap: 20px 0;
         & .aboutCard {
             padding: 20px 20px;
             & .CardIcon {

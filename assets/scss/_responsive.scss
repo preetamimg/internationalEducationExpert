@@ -1,22 +1,775 @@
-@include media-breakpoint(basic) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint(basic) {
 
-@include media-breakpoint-up(md) {}
+}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(sm) {
 
-@include media-breakpoint-up(xl) {}
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) {
+
+}
+
+@include media-breakpoint-up(xl) {
+
+}
 
 @include media-breakpoint-up(xxl) {
+    .navbar {
+        height: 87.5px;
+        --bs-navbar-padding-y: 0.625rem;
+        --bs-navbar-brand-padding-y: 0.391rem;
+    }
+    .hero-section .innercontainer .scroll span {
+        height: 50px;
+    }
+    [class=container] {
+        --bs-gutter-x: 1.875rem;
+    }
+    .pb-1 {
+        padding-bottom: 0.313rem !important;
+    }
+    .navbar .nav-logo {
+        height: 81.25px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 20px;
+    }
+    .themBtn {
+        font-size: 18.75px;
+        padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    }
+    .navbar-expand-lg .navbar-nav {
+        gap: 1.875rem !important;
+    }
+    .container {
+        max-width: 1425px;
+    }
+    .hero-section .swiper-slide .hero-heading {
+        font-size: 75px;
+    }
+    .hero-section .swiper-slide .hero-title {
+        font-size: 21.25px;
+    }
+    .hero-section .innercontainer .scroll {
+        font-size: 20px;
+    }
+    .hero-section .innercontainer .scroll span img {
+        height: 37.5px;
+    }
+    .hero-section {
+        min-height: 687.5px;
+    }
+    
+    
+    .py-2 {
+        padding-top: 0.625rem !important;
+        padding-bottom: 0.625rem !important;
+    }
+
+
+    .AboutCardMain .aboutCard .CardIcon .cardHeading {
+        font-size: 22.5px;
+        line-height: 36.25px;
+    }
+    .AboutCardMain .aboutCard .CardIcon .CardImg {
+        height: 43.75px;
+        width: 43.75px;
+    }
+    .AboutCardMain .aboutCard .cardTitle {
+        font-size: 18.75px;
+        line-height: 32.5px;
+    }
+    .AboutCardMain .aboutCard .moredetaiBtn {
+        font-size: 15px;
+        letter-spacing: 1.25px;
+    }
+    .AboutCardMain .aboutCard::after {
+        width: 2.5px;
+    }
+    .mb-lg-5 {
+        margin-bottom: 3.75rem !important;
+    }
+    .py-4 {
+        padding-top: 1.875rem !important;
+        padding-bottom: 1.875rem !important;
+    }
+    
+    .pe-3 {
+        padding-right: 1.25rem !important;
+    }
+    
+    .gap-4 {
+        gap: 1.875rem !important;
+    }
+    
+    .pb-3 {
+        padding-bottom: 1.25rem !important;
+    }
+    
+    .AboutCardMain .aboutCard {
+        padding: 37.5px 56.25px !important;
+    }
+    
+    .py-md-3 {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+    }
+    
+    .py-lg-5 {
+        padding-top: 3.75rem !important;
+        padding-bottom: 3.75rem !important;
+    }
+    
+    .pt-5 {
+        padding-top: 3.75rem !important;
+    }
+    
+    .heading {
+        font-size: 17.5px;
+        padding-left: 30px; 
+    }
+    
+    .heading::before {
+        font-size: 15px !important;
+        left: 5px !important;
+    }
+    
+    .heading::after {
+        font-size: 15px !important;
+        right: -25px !important;
+    }
+    
+    .sub-heading {
+        font-size: 43.75px !important;
+        line-height: 1.2em;
+    }
+    .about-us .about-left .about-title2 {
+        font-size: 20px;
+    }
+    .row-gap-md-4 {
+        row-gap: 1.875rem !important;
+    }
+    .chooseCountryFluid .chooseCountryContainer .item .countryBox {
+        box-shadow: rgba(100,100,111,.25) 0px 8.75px 36.25px 0px;
+        min-height: 312.5px;
+        padding: 25px;
+    }
+    
+    .mt-3 {
+        margin-top: 1.25rem !important;
+    }
+    .mb-4 {
+        margin-bottom: 1.875rem !important;
+    }
+    
+    .pt-3 {
+        padding-top: 1.25rem !important;
+    }
+    .pt-4 {
+        padding-top: 1.875rem !important;
+    }
+    .me-1 {
+        margin-right: 0.3125rem !important;
+    }
+    
+    .mt-4 {
+        margin-top: 1.875rem !important;
+    }
+    
+    .mt-5 {
+        margin-top: 3.75rem !important;
+    }
+    .mb-2 {
+        margin-bottom: 0.625rem !important;
+    }
+    
+    .mt-2 {
+        margin-top: 0.625rem !important;
+    }
+    .pt-1 {
+        padding-top: 0.3125rem !important;
+    }
+    .pt-2 {
+        padding-top: 0.625rem !important;
+    }
+    
+    .ms-2 {
+        margin-left: 0.625rem !important;
+    }
+    .g-4, .gy-4 {
+        --bs-gutter-y: 1.875rem;
+    }
+    
+    .g-4, .gx-4 {
+        --bs-gutter-x: 1.875rem;
+    }
+    .gap-2 {
+        gap: 0.625rem !important;
+    }
+    .gap-3 {
+        gap: 1.25rem !important;
+    }
+    
+    .my-3 {
+        margin-top: 1.25rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .chooseCountryFluid .chooseCountryContainer .item .countryBox .countryBoxInner .countryName {
+        font-size: 20px;
+    }
+    
+    .chooseCountryFluid .chooseCountryContainer .item .countryBox .countryBoxInner .readBtn {
+        font-size: 17.5px;
+        letter-spacing: 1.5px;
+    }
+    
+    .chooseCountryFluid .chooseCountryContainer .item .countryBox .countryBoxInner .readBtn img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 2.5px;
+    }
+    
+    .slides .owl-nav {
+        top: -81.25px;
+        gap: 12.5px;
+    }
+    
+    .slides .owl-nav button {
+        width: 75px;
+        height: 43.75px;
+    }
+    
+    .studycardsection .innersection .card .card-body::before {
+        width: 3.75px;
+    }
+    
+    .studycardsection .innersection .card .card-body .studyheading {
+        font-size: 22.5px;
+    }
+    
+    .pe-md-3 {
+        padding-right: 1.25rem !important;
+    }
+    
+    .pe-sm-2 {
+        padding-right: 0.625rem !important;
+    }
+    
+    .videoSection .sectionBg .videoPlay .glightbox1 {
+        height: 437.5px;
+        width: 625px;
+    }
+    
+    .videoSection .sectionBg .videoPlay .glightbox1::before {
+        width: 62.5px;
+        height: 62.5px;
+        padding: 17.5px;
+    }
+    
+    .videoSection .sectionBg .videoPlay .glightbox1::after {
+        width: 23.75px;
+        height: 27.5px;
+    }
+    
+    .videoSection .sectionBg .videoContent .videoHeading {
+        font-size: 50px;
+        line-height: 1.2em;
+    }
+    .card-body {
+        padding: 1.25rem 1.25rem;
+    }
+    
+    .cards .card-style .card-content .icon {
+        padding: 22.5px;
+        height: 93.75px;
+        width: 93.75px;
+    }
+    
+    .cards .card-style .card-content .cardheading {
+        font-size: 25px;
+    }
+    
+    .cards .card-style .card-content .pera {
+        font-size: 20px;
+    }
+    
+    .cards .card-style .card-content .readMore {
+        font-size: 18.75px;
+    }
+    
+    .cards .card-style .card-content .readMore span {
+        width: 17.5px;
+        height: 17.5px;
+    }
+    
+    .cards .card-style .card-content .pera2 {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 18.75px 12.5px 25px 12.5px;
+    }
+    
+    .pb-lg-5 {
+        padding-bottom: 3.75rem !important;
+    }
+    
+    .p-md-5 {
+        padding: 3.75rem !important;
+    }
+    
+    
+    .row-gap-4 {
+        row-gap: 1.875rem !important;
+    }
+    
+    .CtaSection .ctaHeading {
+        font-size: 45px;
+    }
+    
+    .CtaSection .ctapara {
+        font-size: 20px;
+    }
+    
+    
+    .newsSection .newsSectionMain .news-blog-card .news-img .news-plus .newsPlusImg {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .newsSection .newsSectionMain .news-blog-card .news-img .news-date {
+        font-size: 17.5px;
+        padding: 20px 30px;
+    }
+    
+    .newsSection .newsSectionMain .news-blog-card .news-img .news-date span {
+        line-height: 20px;
+        font-size: 25px;
+    }
+    
+    .newsSection .newsSectionMain .news-blog-card .news-content {
+        padding: 0 25px;
+    }
+    
+    .newsSection .newsSectionMain .news-blog-card .news-content .news-blog-heading {
+        font-size: 20px;
+    }
+    
+    .newsSection .newsSectionMain .news-blog-card .news-content .news-blog-para {
+        font-size: 20px;
+        line-height: 28.75px;
+    }
+    
+    .newsSection .newsSectionMain .news-blog-card .news-content .readmore-btn {
+        font-size: 17.5px;
+    }
+    
+    .newsSection .newsSectionMain .news-blog-card .news-content .readmore-btn .right-arrow {
+        height: 18.75px;
+        width: 18.75px;
+    }
+    
+    .testimonialsFluid .testimonialsContainer .Testimonials .owl-stage-outer .owl-stage .owl-item .testimonialsBox {
+        padding: 37.5px 37.5px 37.5px 37.5px;
+    }
+    
+    .px-sm-2 {
+        padding-right: 0.625rem !important;
+        padding-left: 0.625rem !important;
+    }
+    
+    .ctcFluid .ctcContainer .ctcBox .ctcHead {
+        font-size: 50px;
+        line-height: 1.2em;
+        margin-bottom: 6.25px;
+    }
+    
+    .ctcFluid .ctcContainer .ctcBox .ctcSub {
+        font-size: 17.5px;
+    }
+    
+    
+    .footer .footer-logo {
+        height: 81.25px;
+    }
+    
+    
+    .footer .social-icon {
+        height: 43.75px;
+        width: 43.75px;
+        padding: 11.25px;
+        border: 1.25px solid #ffe500;
+    }
+    
+    .footer .footer-heading {
+        font-size: 22.5px;
+    }
+    
+    .footer .footer-heading .footer-slash {
+        font-size: 16.25px;
+        padding-top: 2.5px;
+    }
+    
+    
+    .footer .footer-link {
+        font-size: 17.5px;
+    }
+    
+    .testimonialsFluid .testimonialsContainer .Testimonials .owl-stage-outer .owl-stage .owl-item .testimonialsBox .name {
+        font-size: 20px;
+    }
+    
+    .testimonialsFluid .testimonialsContainer .Testimonials .owl-stage-outer .owl-stage .owl-item .testimonialsBox .position {
+        font-size: 17.5px;
+    }
+    
+    .testimonialsFluid .testimonialsContainer .Testimonials .owl-stage-outer .owl-stage .owl-item .testimonialsBox .quote {
+        width: 87.5px;
+        height: 50px;
+    }
+    
+    .testimonialsFluid .testimonialsContainer .Testimonials .owl-stage-outer .owl-stage .owl-item .testimonialsBox .para {
+        font-size: 20px;
+        margin-bottom: 25px;
+        line-height: 35px;
+        margin-top: 25px;
+    }
+    
+    .testimonialsFluid .testimonialsContainer .Testimonials .owl-stage-outer .owl-stage .owl-item .testimonialsBox .starUl .starLi {
+        width: 25px;
+        height: 25px;
+        padding-right: 6.25px;
+    }
+    
+    .p-sm-5 {
+        padding: 3.75rem !important;
+    }
+    
+    .footer .txt {
+        font-size: 16.25px;
+    }
+    
+    .footer .footer-input {
+        font-size: 16.25px;
+    }
+    
+    .footer .divider {
+        height: 1.25px;
+        margin-top: 62.5px;
+        margin-bottom: 37.5px;
+    }
+    
+    .footer .copyright {
+        font-size: 15px;
+    }
+    .gap-md-4 {
+        gap: 1.875rem !important;
+    }
+    
+    .border-2 {
+        --bs-border-width: 2.5px;
+    }
+    .navbar-brand {
+        padding-top: 0.390625rem;
+        padding-bottom: 0.390625rem;
+        margin-right: 1.25rem;
+        font-size: 1.5625rem;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 7.5px;
+        height: 2.5px;
+    }
+    .aboutUsSection .pera {
+        font-size: 20px;
+    }
+    
+    .kyrgyzstanSection .sectionHeading {
+        font-size: 27.5px;
+        line-height: 37.5px;
+    }
+    
+    .ourMission .pera {
+        font-size: 20px;
+    }
+    
+    .coFounder .outterCard {
+        border: 1.25px solid #fff;
+        gap: 1.25rem;
+        margin-left: -262.5px;
+        max-width: 812.5px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner {
+        padding: 18.75px;
+        width: 875px;
+        margin-right: 37.5px;
+        height: 437.5px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    }
+    
+    
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-front .subtitle {
+        font-size: 21.25px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-front .title {
+        font-size: 33.75px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-front .subtitle {
+        font-size: 21.25px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-front .pera {
+        font-size: 17.5px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-front .pera {
+        font-size: 17.5px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-front .readMore .readMoreIcon {
+        width: 18.75px;
+        height: 18.75px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-front .icon {
+        width: 31.25px;
+        height: 31.25px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-back {
+        padding: 6.25px 31.25px 18.75px 31.25px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-back .subtitle {
+        font-size: 21.25px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-back .title {
+        font-size: 33.75px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-back .subtitle {
+        font-size: 21.25px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-back .pera {
+        font-size: 17.5px;
+    }
+    
+    .coFounder .outterCard .flip-card-inner .flip-card-back .icon {
+        width: 31.25px;
+        height: 31.25px;
+    }
+    .pagination {
+        --bs-pagination-padding-x: 0.9375rem;
+        --bs-pagination-padding-y: 0.46875rem;
+        --bs-pagination-font-size: 1.25rem;
+        --bs-pagination-focus-box-shadow: 0 0 0 0.3125rem rgba(13, 110, 253, 0.25);
+        --bs-pagination-border-width: 1.25rem;
+    }
+    
+    .blogPage .newsSectionMain nav .pagination .page-item .page-link {
+        font-size: 17.5px;
+    }
+    
+    .kyrgyzstanSection .unversityPera {
+        font-size: 20px;
+    }
+    
+    .kyrgyzstanSection .pera {
+        font-size: 20px;
+    }
+    
+    .table>:not(caption)>*>* {
+        padding: 0.625rem 0.625rem;
+        border-bottom-width: 1.25px;
+        box-shadow: inset 0 0 0 12498.75px transparent;
+    }
+    
+    .kyrgyzstanSection .tableSection .tableSectionDesign thead tr th {
+        font-size: 22.5px;
+    }
+    
+    .kyrgyzstanSection .tableSection .tableSectionDesign tbody tr td {
+        font-size: 20px;
+    }
+    .coomantoSection {
+        padding-top: 150px;
+    }
+    
+    .accordion {
+        --bs-accordion-border-width: 1.25px;
+        --bs-accordion-border-radius: 0.46875rem;
+        --bs-accordion-inner-border-radius: calc(0.46875rem - (1.25px));
+        --bs-accordion-btn-padding-x: 1.5625rem;
+        --bs-accordion-btn-padding-y: 1.25rem;
+        --bs-accordion-btn-icon-width: 1.5625rem;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.3125rem rgba(13, 110, 253, 0.25);
+        --bs-accordion-body-padding-x: 1.5625rem;
+        --bs-accordion-body-padding-y: 1.25rem;
+    }
+    
+    .mb-3 {
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .aboutUsSection .aboutAccordin .accordinItem::before {
+        width: 6.25px;
+    }
+    
+    .aboutUsSection .aboutAccordin .accordinItem .accordinHeader .accordinButton {
+        font-size: 21.25px;
+    }
+    
+    .aboutUsSection .aboutAccordin .accordinItem .accordinHeader .accordinButton::before {
+        width: 6.25px;
+    }
+    
+    .aboutUsSection .aboutAccordin .accordinItem .accordion-button:not(.collapsed)::after {
+        width: 12.5px;
+    }
+    
+    .accordion-body {
+        padding: 1.25rem 1.5625rem;
+    }
+    
+    .aboutUsSection .pera {
+        font-size: 25px;
+    }
+    
+    .aboutUsSection .aboutAccordin .accordinItem .accordinHeader .accordinButton::after {
+        width: 12.5px;
+        height: 12.5px;
+    }
+    
+    .py-5 {
+        padding-top: 3.75rem !important;
+        padding-bottom: 3.75rem !important;
+    }
+    
+    .px-3 {
+        padding-right: 1.25rem !important;
+        padding-left: 1.25rem !important;
+    }
+    
+    .p-0 {
+        padding: 0 !important;
+    }
+    
+    .contactsSection .inner_section .cardsection .card .card-body .chooseList {
+        height: 75px;
+        width: 75px;
+        box-shadow: 0px 0px 12.5px 0px rgba(0,0,0,.2) !important;
+    }
+    
+    .contactsSection .inner_section .cardsection .card .subBody .card-text {
+        font-size: 22.5px;
+    }
+    
+    .contactsSection .inner_section .cardsection .card .subBody .subText {
+        font-size: 20px;
+    }
+    
+    .p-sm-4 {
+        padding: 1.875rem !important;
+    }
+    
+    .contactsSection .inner_section .consultation .sectionTitle {
+        font-size: 56.25px;
+    }
+    
+    .input-group {
+        border: 1.25px solid rgba(90,92,93,.4784313725) !important;
+    }
+    
+    .consultation .formSection .inputGroup .inputText {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+    }
+    
+    .contactsSection .inner_section .consultation .inpImg {
+        height: 62.5px !important;
+    }
+    
+    .consultation .formSection .inputGroup .formInput {
+        font-size: 20px;
+    }
+    
+    .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        margin-left: calc(1.25px*-1);
+    }
+    
+    .py-3 {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+    }
+    .form-control {
+        padding: 0.46875rem 0.9375rem;
+        font-size: 1.25rem;
+        line-height: 1.875;
+        border-radius: 0.46875rem;
+    }
+    .form-control::placeholder,
+    .form-select {
+        font-size: 1.25rem !important;
+        & option {
+            font-size: 1.25rem !important;
+        }
+    }
+    .gap-md-0 {
+        gap: 0 !important;
+    }
+    .bloginnerSection .pera {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .bloginnerSection .sectionHeading {
+        font-size: 27.5px;
+        line-height: 37.5px;
+    }
+    .relatedBlogSection .relatedBlog .owl-dots {
+        gap: 10px;
+    }
+    .relatedBlogSection .relatedBlog .owl-dots .owl-dot {
+        width: 18px;
+        height: 18px;
+        border: 1.25px solid #364f6b;
+    }
+    .gap-lg-0 {
+        gap: 0 !important;
+    }
+    
+    
+    
+    
 }
 
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
 
-@include media-breakpoint-down(lg) {}
+}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(lg) {
 
-@include media-breakpoint-down(sm) {}
+}
+
+@include media-breakpoint-down(md) {
+
+}
+
+@include media-breakpoint-down(sm) {
+
+}
